@@ -23,8 +23,8 @@ class App extends Component {
   }
 
 
-  onClickAboutUs = ({key}) => {
-    let url = `http://localhost:3000/about-us/#${key}`
+  onClickMenuPane = ({ key }) => {
+    let url = `http://localhost:3000/${key}`
     window.location.href = url
   };
   
@@ -32,12 +32,29 @@ class App extends Component {
   render() {
 
     const aboutUsMenu = (
-      <Menu onClick={this.onClickAboutUs}>
-        <Menu.Item key="pct">PCT</Menu.Item>
-        <Menu.Item key="fraternity-video">Fraternity Video</Menu.Item>
-        <Menu.Item key="pillars">Pillars</Menu.Item>
+      <Menu onClick={this.onClickMenuPane}>
+        <Menu.Item key="about-us/#pct">PCT</Menu.Item>
+        <Menu.Item key="about-us/#fraternity-video">Fraternity Video</Menu.Item>
+        <Menu.Item key="about-us/#pillars">Pillars</Menu.Item>
       </Menu>
     );
+
+    const rushMenu = (
+      <Menu onClick={this.onClickMenuPane}>
+        <Menu.Item key="rush/#video">Video</Menu.Item>
+        <Menu.Item key="rush/#schedule">Schedule</Menu.Item>
+        <Menu.Item key="rush/#deadlines">Deadlines</Menu.Item>
+        <Menu.Item key="rush/#events">Events</Menu.Item>
+        <Menu.Item key="rush/#tips">Tips</Menu.Item>
+      </Menu>
+    )
+
+    const leadershipMenu = (
+      <Menu onClick={this.onClickMenuPane}>
+        <Menu.Item key="leadership/#executive-board">Executive Board</Menu.Item>
+        <Menu.Item key="leadership/#directors">Directors</Menu.Item>
+      </Menu>
+    )
 
     return (
       <Layout className="layout">
@@ -52,9 +69,12 @@ class App extends Component {
               <Dropdown overlay={aboutUsMenu}>
                 <a className="primary-nav" onClick={e => e.preventDefault()}> About Us <DownOutlined /></a>
               </Dropdown>
-              {/* <NavLink className="primary-nav" to="/about-us">About Us</NavLink> */}
-              <NavLink className="primary-nav" to="/rush">Rush</NavLink>
-              <NavLink className="primary-nav" to="/leadership">Leadership</NavLink>
+              <Dropdown overlay={rushMenu}>
+                <a className="primary-nav" onClick={e => e.preventDefault()}> Rush <DownOutlined /></a>
+              </Dropdown>
+              <Dropdown overlay={leadershipMenu}>
+                <a className="primary-nav" onClick={e => e.preventDefault()}> Leadership <DownOutlined /></a>
+              </Dropdown>
             </Col>
           </Row>
         </Header>
