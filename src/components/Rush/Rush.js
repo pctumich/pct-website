@@ -4,7 +4,7 @@ const { Content } = Layout;
 
 const Rush = () => {
     return (
-      <Content>
+      <Content className="content">
           <p>Rush</p>
       </Content>
     );

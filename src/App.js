@@ -26,23 +26,28 @@ class App extends Component {
     return (
       <Layout className="layout">
         <Header className="header">
-        <NavLink to="/"><div className="logo" /></NavLink>
-              <Row>
-                <Col xs={0} sm={20} md={20} lg={16}>
-                  <NavLink className="primary-nav" to="/">Home</NavLink>
-                  <NavLink className="primary-nav" to="/about-us">About Us</NavLink>
-                  <NavLink className="primary-nav" to="/rush">Rush</NavLink>
-                  <NavLink className="primary-nav" to="/leadership">Leadership</NavLink>
-                </Col>
-              </Row>
+          <Row>
+            <NavLink to="/"><div className="logo" /></NavLink>
+            <h2 className="title">Phi Chi Theta</h2>
+          </Row>
+          <Row className="nav-bar-row">
+            <Col className="nav-bar-col">
+              <NavLink className="primary-nav" to="/">Home</NavLink>
+              <NavLink className="primary-nav" to="/about-us">About Us</NavLink>
+              <NavLink className="primary-nav" to="/rush">Rush</NavLink>
+              <NavLink className="primary-nav" to="/leadership">Leadership</NavLink>
+            </Col>
+          </Row>
         </Header>
-        <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/about-us" component={AboutUs}/>
-            <Route exact path="/rush" component={Rush}/>
-            <Route exact path="/leadership" component={Leadership}/>
-            <Route component={Error}/>
-          </Switch>
+        <Layout>
+          <Switch>
+              <Route exact path="/" component={Home}/>
+              <Route exact path="/about-us" component={AboutUs}/>
+              <Route exact path="/rush" component={Rush}/>
+              <Route exact path="/leadership" component={Leadership}/>
+              <Route component={Error}/>
+            </Switch>
+        </Layout>
       </Layout>
     )
   }

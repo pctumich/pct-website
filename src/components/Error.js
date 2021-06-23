@@ -4,7 +4,7 @@ const { Content } = Layout;
 
 const Error = () => {
     return (
-      <Content>
+      <Content className="content">
           <p>Error: Page does not exist!</p>
       </Content>
     );

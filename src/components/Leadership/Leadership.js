@@ -4,7 +4,7 @@ const { Content } = Layout;
 
 const Leadership = () => {
     return (
-      <Content>
+      <Content className="content">
           <p>Leadership</p>
       </Content>
     );

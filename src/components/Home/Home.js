@@ -4,7 +4,7 @@ const { Content } = Layout;
 
 const Home = () => {
     return (
-      <Content>
+      <Content className="content">
           <p>Home</p>
       </Content>
     );
