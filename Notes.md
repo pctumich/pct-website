@@ -9,3 +9,6 @@ Leadership menu
 sponsor us? do we need this tab?
 
 main page: slideshow
+
+Rush should also have a menu bar
+Leadership as well
