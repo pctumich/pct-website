@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
+import { Route, Switch, NavLink, Link, Redirect } from 'react-router-dom';
 import { Layout, Row, Col, Dropdown, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
@@ -14,19 +14,18 @@ import Error from './components/Error';
 
 const { Header, Footer } = Layout;
 
-
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
 
     };
-  
   }
 
-  onClickAboutUs = ({ key }) => {
-    console.log(`Click on item ${key}`);
+
+  onClickAboutUs = ({key}) => {
+    let url = `http://localhost:3000/about-us/#${key}`
+    window.location.href = url
   };
   
 
@@ -34,9 +33,9 @@ class App extends Component {
 
     const aboutUsMenu = (
       <Menu onClick={this.onClickAboutUs}>
-        <Menu.Item key="1">PCT</Menu.Item>
-        <Menu.Item key="2">Fraternity Video</Menu.Item>
-        <Menu.Item key="3">Pillars</Menu.Item>
+        <Menu.Item key="pct">PCT</Menu.Item>
+        <Menu.Item key="fraternity-video">Fraternity Video</Menu.Item>
+        <Menu.Item key="pillars">Pillars</Menu.Item>
       </Menu>
     );
 
