@@ -28,18 +28,62 @@
   justify-content: center;
 }
 
-.nav-bar-col {
-  /* padding-bottom: 20px; */
-}
-
 .header {
   background-color:goldenrod;
   height: 165px;
 }
 
-.content {
-  /* margin-top: 100px; */
+.footer {
+  background-color: goldenrod;
 }
 
+.f-title {
+  color: blueviolet;
+  font-weight: 1000;
+  font-size: 40px;
+  text-align: center;
+}
+
+.f-sub {
+  color: blueviolet;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+}
+
+.copyright {
+  color: blueviolet;
+  font-weight: 300;
+  text-align: left;
+  padding-top: 85px;
+}
+
+.contact-us {
+  color: blueviolet;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+}
+
+.contact-info {
+  color: blueviolet;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: left;
+}
+
+.connect-with-us {
+  color: blueviolet;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+}
+
+.social-media {
+  color: blueviolet;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: left;
+}
 
 

@@ -87,6 +87,30 @@ class App extends Component {
               <Route component={Error}/>
             </Switch>
         </Layout>
+        <Footer className="footer">
+          <Row>
+            <h3 className="f-title">Phi Chi Theta</h3>
+          </Row>
+          <Row>
+            <Col span={8}>
+              <h4 className="f-sub">Michigan's Leading Business Fraternity</h4>
+              <p className="copyright">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
+            </Col>
+            <Col span={8}>
+              <h4 className="contact-us">Contact Us:</h4>
+              <h5 className="contact-info">Email: ryantoth@umich.edu</h5>
+              <h5 className="contact-info">Phone: 847.910.5075</h5>
+            </Col>
+            <Col span={8}>
+              <h4 className="connect-with-us">Connect With Us</h4>
+              <div className="social-media">
+                <h5>Instagram</h5>
+                <h5>Twitter</h5>
+                <h5>LinkedIn</h5>
+              </div>
+            </Col>
+          </Row>
+        </Footer>
       </Layout>
     )
   }
