@@ -1,0 +1,16 @@
+.each-fade {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.each-fade > div {
+  width: 100%;
+  text-align: center;
+}
+
+.each-fade > div img {
+  width: 1300px;
+  height: 650px;
+  object-fit: cover;
+}

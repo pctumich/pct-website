@@ -1,0 +1,44 @@
+.heading-new-members {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.heading-president {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.new-members {
+    display:block;
+    background:transparent;
+    padding:20px;
+}
+
+.row-president {
+    margin-top: 40px; 
+}
+
+.text-col {
+    /* margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px; */
+    padding: 30px;
+}
+
+.image-col {
+    margin-top: 60px;
+}
+
+.image-president {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.text-president {
+    white-space: pre-wrap;
+}
