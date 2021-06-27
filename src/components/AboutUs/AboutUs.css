@@ -1,0 +1,30 @@
+.heading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 30px;
+    color:blueviolet;
+}
+
+.text-about-col {
+    margin-left: 20px;
+}
+
+.text-about {
+    white-space: pre-wrap;
+}
+
+.pctlogo-col {
+    text-align: center;
+}
+
+.video-col {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    height: 720px;
+    width: 1280px;
+}
