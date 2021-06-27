@@ -18,21 +18,21 @@ const Home = () => {
       <Row className="row-president">
         <Col className="text-col" span={12}>
           <h2 className="heading-president">President's Welcome</h2>
-          <p className="text-president">On behalf of all of our members, it is my pleasure to welcome you to the official website of Phi Chi Theta at the University of Michigan. PCT is a co-ed professional business fraternity filled with driven, empathetic people. We are a diverse family of brothers and sisters that have actively committed ourselves to the betterment of each other, and the greater Michigan community.
-
-            As a Pittsburgh, Pennsylvania native, I came to the University of Michigan not knowing anyone. I was hopeful to find strong friendships and a community that could make this large university feel like home. My experience pledging PCT as a first semester freshman led me to that and so much more. Immediately, I was surrounded by compassionate, like-minded, intelligent individuals. The exposure and support I gained from PCT allowed me to cultivate my passions and even led me to change my major from Pre-Medical Studies to Economics. Beyond that, I found my family.
-
-            The members of this organization have been a constant inspiration in my life. From the contagious drive towards excellence within distinct professional careers to the value of upperclassmen giving back to underclassmen to help them attain incredible achievements in a variety of business fields, PCT has never failed to inspire me to be the best version of myself. Ultimately, the true value of PCT is in the quality of people that make up our family. Our members are tirelessly committed to helping each other grow professionally, academically, and socially, pledge semester and beyond. Whether it be late night interview prep or even a time of emotional stress, PCT members are there to support you in any way they can. Especially in this world of uncertainty, I am proud to know that every single brother and sister in PCT will always be there for each other.
-
-            Thank you so much for visiting this site, and taking the time to learn more about Phi Chi Theta at the University of Michigan. I hope to see you at our upcoming rush events. Please check out our Rush page to learn more about the application process, and please do not hesitate to reach out with any questions.
-
-            Wishing you and your loved ones health and happiness!
-
-            Best,
-
-            Krisha Monpara
-
-            President - PCT Zeta Beta Class of 2022</p>
+          <p className="text-president">On behalf of all of our members, it is my pleasure to welcome you to the official website of Phi Chi Theta at the University of Michigan. PCT is a co-ed professional business fraternity filled with driven, empathetic people. We are a diverse family of brothers and sisters that have actively committed ourselves to the betterment of each other, and the greater Michigan community.</p>
+          <br></br>
+          <p className="text-president">As a Pittsburgh, Pennsylvania native, I came to the University of Michigan not knowing anyone. I was hopeful to find strong friendships and a community that could make this large university feel like home. My experience pledging PCT as a first semester freshman led me to that and so much more. Immediately, I was surrounded by compassionate, like-minded, intelligent individuals. The exposure and support I gained from PCT allowed me to cultivate my passions and even led me to change my major from Pre-Medical Studies to Economics. Beyond that, I found my family.</p>
+          <br></br>
+          <p className="text-president">The members of this organization have been a constant inspiration in my life. From the contagious drive towards excellence within distinct professional careers to the value of upperclassmen giving back to underclassmen to help them attain incredible achievements in a variety of business fields, PCT has never failed to inspire me to be the best version of myself. Ultimately, the true value of PCT is in the quality of people that make up our family. Our members are tirelessly committed to helping each other grow professionally, academically, and socially, pledge semester and beyond. Whether it be late night interview prep or even a time of emotional stress, PCT members are there to support you in any way they can. Especially in this world of uncertainty, I am proud to know that every single brother and sister in PCT will always be there for each other.</p>
+          <br></br>
+          <p className="text-president">Thank you so much for visiting this site, and taking the time to learn more about Phi Chi Theta at the University of Michigan. I hope to see you at our upcoming rush events. Please check out our Rush page to learn more about the application process, and please do not hesitate to reach out with any questions.</p>
+          <br></br>
+          <p className="text-president">Wishing you and your loved ones health and happiness!</p>
+          <br></br>
+          <p className="text-president">Best,</p>
+          <br></br>
+          <p className="text-president">Krisha Monpara</p>
+          <br></br>
+          <p className="text-president">President - PCT Zeta Beta Class of 2022</p>
         </Col>
         <Col className="image-col" span={12}>
           <Image className="image-president" src={president} preview={false}></Image>
