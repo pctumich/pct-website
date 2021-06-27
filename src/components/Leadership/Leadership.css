@@ -1,0 +1,36 @@
+.leadership-row {
+   padding: 20px;
+}
+
+.image {
+    /* max-width: 100%;
+    height: auto; */
+    width:300px;
+    height:300px;
+    object-fit:cover;
+}
+
+.board-name {
+    text-align: center;
+}
+
+.board-position {
+    text-align: center;
+}
+
+.leadership-col {
+    text-align: center;
+}
+
+.board-bio {
+    text-align: left;
+    width: 250px;
+}
+
+.director-name {
+    text-align: center;
+}
+
+.director-position {
+    text-align: center;
+}
