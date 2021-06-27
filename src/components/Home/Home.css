@@ -22,10 +22,6 @@
 }
 
 .text-col {
-    /* margin-top: 20px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    margin-right: 20px; */
     padding: 30px;
 }
 
@@ -34,11 +30,16 @@
 }
 
 .image-president {
-    width: 60%;
-    height: 60%;
-    object-fit: cover;
+    width: 70%;
+    height: 70%;
+    object-fit:cover;
 }
 
 .text-president {
-    white-space: pre-wrap;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
