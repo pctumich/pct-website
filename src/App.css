@@ -4,6 +4,7 @@
 
 .title {
   font-size: 50px;
+  font-family: Georgia, serif;
   font-weight: 1000;
   margin: 20px;
   color: blueviolet;
@@ -29,7 +30,7 @@
 }
 
 .header {
-  background-color:goldenrod;
+  background-color:white;
   height: 165px;
 }
 

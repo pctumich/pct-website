@@ -11,7 +11,6 @@ import Leadership from './components/Leadership/Leadership';
 import Error from './components/Error';
 
 
-
 const { Header, Footer } = Layout;
 
 class App extends Component {
@@ -31,13 +30,13 @@ class App extends Component {
 
   render() {
 
-    const aboutUsMenu = (
-      <Menu onClick={this.onClickMenuPane}>
-        <Menu.Item key="about-us/#pct">PCT</Menu.Item>
-        <Menu.Item key="about-us/#fraternity-video">Fraternity Video</Menu.Item>
-        <Menu.Item key="about-us/#pillars">Pillars</Menu.Item>
-      </Menu>
-    );
+    // const aboutUsMenu = (
+    //   <Menu onClick={this.onClickMenuPane}>
+    //     <Menu.Item key="/#about-us">PCT</Menu.Item>
+    //     <Menu.Item key="about-us/#fraternity-video">Fraternity Video</Menu.Item>
+    //     <Menu.Item key="about-us/#pillars">Pillars</Menu.Item>
+    //   </Menu>
+    // );
 
     const rushMenu = (
       <Menu onClick={this.onClickMenuPane}>
@@ -65,10 +64,8 @@ class App extends Component {
           </Row>
           <Row className="nav-bar-row">
             <Col className="nav-bar-col">
-              <NavLink className="primary-nav" to="/">Home</NavLink>
-              <Dropdown overlay={aboutUsMenu}>
-                <a className="primary-nav" onClick={e => e.preventDefault()}> About Us <DownOutlined /></a>
-              </Dropdown>
+              <Link className="primary-nav" to="/">Home</Link>
+              <Link className="primary-nav" to={{pathname: '/', hash: '#aboutUs'}}>About Us</Link>
               <Dropdown overlay={rushMenu}>
                 <a className="primary-nav" onClick={e => e.preventDefault()}> Rush <DownOutlined /></a>
               </Dropdown>
@@ -81,9 +78,10 @@ class App extends Component {
         <Layout>
           <Switch>
               <Route exact path="/" component={Home}/>
-              <Route exact path="/about-us" component={AboutUs}/>
-              <Route exact path="/rush" component={Rush}/>
-              <Route exact path="/leadership" component={Leadership}/>
+              {/* <Route path="/#aboutUs" component={Home}/> */}
+              <Route path="/rush" component={Rush}/>
+              <Route path="/leadership" component={Leadership}/>
+              {/* <Redirect to="/"/> */}
               <Route component={Error}/>
             </Switch>
         </Layout>

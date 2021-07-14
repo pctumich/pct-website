@@ -1,14 +1,19 @@
 PCT Website Notes:
 
-Incorporate submenus into header
+Interactive timeline
 
-footer --> contact info, copyright 2021 Phi Chi Theta, connect with us --> twitter, linkedin, IG
+Display pillars better
 
-Leadership menu
+PAGES:
 
-sponsor us? do we need this tab?
+Home: slideshow (apply now --> bubble), presidents welcome, about us, pillars, alumni network 
 
-main page: slideshow
+About Us? Tab?
 
-Rush should also have a menu bar
-Leadership as well
+Rush: Video --> list for email, Timeline / Events, Tips --> put newest members pic!
+
+Leadership: Board, Directors
+
+
+One file for CSS
+One file for big paragraphs 

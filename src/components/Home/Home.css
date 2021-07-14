@@ -5,7 +5,7 @@
     margin-top: 50px;
 }
 
-.heading-president {
+.heading-title {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
@@ -17,22 +17,33 @@
     padding:20px;
 }
 
-.row-president {
-    margin-top: 40px; 
+.row-home {
+    margin-top: 30px;  
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .text-col {
-    padding: 30px;
+    padding-top: 20px;
 }
 
 .image-col {
-    margin-top: 60px;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
 .image-president {
-    width: 70%;
-    height: 70%;
+    margin-left: 50px;
+    width: 80%;
+    height: 80%;
     object-fit:cover;
+}
+
+.image-company {
+    width: 60%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-president {
@@ -42,4 +53,10 @@
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
+}
+
+.hr-title {
+    border: 0;
+    height: 8px;
+    background: #095484;
 }
