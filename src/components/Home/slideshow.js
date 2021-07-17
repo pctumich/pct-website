@@ -10,19 +10,19 @@ import slide_3 from './pics/IanKim.jpg'
 const Slideshow = () => {
     return (
         <div className="slide-container">
-            <Fade>
+            <Fade pauseOnHover={false} duration={7000}>
                 <div className="each-fade">
-                    <div>
+                    <div class="marquee">
                         <img src={slide_1} />
                     </div>
                 </div>
                 <div className="each-fade">
-                    <div>
+                    <div class="marquee">
                         <img src={slide_2} />
                     </div>
                 </div>
                 <div className="each-fade">
-                    <div>
+                    <div class="marquee">
                         <img src={slide_3} />
                     </div>
                 </div>

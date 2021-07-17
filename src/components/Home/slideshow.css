@@ -1,3 +1,8 @@
+.slide-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  filter: brightness(60%) saturate(80%) sepia(10%);
+}
+
 .each-fade {
   display: flex;
   width: 100%;
@@ -6,11 +11,42 @@
 
 .each-fade > div {
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .each-fade > div img {
+  object-fit: cover;
+}
+
+.marquee {
   width: 1300px;
   height: 650px;
-  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  background: #fefefe;
+  color: #333;
+  box-shadow: 15px 0px 10px -10px rgba(0,0,0,0.51);
+}
+
+.marquee img {
+  position: absolute;
+  text-align: center;
+  width: 110%;
+  height: 110%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  animation: scroll-bottom 10s linear infinite alternate;
+}
+
+@keyframes scroll-bottom {
+  0% {
+      transform: translateY(0%);
+  }
+  100% {
+      transform: translateY(-10%);
+  }
 }
