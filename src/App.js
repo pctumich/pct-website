@@ -3,7 +3,7 @@ import { Route, Switch, NavLink, Link, Redirect } from 'react-router-dom';
 import { Layout, Row, Col, Dropdown, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
-import './App.css';
+import './App.scss';
 import Home from './components/Home/Home';
 import AboutUs from './components/AboutUs/AboutUs';
 import Rush from './components/Rush/Rush';
@@ -57,7 +57,7 @@ class App extends Component {
 
     return (
       <Layout className="layout">
-        <Header className="header">
+        <Header className="header border-gradient border-gradient-purple">
           <Row>
             <NavLink to="/"><div className="logo" /></NavLink>
             <h2 className="title">Phi Chi Theta</h2>
