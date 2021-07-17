@@ -1,6 +1,41 @@
+.text-container {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-title {
+  font-size: 100px;
+  font-weight:600;
+  color: white;
+  top: 50%;
+}
+
+.text-hr {
+  height: 5px;
+  color: white;
+  background-color: white;
+}
+
+.text-description {
+  font-size: 50px;
+  font-weight:100;
+  color: white;
+  text-align: center;
+}
+
+.heading-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
 .slide-container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  filter: brightness(60%) saturate(80%) sepia(10%);
+  position: relative;
 }
 
 .each-fade {
@@ -11,11 +46,11 @@
 
 .each-fade > div {
   width: 100%;
-  /* text-align: center; */
 }
 
 .each-fade > div img {
   object-fit: cover;
+  filter: brightness(60%) saturate(80%) sepia(10%);
 }
 
 .marquee {

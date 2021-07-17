@@ -9,24 +9,30 @@ import slide_3 from './pics/IanKim.jpg'
 
 const Slideshow = () => {
     return (
-        <div className="slide-container">
-            <Fade pauseOnHover={false} duration={7000}>
-                <div className="each-fade">
-                    <div class="marquee">
-                        <img src={slide_1} />
+        <div>
+            <div className="slide-container">
+            <div className="text-container">
+                <h1 className="text-title">PHI CHI THETA <hr className="text-hr"></hr></h1>
+                <h3 className="text-description">Michigan's Leading Professional Business Fraternity</h3>
+            </div>
+                <Fade pauseOnHover={false} duration={7000}>
+                    <div className="each-fade">
+                        <div class="marquee">
+                            <img src={slide_1} />
+                        </div>
                     </div>
-                </div>
-                <div className="each-fade">
-                    <div class="marquee">
-                        <img src={slide_2} />
+                    <div className="each-fade">
+                        <div class="marquee">
+                            <img src={slide_2} />
+                        </div>
                     </div>
-                </div>
-                <div className="each-fade">
-                    <div class="marquee">
-                        <img src={slide_3} />
+                    <div className="each-fade">
+                        <div class="marquee">
+                            <img src={slide_3} />
+                        </div>
                     </div>
-                </div>
-            </Fade>
+                </Fade>
+            </div>
         </div>
     )
 };
