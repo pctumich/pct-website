@@ -13,7 +13,19 @@
 
 .text-about {
     white-space: pre-wrap;
+    font-size: 16.5px;
+    padding-left: 90px;
+    padding-right: 90px; 
 }
+
+.text-about-indent {
+    white-space: pre-wrap;
+    font-size: 16.5px;
+    padding-left: 120px;
+    padding-right: 90px; 
+}
+
+
 
 .pctlogo-col {
     text-align: center;

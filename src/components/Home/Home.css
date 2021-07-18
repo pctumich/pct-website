@@ -35,6 +35,7 @@
 
 .image-president {
     margin-left: 50px;
+    margin-top: 70px;
     width: 80%;
     height: 80%;
     object-fit:cover;
@@ -47,17 +48,30 @@
     margin-right: auto;
 }
 
+.name-president {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
 .text-president {
   overflow-x: auto;
   white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
   word-wrap: break-word;
+  font-size: 16.5px;
+  margin-bottom: 25px;
+}
+
+.text-president-signature {
+    font-size: 16.5px;
+    padding: 0;
+    margin: 0;
 }
 
 .hr-title {
     border: 0;
     height: 8px;
     background: #095484;
+    margin-bottom: 30px;
 }
