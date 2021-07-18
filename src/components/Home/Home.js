@@ -13,7 +13,7 @@ const { Content } = Layout;
 
 const Home = () => {
   return (
-    <Content>
+    <div>
       <Slideshow></Slideshow>
       <Row className="row-home">
         <Col className="text-col" span={24}>
@@ -62,7 +62,7 @@ const Home = () => {
           <Image className="image-company" src={pillars} preview={false}></Image>
         </Col>
       </Row>
-    </Content>
+    </div>
   );
 }
 

@@ -20,17 +20,17 @@ const Slideshow = () => {
                 </div>
                 <Fade pauseOnHover={false} duration={7000}>
                     <div className="each-fade">
-                        <div class="marquee">
+                        <div>
                             <img src={slide_1} />
                         </div>
                     </div>
                     <div className="each-fade">
-                        <div class="marquee">
+                        <div>
                             <img src={slide_2} />
                         </div>
                     </div>
                     <div className="each-fade">
-                        <div class="marquee">
+                        <div>
                             <img src={slide_3} />
                         </div>
                     </div>
