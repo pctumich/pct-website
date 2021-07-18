@@ -8,6 +8,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Rush from './components/Rush/Rush';
 import Leadership from './components/Leadership/Leadership';
 import Error from './components/Error';
+import iris from './flower-iris.jpg';
 
 
 class App extends Component {
@@ -48,7 +49,7 @@ class App extends Component {
       <div className="App">
         <div className="header">
           <div className="logo-org">
-            <NavLink to="/"><div className="logo" /></NavLink>
+            <img className="logo" src={iris}></img>
             <h2 className="title">Phi Chi Theta</h2>
           </div>
           <div className="nav">

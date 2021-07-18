@@ -2,9 +2,8 @@
   
   .header {
     padding: 0;
-    height: 10vh;
+    height: 7.5vh;
     position: sticky;
-    z-index: 999;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -13,14 +12,18 @@
 
     .logo-org {
       white-space: nowrap;
-      
-      // .logo {
-      //   width: 71px;
-      //   height: 80px;
-      //   background: url(./logo.jpg);
-      //   margin: 16px 40px 0 12px;
-      //   float: left;
-      // }
+      display: flex;
+      flex-direction: row;
+
+      .logo {
+        margin-top: 8px;
+        margin-left: 4px;
+        width: 6%;
+        height: 6%;
+        float: left;
+        background-color: #001529;
+        z-index: 999;
+      }
 
       .title {
         font-size: 30px;
@@ -43,38 +46,38 @@
   }
 
   .footer {
-    background-color: goldenrod;
-
+    background-color:#001529;
+    
     .copyright {
-      color: blueviolet;
+      color: white;
       font-weight: 300;
       text-align: left;
       padding-top: 85px;
     }
 
     .contact-us {
-      color: blueviolet;
+      color: white;
       font-weight: 600;
       font-size: 20px;
       text-align: left;
     }
     
     .contact-info {
-      color: blueviolet;
+      color: white;
       font-weight: 400;
       font-size: 15px;
       text-align: left;
     }
     
     .connect-with-us {
-      color: blueviolet;
+      color: white;
       font-weight: 600;
       font-size: 20px;
       text-align: left;
     }
     
     .social-media {
-      color: blueviolet;
+      color: white;
       font-weight: 400;
       font-size: 15px;
       text-align: left;
