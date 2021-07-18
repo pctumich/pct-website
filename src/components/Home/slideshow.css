@@ -1,6 +1,8 @@
 .slide-container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
+  margin: 0;
+  padding: 0;
   /* background: #001529; */
 }
 
@@ -41,7 +43,6 @@
 .each-fade {
   display: flex;
   width: 100%;
-  margin-top: 20px;
 }
 
 .each-fade > div {
@@ -68,6 +69,7 @@
   object-fit: cover;
   filter: brightness(60%) saturate(80%) sepia(10%);
 }
+
 
 @keyframes scroll-bottom {
   0% {
