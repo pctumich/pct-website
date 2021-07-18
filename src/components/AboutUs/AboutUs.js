@@ -2,7 +2,6 @@ import React from 'react';
 import { Layout, Row, Col, Image } from 'antd';
 import ReactMarkdown from 'react-markdown'
 import ReactPlayer from "react-player"
-import './AboutUs.css'
 import PCTLogo from './pics/AboutUs.jpg'
 const { Content } = Layout;
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactPlayer from "react-player"
-import './Rush.css'
 import { Layout, Col } from 'antd';
 const { Content } = Layout;
 

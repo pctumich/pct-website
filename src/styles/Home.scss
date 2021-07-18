@@ -1,0 +1,132 @@
+
+.Home {
+    .president-welcome {
+        display: flex;
+        flex-direction: column;
+        .heading {
+            margin-top: 4%;
+            .section-title {
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            .hr {
+                border: 0;
+                height: 8px;
+                width: 85%;
+                background: #095484;
+                margin-bottom: 20px;
+            }
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            .img-name {
+                width: 50%;
+                padding: 0px 70px 40px 60px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .img {
+                    width: 80%;
+                    height: 80%;
+                    object-fit:cover;
+                    align-self: flex-end;
+                }
+                .name {
+                    padding-right: 22%;
+                    font-size: 25px;
+                    font-weight: 500;
+                    margin-top: 15px;
+                    align-self: flex-end;
+                }
+            }
+            .welcome {
+                width: 50%;
+                padding: 0 60px 40px 0px;
+                .text {
+                    overflow-x: auto;
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                    font-size: 16.5px;
+                    margin-bottom: 25px;
+                }
+                .signature {
+                    font-size: 16.5px;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        .heading {
+            margin-top: 4%;
+            .section-title {
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            .hr {
+                border: 0;
+                height: 8px;
+                width: 85%;
+                background: #095484;
+                margin-bottom: 20px;
+            }
+        }
+        .content {
+            margin-left: 200px;
+            margin-right: 200px;
+            .text {
+                white-space: pre-wrap;
+                font-size: 16.5px;
+            }
+            .text-indent {
+                white-space: pre-wrap;
+                font-size: 16.5px;
+                padding: 0px 50px 0px 50px;
+            }
+            .company-img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 60%;
+                width: 60%;
+            }
+        }
+    }
+
+    .pillars {
+        display: flex;
+        flex-direction: column;
+        .heading {
+            margin-top: 4%;
+            .section-title {
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            .hr {
+                border: 0;
+                height: 8px;
+                width: 85%;
+                background: #095484;
+                margin-bottom: 20px;
+            }
+        }
+        .content {
+            .pillars-img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 40%;
+                width: 40%;
+            }
+        }
+    }
+}
+

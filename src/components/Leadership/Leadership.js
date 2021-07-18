@@ -1,6 +1,5 @@
 import React from 'react';
 import { Layout, Col, Row, Image } from 'antd';
-import './Leadership.css'
 import elPrez from './pics/Krisha.jpg'
 import vpi from './pics/Jason.jpg'
 import vpx from './pics/Theo.jpg'

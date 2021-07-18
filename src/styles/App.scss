@@ -1,0 +1,85 @@
+.App {
+  
+  .header {
+    padding: 0;
+    height: 10vh;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#001529;
+
+    .logo-org {
+      white-space: nowrap;
+      
+      // .logo {
+      //   width: 71px;
+      //   height: 80px;
+      //   background: url(./logo.jpg);
+      //   margin: 16px 40px 0 12px;
+      //   float: left;
+      // }
+
+      .title {
+        font-size: 30px;
+        font-family: Georgia, serif;
+        font-weight: 1000;
+        margin: 10px;
+        color: white;
+      }
+     }
+
+    .nav {
+      .primary-nav {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 20px;
+        margin-top: 10px;
+        color: white;
+      }
+    }
+  }
+
+  .footer {
+    background-color: goldenrod;
+
+    .copyright {
+      color: blueviolet;
+      font-weight: 300;
+      text-align: left;
+      padding-top: 85px;
+    }
+
+    .contact-us {
+      color: blueviolet;
+      font-weight: 600;
+      font-size: 20px;
+      text-align: left;
+    }
+    
+    .contact-info {
+      color: blueviolet;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: left;
+    }
+    
+    .connect-with-us {
+      color: blueviolet;
+      font-weight: 600;
+      font-size: 20px;
+      text-align: left;
+    }
+    
+    .social-media {
+      color: blueviolet;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: left;
+    }
+  }
+
+}
+
