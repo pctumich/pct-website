@@ -5,24 +5,29 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  line-height: 1;
 }
 
 .text-title {
   font-size: 100px;
-  font-weight:600;
+  font-weight:100;
   color: white;
   top: 50%;
+  margin: 0;
 }
 
 .text-hr {
-  height: 5px;
+  height: 3px;
+  width: inherit;
+  margin: 0;
   color: white;
   background-color: white;
 }
 
 .text-description {
-  font-size: 50px;
+  font-size: 30px;
   font-weight:100;
+  margin-top: 30px;
   color: white;
   text-align: center;
 }
@@ -36,6 +41,7 @@
 .slide-container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
+  /* background: #001529; */
 }
 
 .each-fade {
@@ -69,7 +75,6 @@
   width: 110%;
   height: 110%;
   margin: 0;
-  line-height: 50px;
   text-align: center;
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
@@ -82,6 +87,6 @@
       transform: translateY(0%);
   }
   100% {
-      transform: translateY(-10%);
+      transform: translateY(-8%);
   }
 }

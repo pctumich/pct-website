@@ -57,13 +57,12 @@ class App extends Component {
 
     return (
       <Layout className="layout">
-        <Header className="header border-gradient border-gradient-purple">
-          <Row>
-            <NavLink to="/"><div className="logo" /></NavLink>
-            <h2 className="title">Phi Chi Theta</h2>
-          </Row>
-          <Row className="nav-bar-row">
-            <Col className="nav-bar-col">
+        <Header className="header">
+            <div className="header-title">
+              <NavLink to="/"><div className="logo" /></NavLink>
+              <h2 className="title">Phi Chi Theta</h2>
+            </div>
+            <div className="header-nav">
               <Link className="primary-nav" to="/">Home</Link>
               <Link className="primary-nav" to={{pathname: '/', hash: '#aboutUs'}}>About Us</Link>
               <Dropdown overlay={rushMenu}>
@@ -72,8 +71,7 @@ class App extends Component {
               <Dropdown overlay={leadershipMenu}>
                 <a className="primary-nav" onClick={e => e.preventDefault()}> Leadership <DownOutlined /></a>
               </Dropdown>
-            </Col>
-          </Row>
+            </div>
         </Header>
         <Layout>
           <Switch>
@@ -81,7 +79,6 @@ class App extends Component {
               {/* <Route path="/#aboutUs" component={Home}/> */}
               <Route path="/rush" component={Rush}/>
               <Route path="/leadership" component={Leadership}/>
-              {/* <Redirect to="/"/> */}
               <Route component={Error}/>
             </Switch>
         </Layout>
