@@ -1,5 +1,4 @@
 import React from 'react';
-import { Layout, Col, Row, Image } from 'antd';
 import elPrez from './pics/Krisha.jpg'
 import vpi from './pics/Jason.jpg'
 import vpx from './pics/Theo.jpg'
@@ -31,189 +30,75 @@ import tech1 from './pics/Ryan.jpg'
 // import wellness1 from './pics/Aakash.jpg'
 import wellness2 from './pics/Sarah.jpg'
 
+const board = [{"name": "Krisha Monpara", "position": "President", "headshot": elPrez, "bio": "Krisha is a junior studying Economics. From Pittsburgh, Pennsylvania, she enjoys running, playing the piano, and spending time with her friends and family. Her internship experience includes Wealth Management at Cetera Financial Investors, the Women’s Advisory Program in Global Investment Banking at RBC, and as an incoming Financial Analyst at Amazon in Seattle."},
+{"name": "Jason Stahlman", "position": "VP Internal", "headshot": vpi, "bio": "Jason is a junior studying Business from Twinsburg, Ohio. He enjoys playing and watching a variety of sports, listening to music, and hanging out with friends. In past summers he has interned in corporate finance and strategy. This upcoming summer he will be interning in Investment Banking at Lincoln International."},
+{"name": "Theo Kardasis", "position": "VP External", "headshot": vpx, "bio": "Theo, originally from Rochester, MI, is a junior in the School of Information studying Data Analysis and minoring in Business and Spanish. In his free time, he loves to hike, cook, and watch YouTube. His past internship experiences lie within strategy and insights, and he will be interning as a Digital Analytics Intern at American Express this coming summer."},
+{"name": "Ian Kim", "position": "VP Finance", "headshot": vpf, "bio": "Ian is a junior studying Industrial and Operations Engineering. Originally from Westford, Massachusetts, Ian enjoys watching Boston Sports, cooking, running and spending time with friends. In past summers, Ian has worked for T-Mobile in Germany, and for a supply chain startup in Chicago. This summer he will be working in Tech Consulting as a Summer Associate at Gartner."},
+{"name": "Jack Xiao", "position": "VP Operations", "headshot": vpOp1, "bio": "Jack is a sophomore studying Business and Computer Science. He is from Lincolnshire, Illinois and enjoys playing basketball, golf, and watching Chicago sports. He is working at Jansen Investments in Chicago and has an interest in Investment Banking."},
+{"name": "Josie Bachus", "position": "VP Operations", "headshot": vpOp2, "bio": "Josephine is a sophomore studying Business and Psychology from Flossmoor, Illinois. She enjoys reading mystery novels, trips to the thrift store, and hanging out with her dog, as well as hanging out with her friends. She is interested in the intersection of business and psychology with a focus in consulting."}]
 
-const { Content } = Layout;
+const directors = [{"position": "Director of New Member Engagement", "name": "Jharna Tripathi", "headshot": Parent},
+{"position": "Director of Alumni Relations", "name": "Linh Phan", "headshot": ""},
+{"position": "Director of Professional Development", "name": "Spencer Semple", "headshot": ""},
+{"position": "Director of Professional Development", "name": "Anne Early", "headshot": ""},
+{"position": "Director of Member Engagement", "name": "Aakash Jajoo", "headshot": ""},
+{"position": "Director of Member Engagement", "name": "Erik Whilborn", "headshot": ""},
+{"position": "Academic Director", "name": "Alexa Finuoli", "headshot": ""},
+{"position": "Academic Director", "name": "Mia Vuckovic", "headshot": ""},
+{"position": "Director of Member Wellness", "name": "Aakash Menon", "headshot": ""},
+{"position": "Director of Member Wellness", "name": "Sarah Morris", "headshot": ""},
+{"position": "Director of Diversity, Equity, and Inclusion", "name": "Jeevin Singh", "headshot": ""},
+{"position": "Director of Diversity, Equity, and Inclusion", "name": "Audrey Thedford", "headshot": ""},
+{"position": "Director of Internal Relations", "name": "Yasmine Zadeh", "headshot": ""},
+{"position": "Director of Internal Relations", "name": "Ava Ben-David", "headshot": ""},
+{"position": "Director of Social Engagement", "name": "Spiro Kass", "headshot": ""},
+{"position": "Director of Social Engagement", "name": "Adi Middha", "headshot": ""},
+{"position": "Fundraising Director", "name": "Carly May", "headshot": ""},
+{"position": "Fundraising Director", "name": "Katie Derrough", "headshot": ""},
+{"position": "Marketing Director", "name": "Michaela Nam", "headshot": ""},
+{"position": "Marketing Director", "name": "Achintya Saxena", "headshot": ""},
+{"position": "Director of Community Outreach", "name": "Anjali Vemuri", "headshot": ""},
+{"position": "Director of Community Outreach", "name": "Sahaja Pinnu", "headshot": ""},
+{"position": "Director of Technology", "name": "Ryan Toth", "headshot": ""},
+{"position": "Director of Technology", "name": "Anthony Zhu", "headshot": ""}]
 
 const Leadership = () => {
+  console.log(board)
     return (
-      <Content className="content">
-          <span id="executive-board" className="executive-board"></span>
-          <h1 className="heading">Executive Board</h1>
-          <Row className="leadership-row">
-            <Col className="leadership-col" span={8}>
-              <Image className="image" src={elPrez} preview={false}></Image>
-              <h2 className="board-name">Krisha Monpara</h2>
-              <h4 className="board-position">President</h4>
-              <p className="board-bio">Krisha is a junior studying Economics. From Pittsburgh, Pennsylvania, she enjoys running, playing the piano, and spending time with her friends and family. Her internship experience includes Wealth Management at Cetera Financial Investors, the Women’s Advisory Program in Global Investment Banking at RBC, and as an incoming Financial Analyst at Amazon in Seattle.</p>
-            </Col>
-            <Col className="leadership-col" span={8}>
-              <Image className="image" src={vpi} preview={false}></Image>
-              <h2 className="board-name">Jason Stahlman</h2>
-              <h4 className="board-position">VP Internal</h4>
-              <p className="board-bio">Jason is a junior studying Business from Twinsburg, Ohio. He enjoys playing and watching a variety of sports, listening to music, and hanging out with friends. In past summers he has interned in corporate finance and strategy. This upcoming summer he will be interning in Investment Banking at Lincoln International. </p>
-            </Col>
-            <Col className="leadership-col" span={8}>
-              <Image className="image" src={vpx} preview={false}></Image>
-              <h2 className="board-name">Theo Kardasis</h2>
-              <h4 className="board-position">VP External</h4>
-              <p className="board-bio">Theo, originally from Rochester, MI, is a junior in the School of Information studying Data Analysis and minoring in Business and Spanish. In his free time, he loves to hike, cook, and watch YouTube. His past internship experiences lie within strategy and insights, and he will be interning as a Digital Analytics Intern at American Express this coming summer. </p>
-            </Col>
-          </Row>
-          <Row className="leadership-row">
-            <Col className="leadership-col" span={8}>
-              <Image className="image" src={vpf} preview={false}></Image>
-              <h2 className="board-name">Ian Kim</h2>
-              <h4 className="board-position">VP Finance</h4>
-              <p className="board-bio">Ian is a junior studying Industrial and Operations Engineering. Originally from Westford, Massachusetts, Ian enjoys watching Boston Sports, cooking, running and spending time with friends. In past summers, Ian has worked for T-Mobile in Germany, and for a supply chain startup in Chicago. This summer he will be working in Tech Consulting as a Summer Associate at Gartner.</p>
-            </Col>
-            <Col className="leadership-col" span={8}>
-              <Image className="image" src={vpOp1} preview={false}></Image>
-              <h2 className="board-name">Jack Xiao</h2>
-              <h4 className="board-position">VP Operations</h4>
-              <p className="board-bio">Jack is a sophomore studying Business and Computer Science. He is from Lincolnshire, Illinois and enjoys playing basketball, golf, and watching Chicago sports. He is working at Jansen Investments in Chicago and has an interest in Investment Banking.</p>
-            </Col>
-            <Col className="leadership-col" span={8}>
-              <Image className="image" src={vpOp2} preview={false}></Image>
-              <h2 className="board-name">Josie Bachus</h2>
-              <h4 className="board-position">VP Operations</h4>
-              <p className="board-bio">Josephine is a sophomore studying Business and Psychology from Flossmoor, Illinois. She enjoys reading mystery novels, trips to the thrift store, and hanging out with her dog, as well as hanging out with her friends. She is interested in the intersection of business and psychology with a focus in consulting.</p>
-            </Col>
-          </Row >
-          <span id="directors" className="directors"></span>
-          <h1 className="heading">Directors</h1>
-          <Row className="leadership-row">
-            <Col className="leadership-col" span={6}>
-              <Image className="image" src={Parent} preview={false}></Image>
-              <h2 className="director-name">Jharna Tripathi</h2>
-              <h4 className="director-position">Director of New Member Engagement</h4>
-            </Col>
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={alumni} preview={false}></Image>
-              <h2 className="director-name">Linh Phan</h2>
-              <h4 className="director-position">Director of Alumni Relations</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={Prof1} preview={false}></Image>
-              <h2 className="director-name">Spencer Semple</h2>
-              <h4 className="director-position">Director of Professional Development</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              <Image className="image" src={Prof2} preview={false}></Image>
-              <h2 className="director-name">Anne Early</h2>
-              <h4 className="director-position">Director of Professional Development</h4>
-            </Col>
-          </Row>
-          <Row className="leadership-row">
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={Member1} preview={false}></Image>
-              <h2 className="director-name">Aakash Jajoo</h2>
-              <h4 className="director-position">Director of Member Engagement</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={Member2} preview={false}></Image>
-              <h2 className="director-name">Erik Whilborn</h2>
-              <h4 className="director-position">Director of Member Engagement</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              <Image className="image" src={Academic1} preview={false}></Image>
-              <h2 className="director-name">Alexa Finuoli</h2>
-              <h4 className="director-position">Academic Director</h4>
-            </Col>
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={Academic1} preview={false}></Image>
-              <h2 className="director-name">Mia Vuckovic</h2>
-              <h4 className="director-position">Academic Director</h4> */}
-            </Col>
-          </Row>
-          <Row className="leadership-row">
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={wellness1} preview={false}></Image>
-              <h2 className="director-name">Aakash Menon</h2>
-              <h4 className="director-position">Director of Member Wellness</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              <Image className="image" src={wellness2} preview={false}></Image>
-              <h2 className="director-name">Sarah Morris</h2>
-              <h4 className="director-position">Director of Member Wellness</h4>
-            </Col>
-            <Col className="leadership-col" span={6}>
-              <Image className="image" src={DEI1} preview={false}></Image>
-              <h2 className="director-name">Jeevin Singh</h2>
-              <h4 className="director-position">Director of Diversity, Equity, and Inclusion</h4>
-            </Col>
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={DEI2} preview={false}></Image>
-              <h2 className="director-name">Audrey Thedford</h2>
-              <h4 className="director-position">Director of Diversity, Equity, and Inclusion</h4> */}
-            </Col>
-          </Row>
-          <Row className="leadership-row">
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={IR1} preview={false}></Image>
-              <h2 className="director-name">Yasmine Zadeh</h2>
-              <h4 className="director-position">Director of Internal Relations</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={IR2} preview={false}></Image>
-              <h2 className="director-name">Ava Ben-David</h2>
-              <h4 className="director-position">Director of Internal Relations</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={Social1} preview={false}></Image>
-              <h2 className="director-name">Spiro Kass</h2>
-              <h4 className="director-position">Director of Social Engagement</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              <Image className="image" src={Social2} preview={false}></Image>
-              <h2 className="director-name">Adi Middha</h2>
-              <h4 className="director-position">Director of Social Engagement</h4>
-            </Col>
-          </Row>
-          <Row className="leadership-row">
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={fundraising1} preview={false}></Image>
-              <h2 className="director-name">Carly May</h2>
-              <h4 className="director-position">Fundraising Director</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={fundraising2} preview={false}></Image>
-              <h2 className="director-name">Katie Derrough</h2>
-              <h4 className="director-position">Fundraising Director</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              <Image className="image" src={marketing1} preview={false}></Image>
-              <h2 className="director-name">Michaela Nam</h2>
-              <h4 className="director-position">Marketing Director</h4>
-            </Col>
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={marketing2} preview={false}></Image>
-              <h2 className="director-name">Achintya Saxena</h2>
-              <h4 className="director-position">Marketing Director</h4> */}
-            </Col>
-          </Row>
-          <Row className="leadership-row">
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={community1} preview={false}></Image>
-              <h2 className="director-name">Anjali Vemuri</h2>
-              <h4 className="director-position">Director of Community Outreach</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={community2} preview={false}></Image>
-              <h2 className="director-name">Sahaja Pinnu</h2>
-              <h4 className="director-position">Director of Community Outreach</h4> */}
-            </Col>
-            <Col className="leadership-col" span={6}>
-              <Image className="image" src={tech1} preview={false}></Image>
-              <h2 className="director-name">Ryan Toth</h2>
-              <h4 className="director-position">Director of Technology</h4>
-            </Col>
-            <Col className="leadership-col" span={6}>
-              {/* <Image className="image" src={tech2} preview={false}></Image>
-              <h2 className="director-name">Anthony Zhu</h2>
-              <h4 className="director-position">Director of Technology</h4> */}
-            </Col>
-          </Row>
-      </Content>
+      <div className="Leadership">
+          <span id="executive-board"></span>
+          <div className="board">
+            <div className="heading">
+              <h2 className="section-title">Executive Board</h2>
+              <hr className="hr"></hr>
+            </div>
+            <div className="container">
+              {board.map((obj,index) => {
+                return (
+                  <div className="trooper" key={index}>
+                    <img className="img" src={obj.headshot} alt=""></img>
+                    <h2 className="name">{obj.name}</h2>
+                    <h4 className="position">{obj.position}</h4>
+                    <p className="bio">{obj.bio}</p>
+                  </div>
+              )})}
+            </div>
+          </div>
+          <span id="directors"></span>
+          <div className="directors">
+            <div className="heading">
+              <h2 className="section-title">Directors</h2>
+              <hr className="hr"></hr>
+            </div>
+            {directors.forEach((obj) => {
+              <div className="trooper">
+                <img className="img" src={obj.headshot} alt=""></img>
+                <h2 className="name">{obj.name}</h2>
+                <h4 className="position">{obj.position}</h4>
+              </div>
+            })}
+          </div>
+      </div>
     );
 }
 
