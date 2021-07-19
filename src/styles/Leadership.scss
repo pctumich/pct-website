@@ -76,17 +76,39 @@
                 margin-bottom: 20px;
             }
         }
-        .trooper {
-            .img {
-                width:300px;
-                height:300px;
-                object-fit:cover;
-            }
-            .position {
-                text-align: center;
-            }
-            .name {
-                text-align: center;
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-left: 6%;
+            margin-right: 6%;
+            overflow: hidden;
+            .trooper {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 275px;
+                padding-top: 2%; 
+                padding-bottom: 2%;
+                .img {
+                    width:275px;
+                    height:275px;
+                    object-fit:cover;
+                    text-align: center;
+                }
+                .position {
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: 350;
+                }
+                .name {
+                    text-align: center;
+                    padding-top: 2%;
+                    font-size: 20px;
+                    font-weight: 450;
+                    margin: 0;
+                }
             }
         }
     }

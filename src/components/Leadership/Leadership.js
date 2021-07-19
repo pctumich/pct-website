@@ -40,26 +40,26 @@ const board = [{"name": "Krisha Monpara", "position": "President", "headshot": e
 const directors = [{"position": "Director of New Member Engagement", "name": "Jharna Tripathi", "headshot": Parent},
 {"position": "Director of Alumni Relations", "name": "Linh Phan", "headshot": ""},
 {"position": "Director of Professional Development", "name": "Spencer Semple", "headshot": ""},
-{"position": "Director of Professional Development", "name": "Anne Early", "headshot": ""},
+{"position": "Director of Professional Development", "name": "Anne Early", "headshot": Prof2},
 {"position": "Director of Member Engagement", "name": "Aakash Jajoo", "headshot": ""},
 {"position": "Director of Member Engagement", "name": "Erik Whilborn", "headshot": ""},
-{"position": "Academic Director", "name": "Alexa Finuoli", "headshot": ""},
+{"position": "Academic Director", "name": "Alexa Finuoli", "headshot": Academic1},
 {"position": "Academic Director", "name": "Mia Vuckovic", "headshot": ""},
 {"position": "Director of Member Wellness", "name": "Aakash Menon", "headshot": ""},
-{"position": "Director of Member Wellness", "name": "Sarah Morris", "headshot": ""},
-{"position": "Director of Diversity, Equity, and Inclusion", "name": "Jeevin Singh", "headshot": ""},
+{"position": "Director of Member Wellness", "name": "Sarah Morris", "headshot": wellness2},
+{"position": "Director of Diversity, Equity, and Inclusion", "name": "Jeevin Singh", "headshot": DEI1},
 {"position": "Director of Diversity, Equity, and Inclusion", "name": "Audrey Thedford", "headshot": ""},
 {"position": "Director of Internal Relations", "name": "Yasmine Zadeh", "headshot": ""},
 {"position": "Director of Internal Relations", "name": "Ava Ben-David", "headshot": ""},
 {"position": "Director of Social Engagement", "name": "Spiro Kass", "headshot": ""},
-{"position": "Director of Social Engagement", "name": "Adi Middha", "headshot": ""},
+{"position": "Director of Social Engagement", "name": "Adi Middha", "headshot": Social2},
 {"position": "Fundraising Director", "name": "Carly May", "headshot": ""},
 {"position": "Fundraising Director", "name": "Katie Derrough", "headshot": ""},
-{"position": "Marketing Director", "name": "Michaela Nam", "headshot": ""},
+{"position": "Marketing Director", "name": "Michaela Nam", "headshot": marketing1},
 {"position": "Marketing Director", "name": "Achintya Saxena", "headshot": ""},
 {"position": "Director of Community Outreach", "name": "Anjali Vemuri", "headshot": ""},
 {"position": "Director of Community Outreach", "name": "Sahaja Pinnu", "headshot": ""},
-{"position": "Director of Technology", "name": "Ryan Toth", "headshot": ""},
+{"position": "Director of Technology", "name": "Ryan Toth", "headshot": tech1},
 {"position": "Director of Technology", "name": "Anthony Zhu", "headshot": ""}]
 
 const Leadership = () => {
@@ -90,13 +90,16 @@ const Leadership = () => {
               <h2 className="section-title">Directors</h2>
               <hr className="hr"></hr>
             </div>
-            {directors.forEach((obj) => {
-              <div className="trooper">
-                <img className="img" src={obj.headshot} alt=""></img>
-                <h2 className="name">{obj.name}</h2>
-                <h4 className="position">{obj.position}</h4>
-              </div>
-            })}
+            <div className="container">
+              {directors.map((obj, index) => {
+                return (
+                  <div className="trooper" key={index}>
+                    <img className="img" src={obj.headshot} alt=""></img>
+                    <h2 className="name">{obj.name}</h2>
+                    <h4 className="position">{obj.position}</h4>
+                  </div>
+              )})}
+            </div>
           </div>
       </div>
     );
