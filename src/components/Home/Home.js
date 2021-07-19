@@ -31,7 +31,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <span id="aboutUs"></span>
+      <span id='aboutUs'></span>
       <div className="about-us">
         <div className="heading">
           <h2 className="section-title">About Us</h2>

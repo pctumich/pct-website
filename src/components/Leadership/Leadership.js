@@ -63,7 +63,6 @@ const directors = [{"position": "Director of New Member Engagement", "name": "Jh
 {"position": "Director of Technology", "name": "Anthony Zhu", "headshot": ""}]
 
 const Leadership = () => {
-  console.log(board)
     return (
       <div className="Leadership">
           <span id="executive-board"></span>

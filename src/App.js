@@ -32,7 +32,6 @@ class App extends Component {
       <Menu onClick={this.onClickMenuPane}>
         <Menu.Item key="rush/#video">Video</Menu.Item>
         <Menu.Item key="rush/#schedule">Schedule</Menu.Item>
-        <Menu.Item key="rush/#deadlines">Deadlines</Menu.Item>
         <Menu.Item key="rush/#events">Events</Menu.Item>
         <Menu.Item key="rush/#tips">Tips</Menu.Item>
       </Menu>
