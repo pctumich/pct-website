@@ -16,6 +16,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-slideshow-image": "^3.4.7",
+    "react-vertical-timeline-component": "^3.3.3",
     "sass": "^1.35.2",
     "web-vitals": "^1.0.1"
   },

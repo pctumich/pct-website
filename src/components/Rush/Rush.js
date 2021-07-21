@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactPlayer from "react-player"
+import Timeline from './timeline'
 
 const Rush = () => {
     return (
@@ -15,6 +16,7 @@ const Rush = () => {
             <h2 className="section-title">Rush Schedule</h2>
             <hr className="hr"></hr>
           </div>
+          <Timeline/>
           <span id="events" className="events"></span>
           <div className="heading">
             <h2 className="section-title">Rush Events</h2>
