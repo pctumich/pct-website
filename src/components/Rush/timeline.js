@@ -1,100 +1,55 @@
 import React from 'react';
+import Icon from './icon'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import Slideshow from './slideshow'
+import cc1 from './pics/coffeeChat1.jpg'
+import cc2 from './pics/coffeeChat2.jpg'
+import cc3 from './pics/coffeeChat3.jpg'
+import cc4 from './pics/coffeeChat4.jpg'
+import is1 from './pics/infoSession1.jpg'
+import is2 from './pics/infoSession2.jpg'
+import is3 from './pics/infoSession3.jpg'
+import we1 from './pics/womenEvent1.jpg'
+import we2 from './pics/womenEvent2.jpg'
+import we3 from './pics/womenEvent3.jpg'
+
 
 const Timeline = () => {
     return (
-        <VerticalTimeline>
+        <VerticalTimeline className="timeline">
             <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="2011 - present"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<WorkIcon />}
+                className="component"
+                icon={<Icon></Icon>}
             >
-                <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                </p>
+                <h1>Info Session</h1>
+                <Slideshow images={[is1, is2, is3]}></Slideshow>
+                <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2010 - 2011"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<WorkIcon />}
+                className="component"
+                icon={<Icon></Icon>}
             >
-                <h3 className="vertical-timeline-element-title">Art Director</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                <p>
-                    Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                </p>
+                <h1>Coffee Chats</h1>
+                <Slideshow images={[cc1, cc2, cc3, cc4]}></Slideshow>
+                <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2008 - 2010"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<WorkIcon />}
+                className="component"
+                icon={<Icon></Icon>}
             >
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                <p>
-                    User Experience, Visual Design
-                </p>
+                <h1>Diverse Voices Event</h1>
+                <Slideshow images={[is1, is2, is3]}></Slideshow>
+                <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2006 - 2008"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<WorkIcon />}
+                className="component"
+                icon={<Icon></Icon>}
             >
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                <p>
-                    User Experience, Visual Design
-                </p>
+                <h1>Women's Event</h1>
+                <Slideshow images={[we1, we2, we3]}></Slideshow>
+                <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
             </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="April 2013"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                // icon={<SchoolIcon />}
-            >
-                <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                <p>
-                    Strategy, Social Media
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="November 2012"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                // icon={<SchoolIcon />}
-            >
-                <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                <p>
-                    Creative Direction, User Experience, Visual Design
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="2002 - 2006"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                // icon={<SchoolIcon />}
-            >
-                <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                <p>
-                    Creative Direction, Visual Design
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                // icon={<StarIcon />}
-            />
         </VerticalTimeline>
     )
 };

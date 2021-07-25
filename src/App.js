@@ -32,7 +32,6 @@ class App extends Component {
       <Menu onClick={this.onClickMenuPane}>
         <Menu.Item key="rush/#video">Video</Menu.Item>
         <Menu.Item key="rush/#schedule">Schedule</Menu.Item>
-        <Menu.Item key="rush/#events">Events</Menu.Item>
         <Menu.Item key="rush/#tips">Tips</Menu.Item>
       </Menu>
     )
@@ -52,8 +51,8 @@ class App extends Component {
             <h2 className="title">Phi Chi Theta</h2>
           </div>
           <div className="nav">
-            <Link className="primary-nav" to="/">Home</Link>
-            <Link className="primary-nav" to={{ pathname: '/', hash: '#aboutUs' }}>About Us</Link>
+            <Link className="primary-nav" onClick={() => window.location.replace("/#home")}>Home</Link>
+            <Link className="primary-nav" onClick={() => window.location.replace("/#aboutUs")}>About Us</Link>
             <Dropdown overlay={rushMenu}>
               <a className="primary-nav" onClick={e => e.preventDefault()}> Rush <DownOutlined /></a>
             </Dropdown>
@@ -64,7 +63,6 @@ class App extends Component {
         </div>
         <Switch>
           <Route exact path="/" component={Home} />
-          {/* <Route path="/#aboutUs" component={Home}/> */}
           <Route path="/rush" component={Rush} />
           <Route path="/leadership" component={Leadership} />
           <Route component={Error} />
