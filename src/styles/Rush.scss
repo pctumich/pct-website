@@ -38,6 +38,7 @@
             border-radius: 50%;
         }
         .component {
+            margin: 0; 
             .slideshow-container {
                 height: 300px;
                 width: 500px;
@@ -63,6 +64,7 @@
                     height: 300px;
                     margin: 0;
                     object-fit: cover;
+                    filter: none;
                   }
             }
         }               

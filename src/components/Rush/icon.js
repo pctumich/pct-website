@@ -1,10 +1,10 @@
 import React from 'react';
-import cc1 from './pics/coffeeChat1.jpg'
+import shield from './pics/shield.png'
 
 const icon = () => {
     return (
         <div className="icon">
-            <img src={cc1} alt=""></img>
+            <img src={shield} alt=""></img>
         </div>
     )
 };

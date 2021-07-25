@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Icon from './icon'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import ScrollTrigger from 'react-scroll-trigger';
 import Slideshow from './slideshow'
 import cc1 from './pics/coffeeChat1.jpg'
 import cc2 from './pics/coffeeChat2.jpg'
@@ -13,45 +14,63 @@ import is3 from './pics/infoSession3.jpg'
 import we1 from './pics/womenEvent1.jpg'
 import we2 from './pics/womenEvent2.jpg'
 import we3 from './pics/womenEvent3.jpg'
+import dei1 from './pics/dei1.jpg'
+import dei2 from './pics/dei2.jpg'
+import dei3 from './pics/dei3.jpg'
 
-
-const Timeline = () => {
-    return (
-        <VerticalTimeline className="timeline">
-            <VerticalTimelineElement
-                className="component"
-                icon={<Icon></Icon>}
-            >
-                <h1>Info Session</h1>
-                <Slideshow images={[is1, is2, is3]}></Slideshow>
-                <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="component"
-                icon={<Icon></Icon>}
-            >
-                <h1>Coffee Chats</h1>
-                <Slideshow images={[cc1, cc2, cc3, cc4]}></Slideshow>
-                <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="component"
-                icon={<Icon></Icon>}
-            >
-                <h1>Diverse Voices Event</h1>
-                <Slideshow images={[is1, is2, is3]}></Slideshow>
-                <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="component"
-                icon={<Icon></Icon>}
-            >
-                <h1>Women's Event</h1>
-                <Slideshow images={[we1, we2, we3]}></Slideshow>
-                <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
-            </VerticalTimelineElement>
-        </VerticalTimeline>
-    )
-};
+class Timeline extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            animate: true
+        };
+        this.updateAnimate = this.updateAnimate.bind(this)
+      }
+    
+    updateAnimate() {
+        this.setState({ animate: false })
+    }
+    
+    render() {
+        return (
+            <VerticalTimeline className="timeline" animate={this.state.animate}>
+                <VerticalTimelineElement
+                    className="component"
+                    icon={<Icon></Icon>}
+                >
+                    <h1>Info Session</h1>
+                    <Slideshow images={[is1, is2, is3]}></Slideshow>
+                    <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="component"
+                    icon={<Icon></Icon>}
+                >
+                    <h1>Coffee Chats</h1>
+                    <Slideshow images={[cc1, cc2, cc3, cc4]}></Slideshow>
+                    <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="component"
+                    icon={<Icon></Icon>}
+                >
+                    <h1>Diverse Voices Event</h1>
+                    <Slideshow images={[dei1, dei2, dei3]}></Slideshow>
+                    <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="component"
+                    icon={<Icon></Icon>}
+                >
+                    <ScrollTrigger onExit={this.updateAnimate}></ScrollTrigger>
+                        <h1>Women's Event</h1>
+                        <Slideshow images={[we1, we2, we3]}></Slideshow>
+                        <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
+                    
+                </VerticalTimelineElement>
+            </VerticalTimeline>
+        )
+    }
+}
 
 export default Timeline;

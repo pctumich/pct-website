@@ -1,10 +1,13 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import slide_1 from './pics/DylanPrime1.jpg'
-import slide_2 from './pics/RyanToth3.jpg'
-import slide_3 from './pics/IanKim.jpg'
+import slide1 from './pics/slide1.jpg'
+import slide2 from './pics/slide2.jpg'
+import slide3 from './pics/slide3.jpg'
+import slide4 from './pics/slide4.jpg'
+import slide5 from './pics/slide5.jpg'
 
+const images = [slide1, slide4, slide5, slide3, slide2]
 
 const Slideshow = () => {
     return (
@@ -17,21 +20,15 @@ const Slideshow = () => {
                 <h3 className="text-description">Michigan's Leading Professional Business Fraternity</h3>
             </div>
             <Fade pauseOnHover={false} duration={5000} arrows={false}>
-                <div className="each-fade">
-                    <div>
-                        <img src={slide_1} />
-                    </div>
-                </div>
-                <div className="each-fade">
-                    <div>
-                        <img src={slide_2} />
-                    </div>
-                </div>
-                <div className="each-fade">
-                    <div>
-                        <img src={slide_3} />
-                    </div>
-                </div>
+                {images.map(image => {
+                        return (
+                            <div className="each-fade">
+                                <div>
+                                    <img src={image} alt="" />
+                                </div>
+                            </div>
+                        )
+                    })}
             </Fade>
         </div>
     )
