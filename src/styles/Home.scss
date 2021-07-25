@@ -79,24 +79,36 @@
             }
         }
         .content {
-            margin-left: 200px;
-            margin-right: 200px;
-            .text {
-                white-space: pre-wrap;
-                font-size: 16.5px;
+            margin-left: 7.5%;
+            display: flex;
+            justify-content: space-evenly;
+            .textCol {
+                padding-right: 3%;
+                .text {
+                    white-space: pre-wrap;
+                    font-size: 16.5px;
+                }
+                .text-indent {
+                    white-space: pre-wrap;
+                    font-size: 16.5px;
+                    padding: 0px 50px 0px 50px;
+                }
             }
-            .text-indent {
-                white-space: pre-wrap;
-                font-size: 16.5px;
-                padding: 0px 50px 0px 50px;
+            .imageCol {
+                padding-top: 2%;
+                margin-right: 7%;
+                .company-img {
+                    display: block;
+                    height: 90%;
+                    width: 100%;
+                }
             }
-            .company-img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                height: 60%;
-                width: 60%;
-            }
+        }
+        .video {
+            display: block;
+            margin-top: 4%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 

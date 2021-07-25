@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout, Image, Row, Col } from 'antd';
 import Slideshow from './slideshow'
-// import new_members from './pics/new_members.jpg'
+import ReactPlayer from "react-player"
 import president from './pics/president.jpg'
 import company_image from './pics/companies.png'
 import pillars from './pics/pillars.png'
@@ -40,14 +40,18 @@ const Home = () => {
             <hr className="hr"></hr>
           </div>
           <div className="content">
-            <p className="text">Phi Chi Theta (PCT) is a National Co-ed Professional Fraternity in Business and Economics. It was founded on June 16, 1924 in Chicago, Illinois.</p>
-            <p className="text">The mission of PCT is to:</p>
-            <p className="text-indent">1. Provide an opportunity to develop and practice those professional leadership skills and abilities necessary to succeed in the business community</p>
-            <p className="text-indent">2. Provide a local and national network to share resources, ideas and concepts; Instill in its membership those values, codes and creeds which will enable participation in a rapidly changing world</p>
-            <p className="text-indent">3. Enable members to develop the business astuteness necessary to achieve high esteem and success in their chosen fields.</p>
-            <p className="text">Today, the Phi Chi Theta National Chapter is comprised of 41 Collegiate and Alumni Chapters with over 23,000 members across the country. Phi Chi Theta is a member of and affiliated with the Association to Advance Collegiate Schools of Business (AACSB), the Professional Fraternity Association (PFA), and the Professional Fraternity Executive Association (PFEA).</p>
-            <img className="company-img" src={company_image}></img>
+            <div className="textCol">
+              <p className="text">Phi Chi Theta (PCT) is a National Co-ed Professional Fraternity in Business and Economics. It was founded on June 16, 1924 in Chicago, Illinois. Today, the Phi Chi Theta National Chapter is comprised of 41 Collegiate and Alumni Chapters with over 23,000 members across the country. Phi Chi Theta is a member of and affiliated with the Association to Advance Collegiate Schools of Business (AACSB), the Professional Fraternity Association (PFA), and the Professional Fraternity Executive Association (PFEA).</p>
+              <p className="text">The mission of PCT is to:</p>
+              <p className="text-indent">1. Provide an opportunity to develop and practice those professional leadership skills and abilities necessary to succeed in the business community</p>
+              <p className="text-indent">2. Provide a local and national network to share resources, ideas and concepts; instill in its membership those values, codes and creeds which will enable participation in a rapidly changing world</p>
+              <p className="text-indent">3. Enable members to develop the business astuteness necessary to achieve high esteem and success in their chosen fields</p>
+            </div>
+            <div className="imageCol">
+              <img className="company-img" src={company_image}></img>
+            </div>
           </div>
+          <ReactPlayer className="video" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true}/>
         </div>
         <span id="pillars"></span>
         <div className="pillars">
