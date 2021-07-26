@@ -1,3 +1,5 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
 .App {
   
   .header {
@@ -48,41 +50,75 @@
 
   .footer {
     background-color:#001529;
+    text-align: center;
     
     .copyright {
       color: white;
       font-weight: 300;
-      text-align: left;
-      padding-top: 85px;
+      text-align: center;
+      padding-top: 10px;
     }
 
     .contact-us {
       color: white;
       font-weight: 600;
       font-size: 20px;
-      text-align: left;
+      text-align: center;
     }
     
-    .contact-info {
-      color: white;
-      font-weight: 400;
-      font-size: 15px;
-      text-align: left;
-    }
+    // .contact-info {
+    //   color: white;
+    //   font-weight: 400;
+    //   font-size: 15px;
+    //   text-align: left;
+    // }
     
-    .connect-with-us {
-      color: white;
-      font-weight: 600;
-      font-size: 20px;
-      text-align: left;
-    }
+    // .connect-with-us {
+    //   color: white;
+    //   font-weight: 600;
+    //   font-size: 20px;
+    //   text-align: center;
+    // }
     
     .social-media {
       color: white;
       font-weight: 400;
       font-size: 15px;
-      text-align: left;
     }
+
+    /* Style all font awesome icons */
+    // .fa {
+    //   z-index: 10;
+    //   background-color: white;
+    //   color: black;
+    //   font-size: 30px;
+    //   text-align: center;
+    //   text-decoration: none;
+    //   border-radius: 50%;
+    //   border: medium solid black;
+    //   width: 32px;
+    //   height: 32px;
+    //   padding: 5px;
+    //   margin: 5px 2px;
+    // }
+
+    i {
+      border-radius: 50%;
+      border: solid black;
+      background-color: white;
+      box-sizing: content-box;
+      color: black;
+      padding: 10px;
+      width:16px;
+      height: 16px;
+      text-align:center
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+
   }
 
 }

@@ -68,24 +68,13 @@ class App extends Component {
           <Route component={Error} />
         </Switch>
         <div className="footer">
-          <Row>
-            <Col span={8}>
-              <p className="copyright">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
-            </Col>
-            <Col span={8}>
-              <h4 className="contact-us">Contact Us:</h4>
-              <h5 className="contact-info">Email: ryantoth@umich.edu</h5>
-              <h5 className="contact-info">Phone: 847.910.5075</h5>
-            </Col>
-            <Col span={8}>
-              <h4 className="connect-with-us">Connect With Us</h4>
-              <div className="social-media">
-                <h5>Instagram</h5>
-                <h5>Twitter</h5>
-                <h5>LinkedIn</h5>
-              </div>
-            </Col>
-          </Row>
+          <h4 className="contact-us">Follow Us</h4>
+          <div className="social-media">
+            <a href="https://www.facebook.com/pctumich/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.facebook.com/pctumich/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/pctumich" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <p className="copyright">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
         </div>
       </div>
     )
