@@ -17,7 +17,7 @@ const Rush = () => {
             <h2 className="section-title">Rush Phi Chi Theta</h2>
             <hr className="hr"></hr>
           </div>
-          <ReactPlayer className="video" url="https://www.youtube.com/watch?v=xj7DYzoTdKQ" controls={true}/>
+          <ReactPlayer className="video" url="https://www.youtube.com/watch?v=xj7DYzoTdKQ" controls={true} height="450px" width="800px"/>
           <span id="schedule" className="schedule"></span>
           <div className="heading">
             <h2 className="section-title">Rush Schedule</h2>

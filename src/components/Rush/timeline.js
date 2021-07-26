@@ -25,48 +25,63 @@ class Timeline extends Component {
             animate: true
         };
         this.updateAnimate = this.updateAnimate.bind(this)
-      }
-    
+    }
+
     updateAnimate() {
         this.setState({ animate: false })
     }
-    
+
     render() {
         return (
             <VerticalTimeline className="timeline" animate={this.state.animate}>
-                <VerticalTimelineElement
-                    className="component"
-                    icon={<Icon></Icon>}
-                >
-                    <h1>Info Session</h1>
+                <VerticalTimelineElement className="component">
+                    <p className="event-name">Info Session</p>
                     <Slideshow images={[is1, is2, is3]}></Slideshow>
-                    <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
+                    <div className="event-info">
+                        <div className="container">
+                            <p>Monday, January 25th</p>
+                            <p className="bar">|</p>
+                            <p>6:00-8:00PM</p>
+                        </div>
+                        <p>Location</p>
+                    </div>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="component"
-                    icon={<Icon></Icon>}
-                >
-                    <h1>Coffee Chats</h1>
+                <VerticalTimelineElement className="component">
+                    <p className="event-name">Coffee Chats</p>
                     <Slideshow images={[cc1, cc2, cc3, cc4]}></Slideshow>
-                    <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
+                    <div className="event-info">
+                        <div className="container">
+                            <p>Monday, January 25th</p>
+                            <p className="bar">|</p>
+                            <p>6:00-8:00PM</p>
+                        </div>
+                        <p>Location</p>
+                    </div>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="component"
-                    icon={<Icon></Icon>}
-                >
-                    <h1>Diverse Voices Event</h1>
+                <VerticalTimelineElement className="component">
+                    <p className="event-name">Diverse Voices Event</p>
                     <Slideshow images={[dei1, dei2, dei3]}></Slideshow>
-                    <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
+                    <div className="event-info">
+                        <div className="container">
+                            <p>Monday, January 25th</p>
+                            <p className="bar">|</p>
+                            <p>6:00-8:00PM</p>
+                        </div>
+                        <p>Location</p>
+                    </div>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="component"
-                    icon={<Icon></Icon>}
-                >
-                    <ScrollTrigger onExit={this.updateAnimate}></ScrollTrigger>
-                        <h1>Women's Event</h1>
-                        <Slideshow images={[we1, we2, we3]}></Slideshow>
-                        <h3>Monday, January 25th | 6:00-8:00PM | Location</h3>
-                    
+                <VerticalTimelineElement className="component">
+                    <p className="event-name">Women's Event</p>
+                    <Slideshow images={[we1, we2, we3]}></Slideshow>
+                    <div className="event-info">
+                        <div className="container">
+                            <p>Monday, January 25th</p>
+                            <p className="bar">|</p>
+                            <p>6:00-8:00PM</p>
+                        </div>
+                        <p>Location</p>
+                    </div>
+                    <ScrollTrigger onEnter={this.updateAnimate}></ScrollTrigger>
                 </VerticalTimelineElement>
             </VerticalTimeline>
         )

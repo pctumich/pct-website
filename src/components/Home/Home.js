@@ -51,7 +51,7 @@ const Home = () => {
               <img className="company-img" src={company_image}></img>
             </div>
           </div>
-          <ReactPlayer className="video" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true}/>
+          <ReactPlayer className="video" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true} height="450px" width="800px"/>
         </div>
         <span id="pillars"></span>
         <div className="pillars">
