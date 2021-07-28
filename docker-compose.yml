@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+    web:
+        image: ryantoth/pct-website
+        x-aws-pull_credentials: "arn:aws:secretsmanager:us-east-1:453246345428:secret:dockerhubAccessToken-KdrsEQ"
+        build:
+            context: .
+            dockerfile: Dockerfile 
+        container_name: web
+        ports: 
+            - "3000:80"
