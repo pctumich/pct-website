@@ -4,7 +4,6 @@ import { Layout, Row, Col, Dropdown, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
 import Home from './components/Home/Home';
-import AboutUs from './components/AboutUs/AboutUs';
 import Rush from './components/Rush/Rush';
 import Leadership from './components/Leadership/Leadership';
 import Error from './components/Error';

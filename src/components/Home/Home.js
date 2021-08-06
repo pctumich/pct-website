@@ -10,7 +10,7 @@ import pillars from './pics/pillars.png'
 const Home = () => {
   return (
     <div>
-      <span id="home" className="homeSpan"></span>
+      <span id="home" className="homeSpan" style={{position: 'absolute', top: '-3%'}}></span>
       <div className="Home">
         <Slideshow></Slideshow>
         <div className="president-welcome">
@@ -33,7 +33,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <span id='aboutUs'></span>
+        <span id='aboutUs' style={{position:'relative', top: '-50px'}}></span>
         <div className="about-us">
           <div className="heading">
             <h2 className="section-title">About Us</h2>
