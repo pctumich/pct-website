@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Route, Switch, NavLink, Link, Redirect } from 'react-router-dom';
-import { Layout, Row, Col, Dropdown, Menu } from 'antd';
+import { Route, Switch, Link } from 'react-router-dom';
+import { Dropdown, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
 import Home from './components/Home/Home';
@@ -58,6 +58,7 @@ class App extends Component {
             <Dropdown overlay={leadershipMenu}>
               <a className="primary-nav" onClick={e => e.preventDefault()}> Leadership <DownOutlined /></a>
             </Dropdown>
+            <Link className="primary-nav" onClick={() => window.open('https://bubble.io/domain_not_supported?domain=rush.pctumich.com')}>Apply Now</Link>
           </div>
         </div>
         <Switch>

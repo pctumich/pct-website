@@ -65,7 +65,7 @@ const directors = [{"position": "Director of New Member Engagement", "name": "Jh
 const Leadership = () => {
     return (
       <div className="Leadership">
-          <span id="executive-board" style={{position:'relative', top: '-40px'}}></span>
+          <span id="executive-board" style={{position:'relative', top: '-60px'}}></span>
           <div className="board">
             <div className="heading">
               <h2 className="section-title">Executive Board</h2>

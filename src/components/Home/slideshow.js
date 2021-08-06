@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import slide1 from './pics/slide1.jpg'
@@ -18,6 +19,7 @@ const Slideshow = () => {
                     <hr className="text-hr"></hr>
                 </h1>
                 <h3 className="text-description">Michigan's Leading Professional Business Fraternity</h3>
+                <button className="text-button" onClick={() => window.open('https://bubble.io/domain_not_supported?domain=rush.pctumich.com')}>Apply Now</button>
             </div>
             <Fade pauseOnHover={false} duration={5000} arrows={false}>
                 {images.map(image => {

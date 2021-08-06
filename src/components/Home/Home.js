@@ -1,5 +1,4 @@
 import React from 'react';
-import { Layout, Image, Row, Col } from 'antd';
 import Slideshow from './slideshow'
 import ReactPlayer from "react-player"
 import president from './pics/president.jpg'

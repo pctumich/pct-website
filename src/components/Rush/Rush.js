@@ -12,20 +12,20 @@ const Rush = () => {
 
     return (
       <div className="Rush">
-          <span id="video" className="video" style={{position:'relative', top: '-10px'}}></span>
+          <span id="video" className="video" style={{position:'relative', top: '-60px'}}></span>
           <div className="heading">
             <h2 className="section-title">Rush Phi Chi Theta</h2>
             <hr className="hr"></hr>
           </div>
           <ReactPlayer className="video" url="https://www.youtube.com/watch?v=xj7DYzoTdKQ" controls={true} height="450px" width="800px"/>
           <span id="schedule" className="schedule" style={{position:'relative', top: '-35px'}}></span>
-          <div className="heading">
+          <div className="heading-v2">
             <h2 className="section-title">Rush Schedule</h2>
             <hr className="hr"></hr>
           </div>
           <Timeline/>
           <span id="tips" className="tips"></span>
-          <div className="heading">
+          <div className="heading-v2">
             <h2 className="section-title">Tips and Tricks for a Successful Rush</h2>
             <hr className="hr"></hr>
           </div>
