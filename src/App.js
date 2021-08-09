@@ -20,7 +20,7 @@ class App extends Component {
 
 
   onClickMenuPane = ({ key }) => {
-    let url = `http://localhost:3000/${key}`
+    let url = `${process.env.REACT_APP_URL}${key}`
     window.location.href = url
   };
 
