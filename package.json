@@ -2,7 +2,7 @@
   "name": "pct-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://rpt225.github.io/pct-website",
+  "homepage": "http://rpt225.github.io/",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
     "@testing-library/jest-dom": "^5.11.4",
