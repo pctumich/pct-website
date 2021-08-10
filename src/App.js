@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { Dropdown, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
@@ -19,26 +20,20 @@ class App extends Component {
   }
 
 
-  onClickMenuPane = ({ key }) => {
-    let url = `${process.env.REACT_APP_URL}${key}`
-    window.location.href = url
-  };
-
-
   render() {
 
     const rushMenu = (
-      <Menu onClick={this.onClickMenuPane}>
-        <Menu.Item key="rush/#video">Video</Menu.Item>
-        <Menu.Item key="rush/#schedule">Schedule</Menu.Item>
-        <Menu.Item key="rush/#tips">Tips</Menu.Item>
+      <Menu>
+        <Menu.Item><Link to="/rush/#video">Video</Link></Menu.Item>
+        <Menu.Item><Link to="/rush/#schedule">Schedule</Link></Menu.Item>
+        <Menu.Item><Link to="/rush/#tips">Tips</Link></Menu.Item>
       </Menu>
     )
 
     const leadershipMenu = (
-      <Menu onClick={this.onClickMenuPane}>
-        <Menu.Item key="leadership/#executive-board">Executive Board</Menu.Item>
-        <Menu.Item key="leadership/#directors">Directors</Menu.Item>
+      <Menu>
+        <Menu.Item><Link to="/leadership/#executive-board">Executive Board</Link></Menu.Item>
+        <Menu.Item><Link to="/leadership/#directors">Directors</Link></Menu.Item>
       </Menu>
     )
 
@@ -50,8 +45,8 @@ class App extends Component {
             <h2 className="title">Phi Chi Theta</h2>
           </div>
           <div className="nav">
-            <Link className="primary-nav" onClick={() => window.location.replace("/#home")}>Home</Link>
-            <Link className="primary-nav" onClick={() => window.location.replace("/#aboutUs")}>About Us</Link>
+            <Link className="primary-nav" to="/#home">Home</Link>
+            <Link className="primary-nav" to="/#aboutUs">About Us</Link>
             <Dropdown overlay={rushMenu}>
               <a className="primary-nav" onClick={e => e.preventDefault()}> Rush <DownOutlined /></a>
             </Dropdown>

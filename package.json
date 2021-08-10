@@ -2,7 +2,6 @@
   "name": "pct-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pctumich.github.io/pct-website/",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
     "@testing-library/jest-dom": "^5.11.4",
@@ -17,6 +16,7 @@
     "react-markdown": "^6.0.2",
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
     "react-scroll-trigger": "^0.6.10",
     "react-slideshow-image": "^3.4.7",
