@@ -11,6 +11,7 @@ import Error from './components/Error';
 import iris from './flower-iris.jpg';
 
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -65,9 +66,9 @@ class App extends Component {
         <div className="footer">
           <h4 className="contact-us">Follow Us</h4>
           <div className="social-media">
-            <a href="https://www.facebook.com/pctumich/" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.facebook.com/pctumich/" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/pctumich" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/pctumich/" target="_blank"><span class="fa fa-facebook facebook"></span></a>
+            <a href="https://www.instagram.com/pctumich/" target="_blank"><span class="fa fa-instagram instagram"></span></a>
+            <a href="https://www.linkedin.com/company/pctumich" target="_blank"><span class="fa fa-linkedin-square linkedin"></span></a>
           </div>
           <p className="copyright">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
         </div>

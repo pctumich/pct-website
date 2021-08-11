@@ -30,7 +30,7 @@
 
       .title {
         font-size: 33px;
-        font-family: Raleway;
+        font-family: Garamond;
         font-weight: 1000;
         margin: 10px;
         color: white;
@@ -40,7 +40,7 @@
     .nav {
       .primary-nav {
         font-size: 20px;
-        font-family: Raleway;
+        font-family: Garamond;
         font-weight: 500;
         margin: 20px 15px 20px 15px;
         margin-top: 10px;
@@ -58,68 +58,71 @@
       font-weight: 300;
       text-align: center;
       padding-top: 10px;
+      padding-bottom: 8px;
     }
 
     .contact-us {
       color: white;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 30px;
       text-align: center;
     }
     
-    // .contact-info {
-    //   color: white;
-    //   font-weight: 400;
-    //   font-size: 15px;
-    //   text-align: left;
-    // }
-    
-    // .connect-with-us {
-    //   color: white;
-    //   font-weight: 600;
-    //   font-size: 20px;
-    //   text-align: center;
-    // }
-    
     .social-media {
-      color: white;
-      font-weight: 400;
-      font-size: 15px;
+      width: 280px;
+      height: 60px;
+      display: flex;
+      justify-content: space-evenly;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    /* Style all font awesome icons */
-    // .fa {
-    //   z-index: 10;
-    //   background-color: white;
-    //   color: black;
-    //   font-size: 30px;
-    //   text-align: center;
-    //   text-decoration: none;
-    //   border-radius: 50%;
-    //   border: medium solid black;
-    //   width: 32px;
-    //   height: 32px;
-    //   padding: 5px;
-    //   margin: 5px 2px;
-    // }
-
-    i {
-      border-radius: 50%;
-      border: solid black;
-      background-color: white;
-      box-sizing: content-box;
-      color: black;
-      padding: 10px;
-      width:16px;
-      height: 16px;
-      text-align:center
+    .facebook {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      color: #fff;
+      font-size: 35px;
+      line-height: 53px;
+      vertical-align: middle;
+      background: #3b5998;
+      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+      border-radius: 10%;
     }
 
-    /* Add a hover effect if you want */
+    .instagram {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      color: #fff;
+      font-size: 45px;
+      line-height: 50px;
+      vertical-align: middle;
+      background: #d6249f;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+      border-radius: 10%;
+    }
+
+    .linkedin {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      background: #fff;
+      border-radius: 40px;
+      font-size: 60px;
+      line-height: 50px;
+      vertical-align: middle;
+      color: #0077b5;
+      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    }
+
     .fa:hover {
-      opacity: 0.7;
+      opacity: 0.6;
     }
-
   }
 
 }

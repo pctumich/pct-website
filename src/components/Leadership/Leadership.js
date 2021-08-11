@@ -6,20 +6,20 @@ import vpf from './pics/Ian.jpg'
 import vpOp1 from './pics/Jack.jpg'
 import vpOp2 from './pics/Josie.jpg'
 import marketing1 from './pics/Michaela.jpg'
-// import marketing2 from './pics/Chin.jpg'
+import marketing2 from './pics/Chin.jpg'
 // import alumni from './pics/Linh.jpg'
 // import community1 from './pics/Anjali.jpg'
 // import community2 from './pics/Sahaja.jpg'
 // import fundraising1 from './pics/Carly.jpg'
-// import fundraising2 from './pics/Katie.jpg'
+import fundraising2 from './pics/Katie.jpg'
 // import IR1 from './pics/Yaz.jpg'
-// import IR2 from './pics/Ava.jpg'
-// import Member1 from './pics/Jajoo.jpg'
+import IR2 from './pics/Ava.jpg'
+import Member1 from './pics/Jajoo.jpg'
 // import Member2 from './pics/Erik.jpg'
 // import Social1 from './pics/Spiro.jpg'
 import Social2 from './pics/Adi.jpg'
 import Parent from './pics/Jharna.jpg'
-// import Prof1 from './pics/Spencer.jpg'
+import Prof1 from './pics/Spencer.jpg'
 import Prof2 from './pics/Anne.jpg'
 import Academic1 from './pics/Alexa.jpg'
 import Academic2 from './pics/Mia.jpg'
@@ -27,7 +27,7 @@ import DEI1 from './pics/Jeevin.jpg'
 // import DEI2 from './pics/Audrey.jpg'
 import tech1 from './pics/Ryan.jpg'
 // import tech2 from './pics/Ant.jpg'
-// import wellness1 from './pics/Aakash.jpg'
+import wellness1 from './pics/Aakash.jpg'
 import wellness2 from './pics/Sarah.jpg'
 
 const board = [{"name": "Krisha Monpara", "position": "President", "headshot": elPrez, "bio": "Krisha is a junior studying Economics. From Pittsburgh, Pennsylvania, she enjoys running, playing the piano, and spending time with her friends and family. Her internship experience includes Wealth Management at Cetera Financial Investors, the Women’s Advisory Program in Global Investment Banking at RBC, and as an incoming Financial Analyst at Amazon in Seattle."},
@@ -39,24 +39,24 @@ const board = [{"name": "Krisha Monpara", "position": "President", "headshot": e
 
 const directors = [{"position": "Director of New Member Engagement", "name": "Jharna Tripathi", "headshot": Parent},
 {"position": "Director of Alumni Relations", "name": "Linh Phan", "headshot": ""},
-{"position": "Director of Professional Development", "name": "Spencer Semple", "headshot": ""},
+{"position": "Director of Professional Development", "name": "Spencer Semple", "headshot": Prof1},
 {"position": "Director of Professional Development", "name": "Anne Early", "headshot": Prof2},
-{"position": "Director of Member Engagement", "name": "Aakash Jajoo", "headshot": ""},
+{"position": "Director of Member Engagement", "name": "Aakash Jajoo", "headshot": Member1},
 {"position": "Director of Member Engagement", "name": "Erik Whilborn", "headshot": ""},
 {"position": "Academic Director", "name": "Alexa Finuoli", "headshot": Academic1},
 {"position": "Academic Director", "name": "Mia Vuckovic", "headshot": Academic2},
-{"position": "Director of Member Wellness", "name": "Aakash Menon", "headshot": ""},
+{"position": "Director of Member Wellness", "name": "Aakash Menon", "headshot": wellness1},
 {"position": "Director of Member Wellness", "name": "Sarah Morris", "headshot": wellness2},
 {"position": "Director of Diversity, Equity, and Inclusion", "name": "Jeevin Singh", "headshot": DEI1},
 {"position": "Director of Diversity, Equity, and Inclusion", "name": "Audrey Thedford", "headshot": ""},
 {"position": "Director of Internal Relations", "name": "Yasmine Zadeh", "headshot": ""},
-{"position": "Director of Internal Relations", "name": "Ava Ben-David", "headshot": ""},
+{"position": "Director of Internal Relations", "name": "Ava Ben-David", "headshot": IR2},
 {"position": "Director of Social Engagement", "name": "Spiro Kass", "headshot": ""},
 {"position": "Director of Social Engagement", "name": "Adi Middha", "headshot": Social2},
 {"position": "Fundraising Director", "name": "Carly May", "headshot": ""},
-{"position": "Fundraising Director", "name": "Katie Derrough", "headshot": ""},
+{"position": "Fundraising Director", "name": "Katie Derrough", "headshot": fundraising2},
 {"position": "Marketing Director", "name": "Michaela Nam", "headshot": marketing1},
-{"position": "Marketing Director", "name": "Achintya Saxena", "headshot": ""},
+{"position": "Marketing Director", "name": "Achintya Saxena", "headshot": marketing2},
 {"position": "Director of Community Outreach", "name": "Anjali Vemuri", "headshot": ""},
 {"position": "Director of Community Outreach", "name": "Sahaja Pinnu", "headshot": ""},
 {"position": "Director of Technology", "name": "Ryan Toth", "headshot": tech1},
