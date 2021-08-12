@@ -17,21 +17,21 @@
       white-space: nowrap;
       display: flex;
       flex-direction: row;
-
+      max-width: 50%;
       .logo {
-        margin-top: 8px;
-        margin-left: 4px;
-        width: 6%;
-        height: 6%;
+        margin-top: 6%;
+        margin-left: 0.5%;
+        width: 55px;
+        height: 55px;
         float: left;
         background-color: #001529;
         z-index: 999;
       }
 
       .title {
-        font-size: 33px;
-        font-family: Garamond;
-        font-weight: 1000;
+        font-size: 40px;
+        font-family: Raleway;
+        font-weight: 650;
         margin: 10px;
         color: white;
       }
@@ -40,7 +40,6 @@
     .nav {
       .primary-nav {
         font-size: 20px;
-        font-family: Garamond;
         font-weight: 500;
         margin: 20px 15px 20px 15px;
         margin-top: 10px;
@@ -88,7 +87,7 @@
       vertical-align: middle;
       background: #3b5998;
       box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-      border-radius: 10%;
+      border-radius: 15%;
     }
 
     .instagram {
@@ -103,7 +102,7 @@
       background: #d6249f;
       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
       box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-      border-radius: 10%;
+      border-radius: 15%;
     }
 
     .linkedin {

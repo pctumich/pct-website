@@ -8,8 +8,7 @@ import Home from './components/Home/Home';
 import Rush from './components/Rush/Rush';
 import Leadership from './components/Leadership/Leadership';
 import Error from './components/Error';
-import iris from './flower-iris.jpg';
-
+import iris from './iris-logo.png';
 
 
 class App extends Component {
@@ -22,7 +21,6 @@ class App extends Component {
 
 
   render() {
-
     const rushMenu = (
       <Menu>
         <Menu.Item><Link to="/rush/#video">Video</Link></Menu.Item>
@@ -30,20 +28,19 @@ class App extends Component {
         <Menu.Item><Link to="/rush/#tips">Tips</Link></Menu.Item>
       </Menu>
     )
-
     const leadershipMenu = (
       <Menu>
         <Menu.Item><Link to="/leadership/#executive-board">Executive Board</Link></Menu.Item>
         <Menu.Item><Link to="/leadership/#directors">Directors</Link></Menu.Item>
       </Menu>
     )
-
+    
     return (
       <div className="App">
         <div className="header">
           <div className="logo-org">
-            <img className="logo" src={iris}></img>
-            <h2 className="title">Phi Chi Theta</h2>
+            <Link className="logo" to="/#home"><img className="logo" src={iris}></img></Link>
+            <Link className="title" to="/#home"><h2 className="title">Phi Chi Theta</h2></Link>
           </div>
           <div className="nav">
             <Link className="primary-nav" to="/#home">Home</Link>

@@ -7,12 +7,12 @@ import vpOp1 from './pics/Jack.jpg'
 import vpOp2 from './pics/Josie.jpg'
 import marketing1 from './pics/Michaela.jpg'
 import marketing2 from './pics/Chin.jpg'
-// import alumni from './pics/Linh.jpg'
+import alumni from './pics/Linh.jpg'
 // import community1 from './pics/Anjali.jpg'
 // import community2 from './pics/Sahaja.jpg'
 // import fundraising1 from './pics/Carly.jpg'
 import fundraising2 from './pics/Katie.jpg'
-// import IR1 from './pics/Yaz.jpg'
+import IR1 from './pics/Yaz.jpg'
 import IR2 from './pics/Ava.jpg'
 import Member1 from './pics/Jajoo.jpg'
 // import Member2 from './pics/Erik.jpg'
@@ -38,7 +38,7 @@ const board = [{"name": "Krisha Monpara", "position": "President", "headshot": e
 {"name": "Josie Bachus", "position": "VP Operations", "headshot": vpOp2, "bio": "Josephine is a sophomore studying Business and Psychology from Flossmoor, Illinois. She enjoys reading mystery novels, trips to the thrift store, and hanging out with her dog, as well as hanging out with her friends. She is interested in the intersection of business and psychology with a focus in consulting."}]
 
 const directors = [{"position": "Director of New Member Engagement", "name": "Jharna Tripathi", "headshot": Parent},
-{"position": "Director of Alumni Relations", "name": "Linh Phan", "headshot": ""},
+{"position": "Director of Alumni Relations", "name": "Linh Phan", "headshot": alumni},
 {"position": "Director of Professional Development", "name": "Spencer Semple", "headshot": Prof1},
 {"position": "Director of Professional Development", "name": "Anne Early", "headshot": Prof2},
 {"position": "Director of Member Engagement", "name": "Aakash Jajoo", "headshot": Member1},
@@ -49,7 +49,7 @@ const directors = [{"position": "Director of New Member Engagement", "name": "Jh
 {"position": "Director of Member Wellness", "name": "Sarah Morris", "headshot": wellness2},
 {"position": "Director of Diversity, Equity, and Inclusion", "name": "Jeevin Singh", "headshot": DEI1},
 {"position": "Director of Diversity, Equity, and Inclusion", "name": "Audrey Thedford", "headshot": ""},
-{"position": "Director of Internal Relations", "name": "Yasmine Zadeh", "headshot": ""},
+{"position": "Director of Internal Relations", "name": "Yasmine Zadeh", "headshot": IR1},
 {"position": "Director of Internal Relations", "name": "Ava Ben-David", "headshot": IR2},
 {"position": "Director of Social Engagement", "name": "Spiro Kass", "headshot": ""},
 {"position": "Director of Social Engagement", "name": "Adi Middha", "headshot": Social2},
