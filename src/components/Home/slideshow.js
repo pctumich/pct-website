@@ -7,8 +7,9 @@ import slide2 from './pics/slide2.jpg'
 import slide3 from './pics/slide3.jpg'
 import slide4 from './pics/slide4.jpg'
 import slide5 from './pics/slide5.jpg'
+import slide6 from './pics/slide6.jpg'
 
-const images = [slide1, slide4, slide5, slide3, slide2]
+const images = [slide1, slide4, slide6, slide5, slide3, slide2]
 
 const Slideshow = () => {
     return (

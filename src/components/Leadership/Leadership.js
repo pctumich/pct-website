@@ -10,12 +10,12 @@ import marketing2 from './pics/Chin.jpg'
 import alumni from './pics/Linh.jpg'
 // import community1 from './pics/Anjali.jpg'
 // import community2 from './pics/Sahaja.jpg'
-// import fundraising1 from './pics/Carly.jpg'
+import fundraising1 from './pics/Carly.jpg'
 import fundraising2 from './pics/Katie.jpg'
 import IR1 from './pics/Yaz.jpg'
 import IR2 from './pics/Ava.jpg'
 import Member1 from './pics/Jajoo.jpg'
-// import Member2 from './pics/Erik.jpg'
+import Member2 from './pics/Erik.jpg'
 // import Social1 from './pics/Spiro.jpg'
 import Social2 from './pics/Adi.jpg'
 import Parent from './pics/Jharna.jpg'
@@ -42,7 +42,7 @@ const directors = [{"position": "Director of New Member Engagement", "name": "Jh
 {"position": "Director of Professional Development", "name": "Spencer Semple", "headshot": Prof1},
 {"position": "Director of Professional Development", "name": "Anne Early", "headshot": Prof2},
 {"position": "Director of Member Engagement", "name": "Aakash Jajoo", "headshot": Member1},
-{"position": "Director of Member Engagement", "name": "Erik Whilborn", "headshot": ""},
+{"position": "Director of Member Engagement", "name": "Erik Whilborn", "headshot": Member2},
 {"position": "Academic Director", "name": "Alexa Finuoli", "headshot": Academic1},
 {"position": "Academic Director", "name": "Mia Vuckovic", "headshot": Academic2},
 {"position": "Director of Member Wellness", "name": "Aakash Menon", "headshot": wellness1},
@@ -53,7 +53,7 @@ const directors = [{"position": "Director of New Member Engagement", "name": "Jh
 {"position": "Director of Internal Relations", "name": "Ava Ben-David", "headshot": IR2},
 {"position": "Director of Social Engagement", "name": "Spiro Kass", "headshot": ""},
 {"position": "Director of Social Engagement", "name": "Adi Middha", "headshot": Social2},
-{"position": "Fundraising Director", "name": "Carly May", "headshot": ""},
+{"position": "Fundraising Director", "name": "Carly May", "headshot": fundraising1},
 {"position": "Fundraising Director", "name": "Katie Derrough", "headshot": fundraising2},
 {"position": "Marketing Director", "name": "Michaela Nam", "headshot": marketing1},
 {"position": "Marketing Director", "name": "Achintya Saxena", "headshot": marketing2},

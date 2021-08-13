@@ -1,15 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slideshow from './slideshow'
 import ReactPlayer from "react-player"
 import president from './pics/president.jpg'
 import company_image from './pics/companies.png'
 import pillars from './pics/pillars.png'
 
+const easeOutQuad = t => t * (2 - t);
+const frameDuration = 1000 / 60;
+
+const CountUpAnimation = ({ children, duration = 2000 }) => {
+  const countTo = parseInt(children, 10);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let frame = 0;
+    const totalFrames = Math.round(duration / frameDuration);
+    const counter = setInterval(() => {
+      frame++;
+      const progress = easeOutQuad(frame / totalFrames);
+      setCount(countTo * progress);
+
+      if (frame === totalFrames) {
+        clearInterval(counter);
+      }
+    }, frameDuration);
+  }, []);
+
+  return Math.floor(count);
+};
 
 const Home = () => {
   return (
     <div>
-      <span id="home" className="homeSpan" style={{position: 'absolute', top: '-3%'}}></span>
+      <span id="home" className="homeSpan" style={{ position: 'absolute', top: '-3%' }}></span>
       <div className="Home">
         <Slideshow></Slideshow>
         <div className="president-welcome">
@@ -32,25 +55,35 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <span id='aboutUs' style={{position:'relative', top: '-50px'}}></span>
+        <span id='aboutUs' style={{ position: 'relative', top: '-50px' }}></span>
         <div className="about-us">
           <div className="heading">
             <h2 className="section-title">About Us</h2>
             <hr className="hr"></hr>
           </div>
           <div className="content">
-            <div className="textCol">
-              <p className="text">Phi Chi Theta (PCT) is a National Co-ed Professional Fraternity in Business and Economics. It was founded on June 16, 1924 in Chicago, Illinois. Today, the Phi Chi Theta National Chapter is comprised of 41 Collegiate and Alumni Chapters with over 23,000 members across the country. Phi Chi Theta is a member of and affiliated with the Association to Advance Collegiate Schools of Business (AACSB), the Professional Fraternity Association (PFA), and the Professional Fraternity Executive Association (PFEA).</p>
-              <p className="text">The mission of PCT is to:</p>
-              <p className="text-indent">1. Provide an opportunity to develop and practice those professional leadership skills and abilities necessary to succeed in the business community</p>
-              <p className="text-indent">2. Provide a local and national network to share resources, ideas and concepts; instill in its membership those values, codes and creeds which will enable participation in a rapidly changing world</p>
-              <p className="text-indent">3. Enable members to develop the business astuteness necessary to achieve high esteem and success in their chosen fields</p>
-            </div>
-            <div className="imageCol">
-              <img className="company-img" src={company_image}></img>
+            <p className="text">Phi Chi Theta (PCT) is a National Co-ed Professional Fraternity in Business and Economics. It was founded on June 16, 1924 in Chicago, Illinois. Today, the Phi Chi Theta National Chapter is comprised of 41 Collegiate and Alumni Chapters with over 23,000 members across the country.</p>
+            <div className="container">
+              <div className="company">
+                <div className="statistics">
+                  <div className="element">
+                    <p className="title">Members</p>
+                    <p><CountUpAnimation>110</CountUpAnimation>+</p>
+                  </div>
+                  <div className="element">
+                    <p className="title">Majors</p>
+                    <p><CountUpAnimation>110</CountUpAnimation>+</p>
+                  </div>
+                  <div className="element">
+                    <p className="title">Full-Time Employment</p>
+                    <p><CountUpAnimation>100</CountUpAnimation>%</p>
+                  </div>
+                </div>
+                <img className="image" src={company_image}></img>
+              </div>
+              <ReactPlayer className="video" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true} height="450px" width="800px" />
             </div>
           </div>
-          <ReactPlayer className="video" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true} height="450px" width="800px"/>
         </div>
         <span id="pillars"></span>
         <div className="pillars">
