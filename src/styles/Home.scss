@@ -88,19 +88,31 @@
                 line-height: 1.75;
             }
             .ant-card {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-color: black;
+                border-color: #095484;
                 border-right-style:none;
                 border-left-style: none;
                 border-top-style: solid;
                 border-bottom-style: solid;
                 border-width: 4px;
-                height:400px;
-                width: inherit;
                 background-color: #095484;
+                .ant-card-body {
+                    height:400px;
+                    width: 1487px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: nowrap;
+                    flex-direction: row;
+                    align-items: center;
+                }
+                .pic-collage {
+                    max-width: 320px;
+                    .img {
+                        width: 80px;
+                        height: auto;
+                    }
+                }
                 .company {
+                    margin: 0;
                     height: 310px;
                     width: 650px;
                     .statistics {

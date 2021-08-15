@@ -5,6 +5,24 @@ import president from './pics/president.jpg'
 import company_image from './pics/companies.png'
 import pillars from './pics/pillars.png'
 import { Card } from 'antd'
+import one from './aboutUsPics/1.JPG'
+import two from './aboutUsPics/2.JPG'
+import three from './aboutUsPics/3.JPG'
+import four from './aboutUsPics/4.JPG'
+import five from './aboutUsPics/5.JPG'
+import six from './aboutUsPics/6.JPG'
+import seven from './aboutUsPics/7.JPG'
+import eight from './aboutUsPics/8.JPG'
+import nine from './aboutUsPics/9.JPG'
+import ten from './aboutUsPics/10.JPG'
+import eleven from './aboutUsPics/11.JPG'
+import twelve from './aboutUsPics/12.JPG'
+import thirteen from './aboutUsPics/13.JPG'
+import fourteen from './aboutUsPics/14.JPG'
+import fifteen from './aboutUsPics/15.JPG'
+import sixteen from './aboutUsPics/16.JPG'
+
+const aboutUsPics = [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen]
 
 const easeOutQuad = t => t * (2 - t);
 const frameDuration = 1000 / 60;
@@ -65,6 +83,12 @@ const Home = () => {
           <div className="content">
             <p className="text">Phi Chi Theta (PCT) is a National Co-ed Professional Fraternity in Business and Economics. It was founded on June 16, 1924 in Chicago, Illinois. Today, the Phi Chi Theta National Chapter is comprised of 41 Collegiate and Alumni Chapters with over 23,000 members across the country.</p>
             <Card>
+              <div className="pic-collage">
+              {aboutUsPics.map((image,index) => {
+                return (
+                  <img className="img" src={image} alt=""></img>
+              )})}
+              </div>
               <div className="company">
                 <div className="statistics">
                   <div className="box-title">
@@ -79,6 +103,12 @@ const Home = () => {
                   </div>
                 </div>
                 <img className="image" src={company_image}></img>
+              </div>
+              <div className="pic-collage">
+              {aboutUsPics.map((image,index) => {
+                return (
+                  <img className="img" src={image} alt=""></img>
+              )})}
               </div>
             </Card>
             <ReactPlayer className="video" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true} height="450px" width="800px" />
