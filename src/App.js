@@ -8,7 +8,7 @@ import Home from './components/Home/Home';
 import Rush from './components/Rush/Rush';
 import Leadership from './components/Leadership/Leadership';
 import Error from './components/Error';
-import iris from './iris-logo.png';
+import iris from './logo.jpg';
 
 
 class App extends Component {

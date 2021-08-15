@@ -4,6 +4,7 @@ import ReactPlayer from "react-player"
 import president from './pics/president.jpg'
 import company_image from './pics/companies.png'
 import pillars from './pics/pillars.png'
+import { Card } from 'antd'
 
 const easeOutQuad = t => t * (2 - t);
 const frameDuration = 1000 / 60;
@@ -63,26 +64,24 @@ const Home = () => {
           </div>
           <div className="content">
             <p className="text">Phi Chi Theta (PCT) is a National Co-ed Professional Fraternity in Business and Economics. It was founded on June 16, 1924 in Chicago, Illinois. Today, the Phi Chi Theta National Chapter is comprised of 41 Collegiate and Alumni Chapters with over 23,000 members across the country.</p>
-            <div className="container">
+            <Card>
               <div className="company">
                 <div className="statistics">
-                  <div className="element">
-                    <p className="title">Members</p>
-                    <p><CountUpAnimation>110</CountUpAnimation>+</p>
-                  </div>
-                  <div className="element">
-                    <p className="title">Majors</p>
-                    <p><CountUpAnimation>110</CountUpAnimation>+</p>
-                  </div>
-                  <div className="element">
-                    <p className="title">Full-Time Employment</p>
-                    <p><CountUpAnimation>100</CountUpAnimation>%</p>
+                  <div className="box-title">
+                    <p className="head">Members</p>
+                    <p className="head">Majors</p> 
+                    <p className="head">Full-Time Employment</p>
+                  </div> 
+                  <div className="box-num">
+                    <p className="num"><CountUpAnimation>110</CountUpAnimation>+</p>
+                    <p className="num"><CountUpAnimation>110</CountUpAnimation>+</p>
+                    <p className="num"><CountUpAnimation>100</CountUpAnimation>%</p>
                   </div>
                 </div>
                 <img className="image" src={company_image}></img>
               </div>
-              <ReactPlayer className="video" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true} height="450px" width="800px" />
-            </div>
+            </Card>
+            <ReactPlayer className="video" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true} height="450px" width="800px" />
           </div>
         </div>
         <span id="pillars"></span>
