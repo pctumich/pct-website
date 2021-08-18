@@ -13,6 +13,7 @@
     "google-spreadsheet": "^3.1.15",
     "list-react-files": "^0.2.0",
     "react": "^17.0.2",
+    "react-countup": "^5.2.0",
     "react-dom": "^17.0.2",
     "react-img-mapper": "^1.2.1",
     "react-markdown": "^6.0.2",
@@ -23,6 +24,7 @@
     "react-scroll-trigger": "^0.6.10",
     "react-slideshow-image": "^3.4.7",
     "react-vertical-timeline-component": "^3.3.3",
+    "react-visibility-sensor": "^5.1.1",
     "sass": "^1.35.2",
     "web-vitals": "^1.0.1"
   },
