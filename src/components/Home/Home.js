@@ -11,25 +11,9 @@ import employment from './statsPics/option3.jpg'
 import majors from './statsPics/option4.jpg'
 import ScrollTrigger from 'react-scroll-trigger';
 import Companies from './companies'
+import { Card, Collapse } from 'antd'
+import ImageMapper from 'react-img-mapper'
 
-// import one from './aboutUsPics/1.JPG'
-// import two from './aboutUsPics/2.JPG'
-// import three from './aboutUsPics/3.JPG'
-// import four from './aboutUsPics/4.JPG'
-// import five from './aboutUsPics/5.JPG'
-// import six from './aboutUsPics/6.JPG'
-// import seven from './aboutUsPics/7.JPG'
-// import eight from './aboutUsPics/8.JPG'
-// import nine from './aboutUsPics/9.JPG'
-// import ten from './aboutUsPics/10.JPG'
-// import eleven from './aboutUsPics/11.JPG'
-// import twelve from './aboutUsPics/12.JPG'
-// import thirteen from './aboutUsPics/13.JPG'
-// import fourteen from './aboutUsPics/14.JPG'
-// import fifteen from './aboutUsPics/15.JPG'
-// import sixteen from './aboutUsPics/16.JPG'
-
-// const aboutUsPics = [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen]
 
 class Home extends Component {
   constructor(props) {
@@ -118,15 +102,40 @@ class Home extends Component {
               <ReactPlayer className="video" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true} height="450px" width="800px" />
             </div>
           </div>
-          <span id="pillars"></span>
-          <div className="pillars">
-            <div className="heading">
-              <h2 className="section-title">Pillars of PCT</h2>
-              <hr className="hr"></hr>
-            </div>
-            <div className="content">
-              <img className="pillars-img" src={pillars} preview={false}></img>
-            </div>
+          <div className="content">
+            <Collapse>
+              <Panel header="Professional Growth" key="1" style={{backgroundColor:"#351c7595"}}>
+                <p className="title">Individual Mentorship</p>
+                <p className="description">Every semester, underclassmen are assigned an upperclassmen mentor in their major or industry of interest to guide them with course selection, resume feedback, interview practice, company / club applications and much more! This is a great opportunity for younger members to become friends with and learn from older members.</p>
+                <p className="title">Industry Overviews</p>
+                <p className="description">At this event, upperclassmen present to the fraternity about their experiences in different industries, including investment banking, management consulting, private equity, marketing, advertising, technology and more. It offers members a unique and in-depth perspective into career paths they may be interested in.</p>
+                <p className="title">Company Visits</p>
+                <p className="description">Every year, members engage in with alumni across varies industries and companies to network and learn about various opportunities. Additionally, members visit companies in Chicago and Detroit..</p>
+                <p className="title">Interview Prep</p>
+                <p className="description">Underclassmen are encouraged to reach out to uppderclassmen to conduct mock interviews. In addition,  we organize a mock "superday" once a semester. Members are given several mock interviews by upperclassmen for industries they are interested in and receive valuable feedback afterwards.</p>
+              </Panel>
+              <Panel header="Community" key="2" style={{backgroundColor:"#b89756"}}>
+                <p className="title">Membership and Social Events</p>
+                <p className="description">We host and participate in a variety of social events, including football game tailgates, bowling nights, IM sports teams, secret santa, karaoke nights, potluck dinners and more. </p>
+                <p className="title">Family Wars</p>
+                <p className="description">All members are grouped into one of four sub-families based on their lineage. Throughout the semester, families have friendly competitions with one another at events like our campus-wide scavenger hunt, family hangouts, and more!</p>
+                <p className="title">Philanthropy</p>
+                <p className="description">Our annual 5K was started by a PCT member in 2015 to support the Matthew Bittker Foundation, an organization his family started in memory of his brother to support pediatric cancer research. We’ve held the 5K every year since to support the foundation and give back to the greater community.</p>
+                <p className="description">Additionally, we participate in the Detroit Partnership Day every year to give back to the Detroit community and organize several of our own service events. We’ve organized events with Habitat for Humanity, Ronald McDonald House, Business Clothing Drive, and more. </p>
+              </Panel>
+              <Panel header="Diversity, Equity, & Inclusion Mindset" key="3" style={{backgroundColor:"black"}}>
+              <p className="title">Committee Creation</p>
+                <p className="title">Education Sessions</p>
+                <p className="title">Cultural Conversations</p>
+                <p className="title">Donations</p>
+              </Panel>
+              <Panel header="Personal Growth" key="4"style={{backgroundColor:"black"}}>
+                <p className="title">Wellness</p>
+                <p className="title">Education</p>
+                <p className="title">People</p>
+                <p className="title">Fraternity Pride</p>
+              </Panel>
+            </Collapse>
           </div>
         </div>
       </div>

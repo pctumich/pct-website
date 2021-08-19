@@ -158,13 +158,28 @@
         }
         .content {
             margin-bottom: 100px;
-            .pillars-img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                height: 40%;
-                width: 40%;
-            }
+            display: flex;
+                    justify-content: center;
+            > .ant-collapse {
+                width: 75%;
+                
+                > .ant-collapse-item > .ant-collapse-header {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 150px;
+                    font-size: 50px;
+                    font-weight: 800;
+                    color: white; 
+                  }
+              }
+            
+              .ant-collapse-content > .ant-collapse-content-box {
+                padding: 20px;
+                .title {
+                    font-size: 30px;
+                }
+              }
         }
     }
 }
