@@ -112,9 +112,14 @@
                     }
                 }
                 .company {
+                    position: relative;
                     margin: 0;
-                    height: 310px;
-                    width: 650px;
+                    height: 355px;
+                    width: 800px;
+
+                    .cover-transition {
+                        opacity: 0;
+                    }
                     .statistics {
                         height: inherit;
                         width: inherit;
