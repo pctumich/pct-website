@@ -2,17 +2,15 @@ import React, { Component } from 'react';
 import Slideshow from './slideshow'
 import ReactPlayer from "react-player"
 import president from './pics/president.jpg'
-import company_image from './pics/companies.png'
 import pillars from './pics/pillars.png'
 import { Card } from 'antd'
-import ImageMapper from 'react-img-mapper'
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import members from './statsPics/pic1.jpg'
 import employment from './statsPics/option3.jpg'
 import majors from './statsPics/option4.jpg'
 import ScrollTrigger from 'react-scroll-trigger';
-
+import Companies from './companies'
 
 // import one from './aboutUsPics/1.JPG'
 // import two from './aboutUsPics/2.JPG'
@@ -41,7 +39,6 @@ class Home extends Component {
       firstTime: true
     };
   }
-
 
   render() {
     return (
@@ -115,6 +112,9 @@ class Home extends Component {
                   <img className="image" src={employment}></img>
                 </div>
               </div>
+              <Card>
+                <Companies animated={false}></Companies>
+              </Card>
               <ReactPlayer className="video" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true} height="450px" width="800px" />
             </div>
           </div>

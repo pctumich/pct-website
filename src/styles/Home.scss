@@ -117,6 +117,16 @@
                     }
                 }
             }
+            .company {
+                position: relative;
+                margin: 0;
+                height: 355px;
+                width: 800px;
+
+                .cover-transition {
+                    opacity: 0;
+                }
+            }
             .video {
                 margin-top: 4%;
                 display: block;
