@@ -87,73 +87,44 @@
                 font-size: 22px;
                 line-height: 1.75;
             }
-            .ant-card {
-                border-color: #095484;
-                border-right-style:none;
-                border-left-style: none;
-                border-top-style: solid;
-                border-bottom-style: solid;
-                border-width: 4px;
-                background-color: #095484;
-                .ant-card-body {
-                    height:400px;
-                    width: 1487px;
+            .stat-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                margin-left: 5%;
+                margin-right: 5%;
+                .element {
                     display: flex;
-                    justify-content: space-evenly;
-                    flex-wrap: nowrap;
-                    flex-direction: row;
+                    justify-content: center;
                     align-items: center;
-                }
-                .pic-collage {
-                    max-width: 320px;
-                    .img {
-                        width: 80px;
-                        height: auto;
-                    }
-                }
-                .company {
-                    position: relative;
-                    margin: 0;
-                    height: 355px;
-                    width: 800px;
-
-                    .cover-transition {
-                        opacity: 0;
-                    }
-                    .statistics {
-                        height: inherit;
-                        width: inherit;
-                        position: absolute;
+                    .num-info {
+                        text-align: center;
+                        height: 200px;
+                        width: 300px;
                         z-index: 4;
                         color: white;
-                        .box-title {
-                            display: flex;
-                            justify-content: space-evenly;
-                            font-size: 30px;
-                            padding-top: 8%;
-                            .head {
-                                width: 180px;
-                                align-self: center;
-                                text-align: center;
-                            }
-                        }
-                        .box-num {
-                            display: flex;
-                            justify-content: space-evenly;
-                            font-size: 30px;
-                            .num {
-                                width: 180px;
-                                align-self: center;
-                                text-align: center;
-                            }
-                        }
+                        font-size: 70px;
+                        font-weight: 400;
+                        position: absolute;
+                        padding-top: 1%;
                     }
                     .image {
+                        height: 250px;
+                        width: auto;
                         position: relative;
-                        height: 100%;
-                        width: 100%;
-                        filter: brightness(25%) saturate(75%) sepia(8%);
+                        filter: brightness(50%) saturate(80%) sepia(10%);
                     }
+                }
+            }
+            .company {
+                position: relative;
+                margin: 0;
+                height: 355px;
+                width: 800px;
+
+                .cover-transition {
+                    opacity: 0;
                 }
             }
             .video {
