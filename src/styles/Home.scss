@@ -118,8 +118,10 @@
                 }
             }
             .company {
+                display: flex;
+                justify-content: center;
                 position: relative;
-                margin: 0;
+                margin: auto;
                 height: 355px;
                 width: 800px;
 
