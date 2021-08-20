@@ -120,7 +120,6 @@ class Home extends Component {
                 <div className="pillar-pics">
                   <img className="pillar-img" src={personalGrowth} alt=""></img>
                   <img className="pillar-img" src={personalGrowth} alt=""></img>
-                  <img className="pillar-img" src={personalGrowth} alt=""></img>
                 </div>
               </Panel>
               <Panel header="Community" key="2" style={{backgroundColor:"#b89756"}}>
