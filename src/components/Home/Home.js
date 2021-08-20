@@ -22,7 +22,8 @@ class Home extends Component {
     super(props);
     this.state = {
       visible: false,
-      firstTime: true
+      firstTime: true,
+      slide: false
     };
   }
 
@@ -110,9 +111,10 @@ class Home extends Component {
               <h2 className="section-title">Pillars of PCT</h2>
               <hr className="hr"></hr>
             </div>
-              <div className="content">
+              {/* <div className="content"> */}
+              <ScrollTrigger className="content" onEnter={() => this.setState({ slide: true })}>
                 <Collapse>
-                  <Panel header="Professional Growth" key="1" style={{ backgroundColor: "#351c7595" }}>
+                  <Panel className={this.state.slide ? "slide-in-1" : ""} header="Professional Growth" key="1" style={{ backgroundColor: "#351c7595" }}>
                     <div className="pillar-info">
                       <p className="title">Individual Mentorship<hr></hr></p>
                       <p className="description">Every semester, underclassmen are assigned an upperclassmen mentor in their major or industry of interest to guide them with course selection, resume feedback, interview practice, company / club applications and much more! This is a great opportunity for younger members to become friends with and learn from older members.</p>
@@ -129,7 +131,7 @@ class Home extends Component {
                       <img className="pillar-img" src={prof1} alt="" style={{marginTop: "7%"}}></img>
                     </div>
                   </Panel>
-                  <Panel header="Community" key="2" style={{ backgroundColor: "#b89756" }}>
+                  <Panel className={this.state.slide ? "slide-in-2" : ""} header="Community" key="2" style={{ backgroundColor: "#b89756" }}>
                     <div className="pillar-info">
                       <p className="title">Membership and Social Events<hr></hr></p>
                       <p className="description">We host and participate in a variety of social events, including football game tailgates, bowling nights, IM sports, secret santa, karaoke nights, potluck dinners and more. </p>
@@ -144,7 +146,7 @@ class Home extends Component {
                       <img className="pillar-img" style={{marginTop: "9%"}} src={philanthropy} alt=""></img>
                     </div>
                   </Panel>
-                  <Panel header="Diversity, Equity, & Inclusion Mindset" key="3" style={{ backgroundColor: "blue" }}>
+                  <Panel className={this.state.slide ? "slide-in-3" : ""} header="Diversity, Equity, & Inclusion Mindset" key="3" style={{ backgroundColor: "blue" }}>
                     <div className="pillar-info">
                       <p className="title">Committee Creation<hr></hr></p>
                       <p className="title">Education Sessions<hr></hr></p>
@@ -152,7 +154,7 @@ class Home extends Component {
                       <p className="title">Donations<hr></hr></p>
                     </div>
                   </Panel>
-                  <Panel header="Personal Growth" key="4" style={{ backgroundColor: "green" }}>
+                  <Panel className={this.state.slide ? "slide-in-4" : ""} header="Personal Growth" key="4" style={{ backgroundColor: "green" }}>
                     <div className="pillar-info">
                       <p className="title">Wellness<hr></hr></p>
                       <p className="description">Our Directors of Member Wellness organize several events a semester to promote mental and physical wellness during the semester. A few include mental health workshops, sleep workshops, and yoga and fitness classes. </p>
@@ -166,7 +168,8 @@ class Home extends Component {
                     </div>
                   </Panel>
                 </Collapse>
-              </div>
+                </ScrollTrigger>
+              {/* </div> */}
             </div>
           </div>
         </div>
