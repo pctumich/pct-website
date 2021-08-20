@@ -2,41 +2,28 @@ import React, { Component } from 'react';
 import Slideshow from './slideshow'
 import ReactPlayer from "react-player"
 import president from './pics/president.jpg'
-import pillars from './pics/pillars.png'
-import { Card } from 'antd'
+import personalGrowth from './pics/personalGrowth.jpg'
 import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
 import members from './statsPics/pic1.jpg'
 import employment from './statsPics/option3.jpg'
 import majors from './statsPics/option4.jpg'
+import philanthropy from './pics/philanthropy.jpg'
+import tailgate from './pics/tailgate.jpg'
+import prof1 from './pics/prof1.jpg'
+import prof2 from './pics/prof2.jpg'
 import ScrollTrigger from 'react-scroll-trigger';
 import Companies from './companies'
+import { Card, Collapse } from 'antd'
 
-// import one from './aboutUsPics/1.JPG'
-// import two from './aboutUsPics/2.JPG'
-// import three from './aboutUsPics/3.JPG'
-// import four from './aboutUsPics/4.JPG'
-// import five from './aboutUsPics/5.JPG'
-// import six from './aboutUsPics/6.JPG'
-// import seven from './aboutUsPics/7.JPG'
-// import eight from './aboutUsPics/8.JPG'
-// import nine from './aboutUsPics/9.JPG'
-// import ten from './aboutUsPics/10.JPG'
-// import eleven from './aboutUsPics/11.JPG'
-// import twelve from './aboutUsPics/12.JPG'
-// import thirteen from './aboutUsPics/13.JPG'
-// import fourteen from './aboutUsPics/14.JPG'
-// import fifteen from './aboutUsPics/15.JPG'
-// import sixteen from './aboutUsPics/16.JPG'
-
-// const aboutUsPics = [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen]
+const { Panel } = Collapse
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       visible: false,
-      firstTime: true
+      firstTime: true,
+      slide: false
     };
   }
 
@@ -124,14 +111,70 @@ class Home extends Component {
               <h2 className="section-title">Pillars of PCT</h2>
               <hr className="hr"></hr>
             </div>
-            <div className="content">
-              <img className="pillars-img" src={pillars} preview={false}></img>
+              {/* <div className="content"> */}
+              <ScrollTrigger className="content" onEnter={() => this.setState({ slide: true })}>
+                <Collapse>
+                  <Panel className={this.state.slide ? "slide-in-1" : ""} header="Professional Growth" key="1" style={{ backgroundColor: "#351c7595" }}>
+                    <div className="pillar-info">
+                      <p className="title">Individual Mentorship<hr></hr></p>
+                      <p className="description">Every semester, underclassmen are assigned an upperclassmen mentor in their major or industry of interest to guide them with course selection, resume feedback, interview practice, company / club applications and much more! This is a great opportunity for younger members to become friends with and learn from older members.</p>
+                      <p className="title">Industry Overviews<hr></hr></p>
+                      <p className="description">At this event, upperclassmen present to the fraternity about their experiences in different industries, including investment banking, management consulting, private equity, marketing, advertising, technology and more. It offers members a unique and in-depth perspective into career paths they may be interested in.</p>
+                      <p className="title">Company Visits<hr></hr></p>
+                      <p className="description">Every year, members engage with alumni across various industries and companies to learn about internship and job opportunities. Additionally, members go on weekend trips to Detroit and Chicago for networking events with companies in various industries, including banking, consulting, and tech.</p>
+                      <p className="title">Interview Prep<hr></hr></p>
+                      <p className="description">Underclassmen are encouraged to reach out to upperclassmen to conduct mock interviews. In addition, we organize a mock "superday" once a semester where members are given several mock interviews by upperclassmen for industries they are interested in and receive valuable feedback afterwards.</p>
+                    </div>
+                    <div className="pillar-pics">
+                      <img className="pillar-img" src={prof1} alt="" style={{marginTop: "5%"}}></img>
+                      <img className="pillar-img" src={prof2} alt="" style={{marginTop: "7%"}}></img>
+                      <img className="pillar-img" src={prof1} alt="" style={{marginTop: "7%"}}></img>
+                    </div>
+                  </Panel>
+                  <Panel className={this.state.slide ? "slide-in-2" : ""} header="Community" key="2" style={{ backgroundColor: "#b89756" }}>
+                    <div className="pillar-info">
+                      <p className="title">Membership and Social Events<hr></hr></p>
+                      <p className="description">We host and participate in a variety of social events, including football game tailgates, bowling nights, IM sports, secret santa, karaoke nights, potluck dinners and more. </p>
+                      <p className="title">Family Wars<hr></hr></p>
+                      <p className="description">All members are grouped into one of four sub-families based on their lineage. Throughout the semester, families have friendly competitions with one another at events like our campus-wide scavenger hunt, family hangouts, and more!</p>
+                      <p className="title">Philanthropy<hr></hr></p>
+                      <p className="description">Our annual 5K was started by a PCT member in 2015 to support the Matthew Bittker Foundation, an organization his family started in memory of his brother to support pediatric cancer research. We’ve held the 5K every year since to support the foundation and give back to the greater community.</p>
+                      <p className="description">Additionally, we participate in the Detroit Partnership Day every year to give back to the Detroit community and organize several of our own service events. We’ve also organized events with Habitat for Humanity, Ronald McDonald House, Business Clothing Drive, and more. </p>
+                    </div>
+                    <div className="pillar-pics">
+                      <img className="pillar-img" style={{marginTop: "9%"}} src={tailgate} alt=""></img>
+                      <img className="pillar-img" style={{marginTop: "9%"}} src={philanthropy} alt=""></img>
+                    </div>
+                  </Panel>
+                  <Panel className={this.state.slide ? "slide-in-3" : ""} header="Diversity, Equity, & Inclusion Mindset" key="3" style={{ backgroundColor: "blue" }}>
+                    <div className="pillar-info">
+                      <p className="title">Committee Creation<hr></hr></p>
+                      <p className="title">Education Sessions<hr></hr></p>
+                      <p className="title">Cultural Conversations<hr></hr></p>
+                      <p className="title">Donations<hr></hr></p>
+                    </div>
+                  </Panel>
+                  <Panel className={this.state.slide ? "slide-in-4" : ""} header="Personal Growth" key="4" style={{ backgroundColor: "green" }}>
+                    <div className="pillar-info">
+                      <p className="title">Wellness<hr></hr></p>
+                      <p className="description">Our Directors of Member Wellness organize several events a semester to promote mental and physical wellness during the semester. A few include mental health workshops, sleep workshops, and yoga and fitness classes. </p>
+                      <p className="title">Learning<hr></hr></p>
+                      <p className="description">We embrace learning, whether it be through professional workshops, personal and mock interviews, or even leadership positions.</p>
+                      <p className="title">People and Fraternity Pride<hr></hr></p>
+                      <p className="description">We pride ourselves on being the best business fraternity we can be. We hope members develop lifelong friendships that reach far beyond the scope of Michigan and our fraternity.</p>
+                    </div>
+                    <div className="pillar-pics">
+                      <img className="pillar-img" style={{width: "70%", height: "auto", marginTop: "12%"}} src={personalGrowth} alt=""></img>
+                    </div>
+                  </Panel>
+                </Collapse>
+                </ScrollTrigger>
+              {/* </div> */}
             </div>
           </div>
         </div>
-      </div>
-    )
+        )
   }
 }
 
-export default Home;
+        export default Home;

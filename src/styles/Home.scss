@@ -158,13 +158,80 @@
         }
         .content {
             margin-bottom: 100px;
-            .pillars-img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                height: 40%;
-                width: 40%;
-            }
+            display: flex;
+                    justify-content: center;
+            > .ant-collapse {
+                width: 85%;
+                > .ant-collapse-item {
+                    transform: translateX(-100%);
+                    -webkit-transform: translateX(-100%);
+                }
+                .slide-in-1 {
+                    animation: slide-in 1s forwards;
+                    -webkit-animation: slide-in 1s forwards;
+                }
+                .slide-in-2 {
+                    animation: slide-in 1.8s forwards;
+                    -webkit-animation: slide-in 1.8s forwards;
+                }
+                .slide-in-3 {
+                    animation: slide-in 2.3s forwards;
+                    -webkit-animation: slide-in 2.3s forwards;
+                }
+                .slide-in-4 {
+                    animation: slide-in 2.8s forwards;
+                    -webkit-animation: slide-in 2.8s forwards;
+                }
+                @keyframes slide-in {
+                    100% { transform: translateX(0%); }
+                }
+                
+                @-webkit-keyframes slide-in {
+                    100% { -webkit-transform: translateX(0%); }
+                }
+                > .ant-collapse-item > .ant-collapse-header {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 150px;
+                    font-size: 50px;
+                    font-weight: 800;
+                    color: white; 
+                  }
+              }
+            
+              .ant-collapse-content > .ant-collapse-content-box {
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                .pillar-info {
+                    width: 50%;
+                    .title {
+                        font-size: 30px;
+                        font-weight: 500;
+                        margin-bottom: 2%;
+                    }
+                    .description {
+                        font-size: 20px;
+                        padding-right: 2%;
+                    }
+                }
+                .pillar-pics {
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    .pillar-img {
+                        width: 80%;
+                        height: auto;
+                        align-self: center;
+                    }
+                }
+              }
         }
     }
 }
