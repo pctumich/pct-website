@@ -7,6 +7,10 @@ import CountUp from "react-countup";
 import members from './statsPics/pic1.jpg'
 import employment from './statsPics/option3.jpg'
 import majors from './statsPics/option4.jpg'
+import philanthropy from './pics/philanthropy.jpg'
+import tailgate from './pics/tailgate.jpg'
+import prof1 from './pics/prof1.jpg'
+import prof2 from './pics/prof2.jpg'
 import ScrollTrigger from 'react-scroll-trigger';
 import Companies from './companies'
 import { Card, Collapse } from 'antd'
@@ -120,8 +124,9 @@ class Home extends Component {
                       <p className="description">Underclassmen are encouraged to reach out to upperclassmen to conduct mock interviews. In addition, we organize a mock "superday" once a semester where members are given several mock interviews by upperclassmen for industries they are interested in and receive valuable feedback afterwards.</p>
                     </div>
                     <div className="pillar-pics">
-                      <img className="pillar-img" src={personalGrowth} alt=""></img>
-                      <img className="pillar-img" src={personalGrowth} alt=""></img>
+                      <img className="pillar-img" src={prof1} alt="" style={{marginTop: "5%"}}></img>
+                      <img className="pillar-img" src={prof2} alt="" style={{marginTop: "7%"}}></img>
+                      <img className="pillar-img" src={prof1} alt="" style={{marginTop: "7%"}}></img>
                     </div>
                   </Panel>
                   <Panel header="Community" key="2" style={{ backgroundColor: "#b89756" }}>
@@ -135,11 +140,11 @@ class Home extends Component {
                       <p className="description">Additionally, we participate in the Detroit Partnership Day every year to give back to the Detroit community and organize several of our own service events. We’ve also organized events with Habitat for Humanity, Ronald McDonald House, Business Clothing Drive, and more. </p>
                     </div>
                     <div className="pillar-pics">
-                      <img className="pillar-img" src={personalGrowth} alt=""></img>
-                      <img className="pillar-img" src={personalGrowth} alt=""></img>
+                      <img className="pillar-img" style={{marginTop: "9%"}} src={tailgate} alt=""></img>
+                      <img className="pillar-img" style={{marginTop: "9%"}} src={philanthropy} alt=""></img>
                     </div>
                   </Panel>
-                  <Panel header="Diversity, Equity, & Inclusion Mindset" key="3" style={{ backgroundColor: "black" }}>
+                  <Panel header="Diversity, Equity, & Inclusion Mindset" key="3" style={{ backgroundColor: "blue" }}>
                     <div className="pillar-info">
                       <p className="title">Committee Creation<hr></hr></p>
                       <p className="title">Education Sessions<hr></hr></p>
@@ -147,7 +152,7 @@ class Home extends Component {
                       <p className="title">Donations<hr></hr></p>
                     </div>
                   </Panel>
-                  <Panel header="Personal Growth" key="4" style={{ backgroundColor: "black" }}>
+                  <Panel header="Personal Growth" key="4" style={{ backgroundColor: "green" }}>
                     <div className="pillar-info">
                       <p className="title">Wellness<hr></hr></p>
                       <p className="description">Our Directors of Member Wellness organize several events a semester to promote mental and physical wellness during the semester. A few include mental health workshops, sleep workshops, and yoga and fitness classes. </p>
@@ -157,7 +162,7 @@ class Home extends Component {
                       <p className="description">We pride ourselves on being the best business fraternity we can be. We hope members develop lifelong friendships that reach far beyond the scope of Michigan and our fraternity.</p>
                     </div>
                     <div className="pillar-pics">
-                      <img className="pillar-img" src={personalGrowth} alt=""></img>
+                      <img className="pillar-img" style={{width: "70%", height: "auto", marginTop: "12%"}} src={personalGrowth} alt=""></img>
                     </div>
                   </Panel>
                 </Collapse>
