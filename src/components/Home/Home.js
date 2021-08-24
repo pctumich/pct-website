@@ -29,7 +29,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div class="container mx-auto px-4">
         <span id="home" className="homeSpan" style={{ position: 'absolute', top: '-3%' }}></span>
         <div className="Home">
           <Slideshow></Slideshow>
@@ -126,9 +126,9 @@ class Home extends Component {
                       <p className="description">Underclassmen are encouraged to reach out to upperclassmen to conduct mock interviews. In addition, we organize a mock "superday" once a semester where members are given several mock interviews by upperclassmen for industries they are interested in and receive valuable feedback afterwards.</p>
                     </div>
                     <div className="pillar-pics">
-                      <img className="pillar-img" src={prof1} alt="" style={{marginTop: "5%"}}></img>
-                      <img className="pillar-img" src={prof2} alt="" style={{marginTop: "7%"}}></img>
-                      <img className="pillar-img" src={prof1} alt="" style={{marginTop: "7%"}}></img>
+                      <img class="w-16 md:w-32 lg:w-48" className="pillar-img" src={prof1} alt="" style={{marginTop: "5%"}}></img>
+                      <img class="w-16 md:w-32 lg:w-48" className="pillar-img" src={prof2} alt="" style={{marginTop: "7%"}}></img>
+                      <img class="w-16 md:w-32 lg:w-48" className="pillar-img" src={prof1} alt="" style={{marginTop: "7%"}}></img>
                     </div>
                   </Panel>
                   <Panel className={this.state.slide ? "slide-in-2" : ""} header="Community" key="2" style={{ backgroundColor: "#b89756" }}>
