@@ -9,6 +9,7 @@ import Rush from './components/Rush/Rush';
 import Leadership from './components/Leadership/Leadership';
 import Error from './components/Error';
 import logo from './logo.svg';
+import NavBar from './components/navbar';
 
 
 class App extends Component {
@@ -36,8 +37,9 @@ class App extends Component {
     )
     
     return (
-      <div class="md:container mx-auto">
-        <div class="flex flex-row">
+      <div id="app">
+        <NavBar></NavBar>
+        {/* <div class="flex flex-row">
           <div class="flex flex-initial flex-row">
             <Link to="/#home"><img class="w-16" src={logo}></img></Link>
             <Link class="text-xl"to="/#home"><p class="text-xl">Phi Chi Theta</p></Link>
@@ -59,15 +61,21 @@ class App extends Component {
           <Route path="/rush" component={Rush} />
           <Route path="/leadership" component={Leadership} />
           <Route component={Error} />
+        </Switch> */}
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/rush" component={Rush} />
+          <Route path="/leadership" component={Leadership} />
+          <Route component={Error} />
         </Switch>
-        <div class="footer">
-          <h4 class="contact-us">Follow Us</h4>
-          <div class="social-media">
-            <a href="https://www.facebook.com/pctumich/" target="_blank"><span class="fa fa-facebook facebook"></span></a>
-            <a href="https://www.instagram.com/pctumich/" target="_blank"><span class="fa fa-instagram instagram"></span></a>
-            <a href="https://www.linkedin.com/company/pctumich" target="_blank"><span class="fa fa-linkedin-square linkedin"></span></a>
+        <div class="text-center bg-white shadow-2xl pt-6">
+          <p class="text-black h-7 text-3xl font-bold">Follow Us</p>
+          <div class="space-x-4 mx-auto w-1/3 h-14">
+            <a href="https://www.facebook.com/pctumich/" target="_blank"><span class="fa fa-facebook text-5xl"></span></a>
+            <a href="https://www.instagram.com/pctumich/" target="_blank"><span class="fa fa-instagram text-5xl"></span></a>
+            <a href="https://www.linkedin.com/company/pctumich" target="_blank"><span class="fa fa-linkedin-square text-5xl"></span></a>
           </div>
-          <p class="copyright">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
+          <p class="text-black pt-4 pb-6">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
         </div>
       </div>
     )

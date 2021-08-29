@@ -64,38 +64,38 @@ const directors = [{"position": "Director of New Member Engagement", "name": "Jh
 
 const Leadership = () => {
     return (
-      <div className="Leadership">
+      <div class="flex-auto container mx-auto px-4">
           <span id="executive-board" style={{position:'relative', top: '-60px'}}></span>
-          <div className="board">
-            <div className="heading">
-              <h2 className="section-title">Executive Board</h2>
-              <hr className="hr"></hr>
+          <div class="">
+            <div class="mt-0.5">
+              <h2 className="text-3xl font-bold text-center">Executive Board</h2>
+              <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-px-20 mx-auto"></hr>
             </div>
-            <div className="container">
+            <div class="flex-auto justify-center">
               {board.map((obj,index) => {
                 return (
-                  <div className="trooper" key={index}>
-                    <img className="img" src={obj.headshot} alt=""></img>
-                    <h2 className="name">{obj.name}</h2>
-                    <h4 className="position">{obj.position}</h4>
-                    <p className="bio">{obj.bio}</p>
+                  <div class="flex-auto flex-col w-80 h-auto" key={index}>
+                    <img class="h-80 w-80 text-center object-cover" src={obj.headshot} alt=""></img>
+                    <h2 class="text-center">{obj.name}</h2>
+                    <h4 class="text-center">{obj.position}</h4>
+                    <p class="text-left w-70">{obj.bio}</p>
                   </div>
               )})}
             </div>
           </div>
           <span id="directors" style={{position:'relative', top: '-10px'}}></span>
-          <div className="directors">
-            <div className="heading">
-              <h2 className="section-title">Directors</h2>
-              <hr className="hr"></hr>
+          <div class="directors">
+            <div class="heading">
+              <h2 class="section-title">Directors</h2>
+              <hr class="hr"></hr>
             </div>
-            <div className="container">
+            <div class="flex-auto flex-row flex-wrap justify-evenly overflow-hidden">
               {directors.map((obj, index) => {
                 return (
-                  <div className="trooper" key={index}>
-                    <img className="img" src={obj.headshot} alt=""></img>
-                    <h2 className="name">{obj.name}</h2>
-                    <h4 className="position">{obj.position}</h4>
+                  <div class="flex-auto flex-col w-80 h-auto" key={index}>
+                    <img class="h-80 w-80 text-center object-cover" src={obj.headshot} alt=""></img>
+                    <h2 class="text-center">{obj.name}</h2>
+                    <h4 class="text-center">{obj.position}</h4>
                   </div>
               )})}
             </div>
