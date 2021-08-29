@@ -68,42 +68,48 @@ class Rush extends Component {
       "Create a Resume": "Even if you have not yet written a formal resume, we encourage you to compile a one page document highlighting your extracurricular activities and achievements, academic accomplishments, hobbies, and anything else you think we should know. We will ask for this after our 3rd rush event. You should not bring a resume to any open events (barring Resume Workshop)."
     }
     return (
-      <div className="Rush">
-        <span id="video" className="video" style={{ position: 'relative', top: '-60px' }}></span>
-        <div className="heading">
-          <h2 className="section-title">Rush Phi Chi Theta</h2>
-          <hr className="hr"></hr>
-        </div>
-        <ReactPlayer className="video" url="https://www.youtube.com/watch?v=xj7DYzoTdKQ" controls={true} height="450px" width="800px" />
-        <div>
-          {/* <p className="email-description-questions">Email any rush questions to pctrushquestionsf21@umich.edu</p> */}
-          <p className="email-description-updates">Enter your U-M email below to receive updates about rush!</p>
-          <div className="rush-email-container">
-            <div className="listserv">
-              <input className="input" placeholder='e.g ryantoth@umich.edu' value={this.state.rushEmail} onChange={event => this.updateInputValue(event)}></input>
-              <Button className="button" type="primary" onClick={this.addEmail}>Submit</Button>
+      <div class="container mx-auto px-4">
+        <span id="video" class="video" style={{ position: 'relative', top: '-60px' }}></span>
+        <div id="header" class="mt-8">
+              <h2 class="text-3xl font-bold text-center">Rush Phi Chi Theta</h2>
+              <hr class="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
             </div>
-            {this.state.submitted &&
-                <p className="thanks">Thank you!</p>
-            }
+        <ReactPlayer class="lg:w-3/5 lg:h-96 mx-auto overflow-hidden" width="w-60" height="h-96" url="https://www.youtube.com/watch?v=xj7DYzoTdKQ" controls={true} />
+        <div>
+          <p id="email-description-updates" class="mx-auto text-center pt-12 text-xl lg:w-1/2 lg:leading-10">Email any questions to pctrushquestionsf21@umich.edu and enter your U-M email below to receive updates about rush!</p>
+          <div id="rush-email-container" class="mx-auto text-center">
+            <div class="inline-block h-8">
+              <input class="pb-1 h-full text-xl text-center border border-black" placeholder='e.g ryantoth@umich.edu' value={this.state.rushEmail} onChange={event => this.updateInputValue(event)}></input>
+              {!this.state.submitted &&
+                <Button class="" type="primary" onClick={this.addEmail}>Submit</Button>
+              }
+              {this.state.submitted &&
+                <p class="">Thank you!</p>
+              }
+            </div>
           </div>
         </div>
         <span id="schedule" className="schedule" style={{ position: 'relative', top: '-35px' }}></span>
-        <div className="heading-v2">
-          <h2 className="section-title">Rush Schedule</h2>
-          <hr className="hr"></hr>
+        <div id="header" className="mt-8">
+              <h2 className="text-3xl font-bold text-center">Rush Schedule</h2>
+              <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
         </div>
-        <Timeline />
+        {window.innerWidth < 1024 &&
+          <div></div>
+        }
+        {window.innerWidth >= 1024 &&
+          <Timeline />
+        }
         <span id="tips" className="tips"></span>
-        <div className="heading-v2">
-          <h2 className="section-title">Tips and Tricks for a Successful Rush</h2>
-          <hr className="hr"></hr>
-        </div>
+        <div id="header" className="mt-8">
+              <h2 className="text-3xl font-bold text-center">Tips and Tricks for a Successful Rush</h2>
+              <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
+            </div>
         <div className="tips">
           {Object.entries(tips).map(([key, value]) => {
             return (
-              <div className="container">
-                <p className="tip">{key}</p>
+              <div className="lg:w-3/4 mx-auto">
+                <p class="text-xl mb-2">{key}</p>
                 <p className="content">{value}</p>
               </div>
             )

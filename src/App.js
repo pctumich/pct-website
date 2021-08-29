@@ -68,9 +68,9 @@ class App extends Component {
           <Route path="/leadership" component={Leadership} />
           <Route component={Error} />
         </Switch>
-        <div class="text-center bg-white shadow-2xl pt-6">
+        <div class="text-center bg-white shadow-2xl shadow-inner pt-6">
           <p class="text-black h-7 text-3xl font-bold">Follow Us</p>
-          <div class="space-x-4 mx-auto w-1/3 h-14">
+          <div class="space-x-4 mx-auto w-1/2 h-14">
             <a href="https://www.facebook.com/pctumich/" target="_blank"><span class="fa fa-facebook text-5xl"></span></a>
             <a href="https://www.instagram.com/pctumich/" target="_blank"><span class="fa fa-instagram text-5xl"></span></a>
             <a href="https://www.linkedin.com/company/pctumich" target="_blank"><span class="fa fa-linkedin-square text-5xl"></span></a>
