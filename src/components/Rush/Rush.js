@@ -3,6 +3,20 @@ import ReactPlayer from "react-player"
 import Timeline from './timeline'
 import { Button } from 'antd'
 import { GoogleSpreadsheet } from "google-spreadsheet";
+import SlideshowMobile from './slideshowMobile'
+import cc1 from './pics/coffeeChat1.jpg'
+import cc2 from './pics/coffeeChat2.jpg'
+import cc3 from './pics/coffeeChat3.jpg'
+import cc4 from './pics/coffeeChat4.jpg'
+import is1 from './pics/infoSession1.jpg'
+import is2 from './pics/infoSession2.jpg'
+import is3 from './pics/infoSession3.jpg'
+import we1 from './pics/womenEvent1.jpg'
+import we2 from './pics/womenEvent2.jpg'
+import we3 from './pics/womenEvent3.jpg'
+import dei1 from './pics/dei1.jpg'
+import dei2 from './pics/dei2.jpg'
+import dei3 from './pics/dei3.jpg'
 
 // Config variables
 const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
@@ -52,7 +66,7 @@ class Rush extends Component {
       });
       // loads document properties and worksheets
       await doc.loadInfo();
-  
+
       const sheet = doc.sheetsById[SHEET_ID];
       const result = await sheet.addRow(row);
     } catch (e) {
@@ -71,9 +85,9 @@ class Rush extends Component {
       <div class="container mx-auto px-4">
         <span id="video" class="video" style={{ position: 'relative', top: '-60px' }}></span>
         <div id="header" class="mt-8">
-              <h2 class="text-3xl font-bold text-center">Rush Phi Chi Theta</h2>
-              <hr class="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
-            </div>
+          <h2 class="text-3xl font-bold text-center">Rush Phi Chi Theta</h2>
+          <hr class="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
+        </div>
         <ReactPlayer class="lg:w-3/5 lg:h-96 mx-auto overflow-hidden" width="w-60" height="h-96" url="https://www.youtube.com/watch?v=xj7DYzoTdKQ" controls={true} />
         <div>
           <p id="email-description-updates" class="mx-auto text-center pt-12 text-xl lg:w-1/2 lg:leading-10">Email any questions to pctrushquestionsf21@umich.edu and enter your U-M email below to receive updates about rush!</p>
@@ -91,20 +105,53 @@ class Rush extends Component {
         </div>
         <span id="schedule" className="schedule" style={{ position: 'relative', top: '-35px' }}></span>
         <div id="header" className="mt-8">
-              <h2 className="text-3xl font-bold text-center">Rush Schedule</h2>
-              <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
+          <h2 className="text-3xl font-bold text-center">Rush Schedule</h2>
+          <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
         </div>
         {window.innerWidth < 1024 &&
-          <div></div>
+          <div>
+            <div>
+              <p className="text-center text-lg font-semibold">Info Session</p>
+              <SlideshowMobile images={[is1, is2, is3]}></SlideshowMobile>
+              <div className="event-info">
+                <p class="text-center pt-4 m-0">Sunday, September 12th | 3:30-4:00PM</p>
+                <p class="text-center">Ross: Robertson Auditorium</p>
+              </div>
+            </div>
+            <div>
+              <p className="text-center text-lg font-semibold">Diverse Voices Event</p>
+              <SlideshowMobile images={[dei1, dei2, dei3]}></SlideshowMobile>
+              <div className="event-info">
+                <p class="text-center pt-4 m-0">Tuesday, September 14th | 5:00-7:00PM</p>
+                <p class="text-center">Ross: R2240</p>
+              </div>
+            </div>
+            <div>
+              <p className="text-center text-lg font-semibold">Women's Event</p>
+              <SlideshowMobile images={[we1, we2, we3]}></SlideshowMobile>
+              <div className="event-info">
+                <p class="text-center pt-4 m-0">Wednesday, September 15th | 4:30-6:30PM</p>
+                <p class="text-center">Ross: R0230</p>
+              </div>
+            </div>
+            <div>
+              <p className="text-center text-lg font-semibold">Coffee Chats</p>
+              <SlideshowMobile images={[cc1, cc2, cc3, cc4]}></SlideshowMobile>
+              <div className="event-info">
+                <p class="text-center pt-4 m-0">Thursday, September 16th | 5:00-7:00PM</p>
+                <p class="text-center">Ross: R1210, R1230, R1240</p>
+              </div>
+            </div>
+          </div>
         }
         {window.innerWidth >= 1024 &&
           <Timeline />
         }
         <span id="tips" className="tips"></span>
         <div id="header" className="mt-8">
-              <h2 className="text-3xl font-bold text-center">Tips and Tricks for a Successful Rush</h2>
-              <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
-            </div>
+          <h2 className="text-3xl font-bold text-center">Tips and Tricks for a Successful Rush</h2>
+          <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
+        </div>
         <div className="tips">
           {Object.entries(tips).map(([key, value]) => {
             return (

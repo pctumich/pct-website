@@ -39,7 +39,7 @@
         }
         .vertical-timeline-element-content.bounce-in {
             margin: 0;
-            padding: 0em;
+            padding: 1em;
             -webkit-box-shadow: 0 0px 0 #ddd;
             box-shadow: 0 0px 0 #ddd;
         }
@@ -51,6 +51,8 @@
         .slideshow-container {
             height: 240px;
             width: 400px;
+            margin-left: auto;
+            margin-right: auto;
 
             .each-fade {
                 display: flex;
@@ -73,8 +75,7 @@
                 margin: 0;
                 object-fit: cover;
                 filter: none;
-                margin-left: auto;
-                margin-right: auto;
+                
               }
 
               @keyframes scroll-bottom {

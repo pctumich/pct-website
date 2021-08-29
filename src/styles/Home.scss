@@ -194,7 +194,7 @@
 // }
 
 .ant-collapse {
-    width: 85%;
+    
     > .ant-collapse-item {
         transform: translateX(-100%);
         -webkit-transform: translateX(-100%);
@@ -241,9 +241,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    font-size: 50px;
-    font-weight: 800;
-    color: white; 
+    color: white !important;
+    font-weight: 400; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem !important; 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
+  
+  .ant-card {
+      margin: auto;
   }
   

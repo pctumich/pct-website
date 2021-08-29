@@ -38,23 +38,11 @@ class Timeline extends Component {
                     <Slideshow images={[is1, is2, is3]}></Slideshow>
                     <div className="event-info">
                         <div className="container">
-                            <p>Monday, January 25th</p>
+                            <p>Sunday, September 12th</p>
                             <p className="bar">|</p>
-                            <p>6:00-8:00PM</p>
+                            <p>3:30-4:00PM</p>
                         </div>
-                        <p>Location</p>
-                    </div>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement className="component">
-                    <p className="event-name">Coffee Chats</p>
-                    <Slideshow images={[cc1, cc2, cc3, cc4]}></Slideshow>
-                    <div className="event-info">
-                        <div className="container">
-                            <p>Monday, January 25th</p>
-                            <p className="bar">|</p>
-                            <p>6:00-8:00PM</p>
-                        </div>
-                        <p>Location</p>
+                        <p>Ross: Robertson Auditorium</p>
                     </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement className="component">
@@ -62,11 +50,11 @@ class Timeline extends Component {
                     <Slideshow images={[dei1, dei2, dei3]}></Slideshow>
                     <div className="event-info">
                         <div className="container">
-                            <p>Monday, January 25th</p>
+                            <p>Tuesday, September 14th</p>
                             <p className="bar">|</p>
-                            <p>6:00-8:00PM</p>
+                            <p>5:00-7:00PM</p>
                         </div>
-                        <p>Location</p>
+                        <p>Ross: R2240</p>
                     </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement className="component">
@@ -74,11 +62,23 @@ class Timeline extends Component {
                     <Slideshow images={[we1, we2, we3]}></Slideshow>
                     <div className="event-info">
                         <div className="container">
-                            <p>Monday, January 25th</p>
+                            <p>Wednesday, September 15th</p>
                             <p className="bar">|</p>
-                            <p>6:00-8:00PM</p>
+                            <p>4:30-6:30PM</p>
                         </div>
-                        <p>Location</p>
+                        <p>Ross: R0230</p>
+                    </div>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement className="component">
+                    <p className="event-name">Coffee Chats</p>
+                    <Slideshow images={[cc1, cc2, cc3, cc4]}></Slideshow>
+                    <div className="event-info">
+                        <div className="container">
+                            <p>Thursday, September 16th</p>
+                            <p className="bar">|</p>
+                            <p>5:00-7:00PM</p>
+                        </div>
+                        <p>Ross: R1210, R1230, R1240</p>
                     </div>
                     <ScrollTrigger onEnter={this.updateAnimate}></ScrollTrigger>
                 </VerticalTimelineElement>
