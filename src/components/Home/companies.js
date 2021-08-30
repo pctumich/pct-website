@@ -137,7 +137,7 @@ class Companies extends Component {
         });
 
         return (
-            <div class="company relative max-w-4xl justify-center mx-auto">
+            <div class="company relative justify-center max-w-3xl mx-auto">
                 <img onLoad={this.onImgLoad} src={company_image}></img>
                 {covers}
                 <ScrollTrigger onEnter={this.onEnterViewport}></ScrollTrigger>

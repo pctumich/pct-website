@@ -71,7 +71,7 @@ const Leadership = () => {
           <div className="board flex-wrap">
             <div id="header" className="mt-8">
               <h2 className="text-3xl font-bold text-center">Executive Board</h2>
-              <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
+              <hr className="block box-content border-0 h-1 w-10/12 bg-black mb-5 mx-auto"></hr>
             </div>
 
             {/* Normal view with cards in a row */}
@@ -131,15 +131,15 @@ const Leadership = () => {
             </div>
           </div>
 
-          <span id="directors" style={{position:'relative', top: '-10px'}}></span>
+          <span id="directors" style={{position:'relative'}}></span>
           <div className="directors">
             <div id="header" className="mt-8">
               <h2 className="text-3xl font-bold text-center">Directors</h2>
-              <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
+              <hr className="block box-content border-0 h-1 w-10/12 bg-black mb-5 mx-auto"></hr>
             </div>
 
             {/* Normal view with cards side by side */}
-            <div className="hidden container sm:flex">
+            <div className="hidden container mx-auto sm:flex">
               {directors.map((obj, index) => {
                 return (
                   <div className="trooper" key={index}>

@@ -194,6 +194,8 @@
 // }
 
 .ant-collapse {
+    background-color: white !important;
+    border: none !important;
     > .ant-collapse-item {
         transform: translateX(-100%);
         -webkit-transform: translateX(-100%);
@@ -201,18 +203,38 @@
     .slide-in-1 {
         animation: slide-in 1s forwards;
         -webkit-animation: slide-in 1s forwards;
+        background-image: url("../components/Home/pics/sssplit1.jpg");
+        max-width: 70rem !important;
+        margin-left: auto;
+        margin-right: auto;
+        // filter: brightness(80%) saturate(80%) sepia(10%);
     }
     .slide-in-2 {
         animation: slide-in 1.8s forwards;
         -webkit-animation: slide-in 1.8s forwards;
+        background-image: url("../components/Home/pics/sssplit2.jpg");
+        max-width: 70rem !important;
+        margin-left: auto;
+        margin-right: auto;
+        // filter: brightness(80%) saturate(80%) sepia(10%);
     }
     .slide-in-3 {
         animation: slide-in 2.3s forwards;
         -webkit-animation: slide-in 2.3s forwards;
+        background-image: url("../components/Home/pics/sssplit3.jpg");
+        max-width: 70rem !important;
+        margin-left: auto;
+        margin-right: auto;
+        // filter: brightness(80%) saturate(80%) sepia(10%);
     }
     .slide-in-4 {
         animation: slide-in 2.8s forwards;
         -webkit-animation: slide-in 2.8s forwards;
+        background-image: url("../components/Home/pics/sssplit4.jpg");
+        max-width: 70rem !important;
+        margin-left: auto;
+        margin-right: auto;
+        // filter: brightness(80%) saturate(80%) sepia(10%);
     }
     @keyframes slide-in {
         100% { transform: translateX(0%); }

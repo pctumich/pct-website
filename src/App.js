@@ -68,14 +68,14 @@ class App extends Component {
           <Route path="/leadership" component={Leadership} />
           <Route component={Error} />
         </Switch>
-        <div class="text-center bg-black shadow-2xl shadow-inner pt-6">
-          <p class="text-black h-7 text-3xl text-white font-bold">Follow Us</p>
-          <div class="space-x-4 mx-auto w-1/2 h-14">
-            <a href="https://www.facebook.com/pctumich/" target="_blank"><span class="fa fa-facebook text-5xl"></span></a>
-            <a href="https://www.instagram.com/pctumich/" target="_blank"><span class="fa fa-instagram text-5xl"></span></a>
-            <a href="https://www.linkedin.com/company/pctumich" target="_blank"><span class="fa fa-linkedin-square text-5xl"></span></a>
+        <div class="text-center bg-black shadow-2xl shadow-inner pt-3">
+          <p class="text-black h-4 text-2xl text-white font-semibold">Follow Us</p>
+          <div class="space-x-4 mx-auto w-1/2">
+            <a href="https://www.facebook.com/pctumich/" target="_blank"><span class="fa fa-facebook text-3xl text-white"></span></a>
+            <a href="https://www.instagram.com/pctumich/" target="_blank"><span class="fa fa-instagram text-4xl text-white"></span></a>
+            <a href="https://www.linkedin.com/company/pctumich" target="_blank"><span class="fa fa-linkedin-square text-4xl text-white"></span></a>
           </div>
-          <p class="text-white pt-4 pb-6">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
+          <p class="text-white pt-2 pb-3">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
         </div>
       </div>
     )
