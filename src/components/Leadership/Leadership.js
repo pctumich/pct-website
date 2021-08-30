@@ -26,7 +26,7 @@ import Academic2 from './pics/Mia.jpg'
 import DEI1 from './pics/Jeevin.jpg'
 // import DEI2 from './pics/Audrey.jpg'
 import tech1 from './pics/Ryan.jpg'
-// import tech2 from './pics/Ant.jpg'
+import tech2 from './pics/Ant.jpg'
 import wellness1 from './pics/Aakash.jpg'
 import wellness2 from './pics/Sarah.jpg'
 
@@ -62,7 +62,7 @@ const directors = [{"position": "Director of New Member Engagement", "name": "Jh
 {"position": "Director of Community Outreach", "name": "Anjali Vemuri", "headshot": ""},
 {"position": "Director of Community Outreach", "name": "Sahaja Pinnu", "headshot": ""},
 {"position": "Director of Technology", "name": "Ryan Toth", "headshot": tech1},
-{"position": "Director of Technology", "name": "Anthony Zhu", "headshot": ""}]
+{"position": "Director of Technology", "name": "Anthony Zhu", "headshot": tech2}]
 
 const Leadership = () => {
     return (
@@ -73,10 +73,12 @@ const Leadership = () => {
               <h2 className="text-3xl font-bold text-center">Executive Board</h2>
               <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
             </div>
-            <div className="container flex flex-wrap justify-evenly ">
+
+            {/* Normal view with cards in a row */}
+            <div className="hidden container sm:flex">
               {board1.map((obj,index) => {
                 return (
-                  <div className="trooper flex w-full" key={index}>
+                  <div className="trooper" key={index}>
                     <img className="img" src={obj.headshot} alt=""></img>
                     <h2 className="name">{obj.name}</h2>
                     <h4 className="position">{obj.position}</h4>
@@ -84,25 +86,60 @@ const Leadership = () => {
                   </div>
               )})}
             </div>
-            <div className="container flex flex-wrap">
+
+            {/* use individual cards in a column for mobile */}
+            <div className="w-10/12 mx-auto sm:hidden">
+              {board1.map((obj,index) => {
+                return (
+                  <div class="max-w-sm mb-10 rounded overflow-hidden shadow-lg">
+                    <img class="headshot w-full" src={obj.headshot} alt={obj.name + " headshot"}></img>
+                    <div class="px-6 py-4">
+                      <h2 className="name font-bold text-xl mb-2">{obj.name}</h2>
+                      <h4 className="position font-bold text-xl mb-2">{obj.position}</h4>
+                      <p className="bio text-gray-700 text-base">{obj.bio}</p>
+                    </div>
+                  </div>
+              )})}
+            </div>
+
+            {/* Normal view with cards side by side */}
+            <div className="hidden container sm:flex">
               {board2.map((obj,index) => {
                 return (
-                  <div className="trooper flex" key={index}>
+                  <div className="trooper" key={index}>
                     <img className="img" src={obj.headshot} alt=""></img>
                     <h2 className="name">{obj.name}</h2>
                     <h4 className="position">{obj.position}</h4>
                     <p className="bio">{obj.bio}</p>
+                  </div>
+              )})}
+            </div>
+
+            {/* use individual cards in a column for mobile */}
+            <div className="w-10/12 mx-auto sm:hidden">
+              {board2.map((obj,index) => {
+                return (
+                  <div class="max-w-sm mb-10 rounded overflow-hidden shadow-lg">
+                    <img class="headshot w-full" src={obj.headshot} alt={obj.name + " headshot"}></img>
+                    <div class="px-6 py-4">
+                      <h2 className="name font-bold text-xl mb-2">{obj.name}</h2>
+                      <h4 className="position font-bold text-xl mb-2">{obj.position}</h4>
+                      <p className="bio text-gray-700 text-base">{obj.bio}</p>
+                    </div>
                   </div>
               )})}
             </div>
           </div>
+
           <span id="directors" style={{position:'relative', top: '-10px'}}></span>
           <div className="directors">
             <div id="header" className="mt-8">
               <h2 className="text-3xl font-bold text-center">Directors</h2>
               <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
             </div>
-            <div className="container">
+
+            {/* Normal view with cards side by side */}
+            <div className="hidden container sm:flex">
               {directors.map((obj, index) => {
                 return (
                   <div className="trooper" key={index}>
@@ -112,6 +149,21 @@ const Leadership = () => {
                   </div>
               )})}
             </div>
+
+            {/* use individual cards in a column for mobile */}
+            <div className="w-72 mx-auto sm:hidden">
+              {directors.map((obj,index) => {
+                return (
+                  <div class="max-w-sm mb-10 rounded overflow-hidden shadow-lg">
+                    <img class="headshot h-72 w-full object-cover" src={obj.headshot} alt={obj.name + " headshot"}></img>
+                    <div class="px-6 py-4">
+                      <h2 className="name text-center font-medium text-xl mb-2">{obj.name}</h2>
+                      <h4 className="position text-center font-normal text-xl mb-2">{obj.position}</h4>
+                    </div>
+                  </div>
+              )})}
+            </div>
+
           </div>
       </div>
     );

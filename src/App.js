@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Dropdown, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
@@ -68,14 +68,14 @@ class App extends Component {
           <Route path="/leadership" component={Leadership} />
           <Route component={Error} />
         </Switch>
-        <div class="text-center bg-white shadow-2xl shadow-inner pt-6">
-          <p class="text-black h-7 text-3xl font-bold">Follow Us</p>
+        <div class="text-center bg-black shadow-2xl shadow-inner pt-6">
+          <p class="text-black h-7 text-3xl text-white font-bold">Follow Us</p>
           <div class="space-x-4 mx-auto w-1/2 h-14">
             <a href="https://www.facebook.com/pctumich/" target="_blank"><span class="fa fa-facebook text-5xl"></span></a>
             <a href="https://www.instagram.com/pctumich/" target="_blank"><span class="fa fa-instagram text-5xl"></span></a>
             <a href="https://www.linkedin.com/company/pctumich" target="_blank"><span class="fa fa-linkedin-square text-5xl"></span></a>
           </div>
-          <p class="text-black pt-4 pb-6">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
+          <p class="text-white pt-4 pb-6">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
         </div>
       </div>
     )

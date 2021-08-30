@@ -13,7 +13,7 @@ const navigation = [
   { name: 'About Us', href: '/#aboutUs' },
   { name: 'Rush', href: '/rush' },
   { name: 'Leadership', href: '/leadership' },
-  { name: 'Apply Now', href: '#' },
+  // { name: 'Apply Now', href: '/apply' },
 ]
 
 function classNames(...classes) {
@@ -22,10 +22,10 @@ function classNames(...classes) {
 
 export default function NavBar() {
   return (
-    <Disclosure as="nav" class="sticky top-0 z-50 bg-gray-800">
+    <Disclosure as="nav" class="sticky top-0 z-50 bg-black">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="max-w-9xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -45,7 +45,7 @@ export default function NavBar() {
                     src={logo}
                     alt="PCT Logo"
                   />
-                  <Link className="block h-8 w-auto"to="/#home"><p class="text-xl">Phi Chi Theta</p></Link>
+                  <Link className="block h-8 w-auto" to="/#home"><p class="text-xl text-base text-white">Phi Chi Theta</p></Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="absolute right-0 space-x-4">
@@ -56,12 +56,18 @@ export default function NavBar() {
                         to={item.href}
                         className={classNames(
                           'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          'px-3 py-2 rounded-md text-lg font-medium'
                         )}
                       >
                         {item.name}
                       </Link>
                     ))}
+                    <a href="https://bubble.io/domain_not_supported?domain=rush.pctumich.com" target="_blank" rel="noopener noreferrer" className={classNames(
+                      'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      'px-3 py-2 rounded-md text-lg font-medium'
+                    )} >
+                      Apply Now
+                    </a>
                   </div>
                 </div>
               </div>
@@ -72,7 +78,7 @@ export default function NavBar() {
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Link
-                //   key={item.name}
+                  //   key={item.name}
                   to={item.href}
                   className={classNames(
                     'text-gray-300 hover:bg-gray-700 hover:text-white',
@@ -82,11 +88,17 @@ export default function NavBar() {
                   {item.name}
                 </Link>
               ))}
+              <a href="https://bubble.io/domain_not_supported?domain=rush.pctumich.com" target="_blank" rel="noopener noreferrer" className={classNames(
+                    'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    'block px-3 py-2 rounded-md text-base font-medium'
+                  )}>
+                      Apply Now
+                    </a>
             </div>
           </Disclosure.Panel>
         </>
       )}
-      
+
     </Disclosure>
   )
 }

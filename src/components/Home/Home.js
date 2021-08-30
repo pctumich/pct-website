@@ -76,51 +76,51 @@ class Home extends Component {
             </div>
             <div class="flex-auto flex-c">
               <p class="w-10/12 mx-auto">Phi Chi Theta (PCT) is a National Co-ed Professional Fraternity in Business and Economics. It was founded on June 16, 1924 in Chicago, Illinois. Today, the Phi Chi Theta National Chapter is comprised of 41 Collegiate and Alumni Chapters with over 23,000 members across the country.</p>
-              <div class="flex-auto flex-row flex-nowrap justify-around">
-                <div class="flex-auto justify-center items-center">
-                  <ScrollTrigger class="text-center h-70 w-70 z-40 text-white absolute self-center" onEnter={() => this.setState({ visible: true })} onExit={() => this.setState({ visible: false, firstTime: false })}>
+              <div class="sm:flex flex-auto flex-row flex-nowrap justify-around align-center mx-auto">
+                <div class="flex justify-center align-center mb-10">
+                  <ScrollTrigger className="text-center h-70 w-96 z-40 text-white absolute pt-20 text-3xl" onEnter={() => this.setState({ visible: true })} onExit={() => this.setState({ visible: false, firstTime: false })}>
                     {this.state.visible && this.state.firstTime &&
                       <CountUp end={110} start={0} suffix="+" duration={2} />
                     }
                     {!this.state.firstTime &&
-                      <p class="text-center">110+</p>
+                      <p class="m-0">110+</p>
                     }
                     <p>Members</p>
                   </ScrollTrigger>
-                  <img className="h-70 w-auto relative filter brightness-50 saturate-80 m-0" src={members} alt="" preview={false}></img>
+                  <img className="sm:w-96 sm:h-70 relative filter brightness-50 saturate-80 m-0" src={members} alt="" preview={false}></img>
                 </div>
-                <div className="flex-auto justify-center items-center h-70">
-                  <ScrollTrigger className="text-center h-70 w-70 z-40 text-white absolute left-1/2" onEnter={() => this.setState({ visible: true })} onExit={() => this.setState({ visible: false, firstTime: false })}>
+                <div className="flex justify-center align-center mb-10">
+                  <ScrollTrigger className="text-center h-70 w-96 z-40 text-white absolute pt-20 text-3xl" onEnter={() => this.setState({ visible: true })} onExit={() => this.setState({ visible: false, firstTime: false })}>
                     {this.state.visible && this.state.firstTime &&
                       <CountUp end={35} start={0} suffix="+" duration={2} />
                     }
                     {!this.state.firstTime &&
-                      <p>35+</p>
+                      <p class="m-0">35+</p>
                     }
                     <p>Majors</p>
                   </ScrollTrigger>
-                  <img className="h-70 w-auto relative filter brightness-50 saturate-80 m-0" src={majors}></img>
+                  <img className="sm:w-96 sm:h-70 relative filter brightness-50 saturate-80 m-0" src={majors}></img>
                 </div>
-                <div className="flex-auto justify-center items-center h-70">
-                  <ScrollTrigger className="text-center h-70 w-70 z-40 text-white absolute left-1/2" onEnter={() => this.setState({ visible: true })} onExit={() => this.setState({ visible: false, firstTime: false })}>
+                <div className="flex justify-center align-center mb-10">
+                  <ScrollTrigger className="text-center h-70 w-96 z-40 text-white absolute pt-20 text-3xl" onEnter={() => this.setState({ visible: true })} onExit={() => this.setState({ visible: false, firstTime: false })}>
                     {this.state.visible && this.state.firstTime &&
                       <CountUp end={100} start={0} suffix="%" duration={2} />
                     }
                     {!this.state.firstTime &&
-                      <p>100%</p>
+                      <p class="m-0">100%</p>
                     }
-                    <p>Full-Time Employment</p>
+                    <p class="">Full-Time Employment</p>
                   </ScrollTrigger>
-                  <img className="h-70 w-auto relative filter brightness-50 saturate-80 m-0" src={employment}></img>
+                  <img className="sm:w-96 sm:h-70 relative filter brightness-50 saturate-80 m-0" src={employment}></img>
                 </div>
               </div>
               <Companies animated={false}></Companies>
-              <ReactPlayer class="lg:w-3/5 lg:h-96 mx-auto overflow-hidden pb-10" width="w-60" height="h-full" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true}/>
+              {/* <ReactPlayer class="lg:w-3/5 lg:h-96 mx-auto overflow-hidden pb-10" width="w-60" height="h-full" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true}/> */}
             </div>
           </div>
           <span id="pillars"></span>
           <div class="heading">
-              <h2 class="text-3xl font-bold text-center">Pillars of PCT</h2>
+              <h2 class="text-3xl font-bold text-center pt-8">Pillars of PCT</h2>
               <hr class="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-10 mx-auto"></hr>
             </div>
           <div class="flex-auto flex-col lg:mx-48">
