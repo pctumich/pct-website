@@ -33,7 +33,7 @@ class Home extends Component {
         <span id="home" className="homeSpan" style={{ position: 'absolute', top: '-3%' }}></span>
         <div className="Home">
           <Slideshow></Slideshow>
-          <div id="president-welcome" className="flex flex-col">
+          <div id="president-welcome" className="flex flex-col pt-6">
             <div id="header" className="mt-2">
               <h2 className="text-3xl font-bold text-center">President's Welcome</h2>
               <hr className="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
@@ -69,7 +69,7 @@ class Home extends Component {
             </div>
           </div>
           <span id='aboutUs' style={{ position: 'relative', top: '-50px' }}></span>
-          <div class="flex-auto flex-col">
+          <div class="flex-auto flex-col pt-4">
             <div class="heading">
             <h2 class="text-3xl font-bold text-center">About Us</h2>
               <hr class="block box-content border-0 h-2 w-10/12 bg-blue-800 mb-5 mx-auto"></hr>
@@ -89,7 +89,7 @@ class Home extends Component {
                   </ScrollTrigger>
                   <img className="h-70 w-auto relative filter brightness-50 saturate-80 m-0" src={members} alt="" preview={false}></img>
                 </div>
-                <div className="flex-auto justify-center items-center">
+                <div className="flex-auto justify-center items-center h-70">
                   <ScrollTrigger className="text-center h-70 w-70 z-40 text-white absolute left-1/2" onEnter={() => this.setState({ visible: true })} onExit={() => this.setState({ visible: false, firstTime: false })}>
                     {this.state.visible && this.state.firstTime &&
                       <CountUp end={35} start={0} suffix="+" duration={2} />
@@ -101,7 +101,7 @@ class Home extends Component {
                   </ScrollTrigger>
                   <img className="h-70 w-auto relative filter brightness-50 saturate-80 m-0" src={majors}></img>
                 </div>
-                <div className="flex-auto justify-center items-center">
+                <div className="flex-auto justify-center items-center h-70">
                   <ScrollTrigger className="text-center h-70 w-70 z-40 text-white absolute left-1/2" onEnter={() => this.setState({ visible: true })} onExit={() => this.setState({ visible: false, firstTime: false })}>
                     {this.state.visible && this.state.firstTime &&
                       <CountUp end={100} start={0} suffix="%" duration={2} />
