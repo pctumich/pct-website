@@ -83,10 +83,10 @@ class Rush extends Component {
     }
     return (
       <div class="container mx-auto px-4">
-        <span id="video" class="video" style={{ position: 'relative', top: '-60px' }}></span>
+        <span id="video" class="video" style={{ position: 'relative', top: '-90px' }}></span>
         <div id="header" class="mt-8">
           <h2 class="text-3xl font-bold text-center">Rush Phi Chi Theta</h2>
-          <hr class="block box-content border-0 h-2 w-10/12 bg-black mb-5 mx-auto"></hr>
+          <hr class="block box-content border-0 h-1 w-10/12 bg-black mb-5 mx-auto"></hr>
         </div>
         <ReactPlayer class="lg:w-3/5 lg:h-96 mx-auto overflow-hidden" width="w-60" height="h-96" url="https://www.youtube.com/watch?v=xj7DYzoTdKQ" controls={true} />
         <div>
@@ -106,7 +106,7 @@ class Rush extends Component {
         <span id="schedule" className="schedule" style={{ position: 'relative', top: '-35px' }}></span>
         <div id="header" className="mt-8">
           <h2 className="text-3xl font-bold text-center">Rush Schedule</h2>
-          <hr className="block box-content border-0 h-2 w-10/12 bg-black mb-5 mx-auto"></hr>
+          <hr className="block box-content border-0 h-1 w-10/12 bg-black mb-5 mx-auto"></hr>
         </div>
         {window.innerWidth < 1024 &&
           <div>
@@ -150,7 +150,7 @@ class Rush extends Component {
         <span id="tips" className="tips"></span>
         <div id="header" className="mt-8">
           <h2 className="text-3xl font-bold text-center">Tips and Tricks for a Successful Rush</h2>
-          <hr className="block box-content border-0 h-2 w-10/12 bg-black mb-5 mx-auto"></hr>
+          <hr className="block box-content border-0 h-1 w-10/12 bg-black mb-5 mx-auto"></hr>
         </div>
         <div className="tips">
           {Object.entries(tips).map(([key, value]) => {

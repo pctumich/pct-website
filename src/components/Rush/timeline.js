@@ -16,6 +16,7 @@ import we3 from './pics/womenEvent3.jpg'
 import dei1 from './pics/dei1.jpg'
 import dei2 from './pics/dei2.jpg'
 import dei3 from './pics/dei3.jpg'
+import logo from '../../logo.svg';
 
 class Timeline extends Component {
     constructor(props) {
@@ -33,7 +34,8 @@ class Timeline extends Component {
     render() {
         return (
             <VerticalTimeline className="timeline" animate={this.state.animate}>
-                <VerticalTimelineElement className="component">
+                <VerticalTimelineElement className="component" iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    icon={<img src={logo}/>}>
                     <p className="event-name">Info Session</p>
                     <Slideshow images={[is1, is2, is3]}></Slideshow>
                     <div className="event-info">

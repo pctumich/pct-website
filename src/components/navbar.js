@@ -11,8 +11,8 @@ import Leadership from './Leadership/Leadership';
 const navigation = [
   { name: 'Home', href: '/#home' },
   { name: 'About Us', href: '/#aboutUs' },
-  { name: 'Rush', href: '/rush' },
-  { name: 'Leadership', href: '/leadership' },
+  { name: 'Rush', href: '/rush#video' },
+  { name: 'Leadership', href: '/leadership#executive-board' },
   // { name: 'Apply Now', href: '/apply' },
 ]
 
@@ -47,7 +47,7 @@ export default function NavBar() {
                   />
                   <Link className="flex h-8 w-auto mb-2" to="/#home"><p class="text-3xl text-base text-white">Phi Chi Theta</p></Link>
                 </div>
-                <div className="hidden sm:flex sm:mt-2">
+                <div className="hidden sm:flex sm:mt-2 sm:mb-2">
                     {navigation.map((item) => (
                       <Link
                         // key={item.name}

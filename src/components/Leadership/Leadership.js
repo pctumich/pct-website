@@ -24,20 +24,20 @@ import Prof2 from './pics/Anne.jpg'
 import Academic1 from './pics/Alexa.jpg'
 import Academic2 from './pics/Mia.jpg'
 import DEI1 from './pics/Jeevin.jpg'
-// import DEI2 from './pics/Audrey.jpg'
+import DEI2 from './pics/Audrey.jpg'
 import tech1 from './pics/Ryan.jpg'
 import tech2 from './pics/Ant.jpg'
 import wellness1 from './pics/Aakash.jpg'
 import wellness2 from './pics/Sarah.jpg'
 
 const board1 = [{"name": "Krisha Monpara", "position": "President", "headshot": elPrez, "bio": "Krisha is a junior studying Economics. From Pittsburgh, Pennsylvania, she enjoys running, playing the piano, and spending time with her friends and family. Her internship experience includes Wealth Management at Cetera Financial Investors, the Women’s Advisory Program in Global Investment Banking at RBC, and as an incoming Financial Analyst at Amazon in Seattle."},
-{"name": "Jason Stahlman", "position": "VP Internal", "headshot": vpi, "bio": "Jason is a junior studying Business from Twinsburg, Ohio. He enjoys playing and watching a variety of sports, listening to music, and hanging out with friends. In past summers he has interned in corporate finance and strategy. This upcoming summer he will be interning in Investment Banking at Lincoln International."},
+{"name": "Jason Stahlman", "position": "VP Internal", "headshot": vpi, "bio": "Jason is a senior studying Business from Twinsburg, Ohio. He enjoys playing and watching a variety of sports, listening to music, and hanging out with friends. In past summers he has interned in corporate finance, strategy and investment banking. Upon graduation he will be joining Lincoln International as an Investment Banking Analyst."},
 {"name": "Theo Kardasis", "position": "VP External", "headshot": vpx, "bio": "Theo, originally from Rochester, MI, is a junior in the School of Information studying Data Analysis and minoring in Business and Spanish. In his free time, he loves to hike, cook, and watch YouTube. His past internship experiences lie within strategy and insights, and he will be interning as a Digital Analytics Intern at American Express this coming summer."},
 ]
 
-const board2 = [{"name": "Ian Kim", "position": "VP Finance", "headshot": vpf, "bio": "Ian is a junior studying Industrial and Operations Engineering. Originally from Westford, Massachusetts, Ian enjoys watching Boston Sports, cooking, running and spending time with friends. In past summers, Ian has worked for T-Mobile in Germany, and for a supply chain startup in Chicago. This summer he will be working in Tech Consulting as a Summer Associate at Gartner."},
+const board2 = [{"name": "Ian Kim", "position": "VP Finance", "headshot": vpf, "bio": "Ian is a senior studying Industrial and Operations Engineering with minors in German and Computer Science. He is originally from the Boston suburbs, and has interned within a variety of industries, most recently research and advisory at Gartner. Ian’s hobbies include running, golf, basketball, cooking, shoes and travel."},
 {"name": "Jack Xiao", "position": "VP Operations", "headshot": vpOp1, "bio": "Jack is a junior studying Business and minoring in Computer Science. He is from Lincolnshire, Illinois and enjoys playing basketball, golf, and watching Chicago sports. In past summers, he has interned in Private Equity and has cofounded a basketball camp with his former high school teammates. This upcoming summer he will be interning in Investment Banking at Lincoln International."},
-{"name": "Josie Bachus", "position": "VP Operations", "headshot": vpOp2, "bio": "Josephine is a sophomore studying Business and Psychology from Flossmoor, Illinois. She enjoys reading mystery novels, trips to the thrift store, and hanging out with her dog, as well as hanging out with her friends. She is interested in the intersection of business and psychology with a focus in consulting."}]
+{"name": "Josie Bachus", "position": "VP Operations", "headshot": vpOp2, "bio": "Josie is a junior studying business from Flossmoor, Illinois. She enjoys hanging out with friends and playing with her two yellow labradors at home. She was recently a research assistant for the University of Chicago's Behavioral Economics department and plans to pursue a job in consulting this fall."}]
 
 const directors = [{"position": "Director of New Member Engagement", "name": "Jharna Tripathi", "headshot": Parent},
 {"position": "Director of Alumni Relations", "name": "Linh Phan", "headshot": alumni},
@@ -50,7 +50,7 @@ const directors = [{"position": "Director of New Member Engagement", "name": "Jh
 {"position": "Director of Member Wellness", "name": "Aakash Menon", "headshot": wellness1},
 {"position": "Director of Member Wellness", "name": "Sarah Morris", "headshot": wellness2},
 {"position": "Director of Diversity, Equity, and Inclusion", "name": "Jeevin Singh", "headshot": DEI1},
-{"position": "Director of Diversity, Equity, and Inclusion", "name": "Audrey Thedford", "headshot": ""},
+{"position": "Director of Diversity, Equity, and Inclusion", "name": "Audrey Thedford", "headshot": DEI2},
 {"position": "Director of Internal Relations", "name": "Yasmine Zadeh", "headshot": IR1},
 {"position": "Director of Internal Relations", "name": "Ava Ben-David", "headshot": IR2},
 {"position": "Director of Social Engagement", "name": "Spiro Kass", "headshot": ""},

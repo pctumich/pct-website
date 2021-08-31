@@ -14,10 +14,6 @@ import prof2 from './pics/prof2.jpg'
 import ScrollTrigger from 'react-scroll-trigger';
 import Companies from './companies'
 import { Card, Collapse } from 'antd'
-import split1 from './pics/split1.jpg'
-import split2 from './pics/split2.jpg'
-import split3 from './pics/split3.jpg'
-import split4 from './pics/split4.jpg'
 import { url } from 'vfile-message';
 
 const { Panel } = Collapse
@@ -123,6 +119,7 @@ class Home extends Component {
               <Companies animated={false}></Companies>
               {/* <ReactPlayer class="lg:w-3/5 lg:h-96 mx-auto overflow-hidden pb-10" width="w-60" height="h-full" url="https://www.youtube.com/watch?v=BzZHfNNZFzo" controls={true}/> */}
             </div>
+            <div class="pb-4"></div>
           </div>
           <span id="pillars"></span>
           <div class="heading">
