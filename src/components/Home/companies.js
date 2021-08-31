@@ -132,7 +132,7 @@ class Companies extends Component {
         const {width, height} = this.state.dimensions;
         var delay = 0;
         const covers = LOGO_COORDS.map((coords) => {
-            delay += 100;
+            delay += 75;
             return <Cover coords={coords} new_dimensions={this.state.dimensions} animated={this.state.animated} transition_delay={delay}></Cover>
         });
 

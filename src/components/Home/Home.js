@@ -39,17 +39,17 @@ class Home extends Component {
               <h2 className="text-3xl font-bold text-center">President's Welcome</h2>
               <hr className="block box-content border-0 h-1 w-10/12 bg-black mb-5 mx-auto"></hr>
             </div>
-            <div className="flex flex-wrap justify-center w-10/12 mx-auto">
-              <div className="hidden sm:flex flex-col img w-6/12 pl-0 pr-4 pt-3 pb-4">
-                <img className="m-10 h-auto object-cover shadow-md" src={president} alt="President Headshot"></img>
+            <div className="flex flex-wrap justify-center w-10/12 mx-auto mb-6">
+              <div className="hidden sm:inline-block align-middle img w-6/12">
+                <img className="h-auto object-cover shadow-md" src={president} alt="President Headshot"></img>
               </div>
-              <div className="hidden sm:block w-6/12 xl:text-lg mr-auto">
+              <div className="hidden sm:inline-block align-middle w-6/12 sm:text-sm xl:text-lg">
                 <p className="text whitespace-pre-wrap break-words overflow-x-auto mb-6">On behalf of all of our members, it is my pleasure to welcome you to the official website of Phi Chi Theta at the University of Michigan. PCT is a co-ed professional business fraternity filled with driven, empathetic people. We are a diverse family of brothers and sisters that have actively committed ourselves to the betterment of each other, and the greater Michigan community.</p>
-                <p className="text whitespace-pre-wrap break-words overflow-x-auto mb-6">The members of this organization have been a constant inspiration in my life. From the contagious drive towards excellence within distinct professional careers to the value of upperclassmen giving back to underclassmen to help them attain incredible achievements in a variety of business fields, PCT has never failed to inspire me to be the best version of myself. Ultimately, the true value of PCT is in the quality of people that make up our family. Our members are tirelessly committed to helping each other grow professionally, academically, and socially, pledge semester and beyond. Whether it be late night interview prep or even a time of emotional stress, PCT members are there to support you in any way they can. Especially in this world of uncertainty, I am proud to know that every single brother and sister in PCT will always be there for each other.</p>
-                <p className="text whitespace-pre-wrap break-words overflow-x-auto mb-6">I hope you will continue browsing our website to learn more about who we are, what we stand for, and where you can fit in. If you have any questions, please contact me at kmonpara@umich.edu. We look forward to meeting you!</p>
-                <p className="signature">Best,</p>
-                <p className="signature">Krisha Monpara</p>
-                <p className="signature">President - PCT Zeta Beta Class of 2022</p>
+                <p className="text whitespace-pre-wrap break-words overflow-x-auto mb-6">The members of this organization have been a constant inspiration in my life. From the contagious drive towards excellence to upperclassmen giving back to help underclassmen excel in a variety of business fields, PCT continues to inspire me to be the best version of myself. Ultimately, the true value of PCT is in the quality of people that make up our family. Our members are committed to helping each other grow professionally, academically, and socially, pledge semester and beyond. Whether it be late night interview prep or even a time of emotional stress, PCT members are there to support you in any way they can.</p>
+                <p className="text whitespace-pre-wrap break-words overflow-x-auto mb-6">I encourage you to continue browsing through our website to learn more about our organization. Please reach out to pctboard@umich.edu if you have any questions. We look forward to meeting you!</p>
+                <p className="mb-0">Best,</p>
+                <p className="mb-0">Krisha Monpara</p>
+                <p className="mb-0">President - PCT Zeta Beta Class of 2022</p>
               </div>
               {/* Mobile President's welcome stacked on picture */}
               <div className="justify-center w-10/12 mb-10 mx-auto sm:hidden">
@@ -57,11 +57,11 @@ class Home extends Component {
               </div>
               <div className="justify-center my-5 mx-auto sm:hidden">
                 <p className="text whitespace-pre-wrap break-words overflow-x-auto mb-6">On behalf of all of our members, it is my pleasure to welcome you to the official website of Phi Chi Theta at the University of Michigan. PCT is a co-ed professional business fraternity filled with driven, empathetic people. We are a diverse family of brothers and sisters that have actively committed ourselves to the betterment of each other, and the greater Michigan community.</p>
-                <p className="text whitespace-pre-wrap break-words overflow-x-auto mb-6">The members of this organization have been a constant inspiration in my life. From the contagious drive towards excellence within distinct professional careers to the value of upperclassmen giving back to underclassmen to help them attain incredible achievements in a variety of business fields, PCT has never failed to inspire me to be the best version of myself. Ultimately, the true value of PCT is in the quality of people that make up our family. Our members are tirelessly committed to helping each other grow professionally, academically, and socially, pledge semester and beyond. Whether it be late night interview prep or even a time of emotional stress, PCT members are there to support you in any way they can. Especially in this world of uncertainty, I am proud to know that every single brother and sister in PCT will always be there for each other.</p>
-                <p className="text whitespace-pre-wrap break-words overflow-x-auto mb-6">I hope you will continue browsing our website to learn more about who we are, what we stand for, and where you can fit in. If you have any questions, please contact me at kmonpara@umich.edu. We look forward to meeting you!</p>
-                <p className="signature">Best,</p>
-                <p className="signature">Krisha Monpara</p>
-                <p className="signature">President - PCT Zeta Beta Class of 2022</p>
+                <p className="text whitespace-pre-wrap break-words overflow-x-auto mb-6">The members of this organization have been a constant inspiration in my life. From the contagious drive towards excellence to upperclassmen giving back to help underclassmen excel in a variety of business fields, PCT continues to inspire me to be the best version of myself. Ultimately, the true value of PCT is in the quality of people that make up our family. Our members are committed to helping each other grow professionally, academically, and socially, pledge semester and beyond. Whether it be late night interview prep or even a time of emotional stress, PCT members are there to support you in any way they can.</p>
+                <p className="text whitespace-pre-wrap break-words overflow-x-auto mb-6">I encourage you to continue browsing through our website to learn more about our organization. Please reach out to pctboard@umich.edu if you have any questions. We look forward to meeting you!</p>
+                <p className="mb-0">Best,</p>
+                <p className="mb-0">Krisha Monpara</p>
+                <p className="mb-0">President - PCT Zeta Beta Class of 2022</p>
               </div>
             </div>
           </div>
