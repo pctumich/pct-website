@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Dropdown, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
@@ -8,7 +8,8 @@ import Home from './components/Home/Home';
 import Rush from './components/Rush/Rush';
 import Leadership from './components/Leadership/Leadership';
 import Error from './components/Error';
-import iris from './logo.jpg';
+import logo from './logo.svg';
+import NavBar from './components/navbar';
 
 
 class App extends Component {
@@ -36,22 +37,23 @@ class App extends Component {
     )
     
     return (
-      <div className="App">
-        <div className="header">
-          <div className="logo-org">
-            <Link className="logo" to="/#home"><img className="logo" src={iris}></img></Link>
-            <Link className="title" to="/#home"><h2 className="title">Phi Chi Theta</h2></Link>
+      <div id="app">
+        <NavBar></NavBar>
+        {/* <div class="flex flex-row">
+          <div class="flex flex-initial flex-row">
+            <Link to="/#home"><img class="w-16" src={logo}></img></Link>
+            <Link class="text-xl"to="/#home"><p class="text-xl">Phi Chi Theta</p></Link>
           </div>
-          <div className="nav">
-            <Link className="primary-nav" to="/#home">Home</Link>
-            <Link className="primary-nav" to="/#aboutUs">About Us</Link>
+          <div class="nav">
+            <Link class="primary-nav" to="/#home">Home</Link>
+            <Link class="primary-nav" to="/#aboutUs">About Us</Link>
             <Dropdown overlay={rushMenu}>
-              <a className="primary-nav" onClick={e => e.preventDefault()}> Rush <DownOutlined /></a>
+              <a class="primary-nav" onClick={e => e.preventDefault()}> Rush <DownOutlined /></a>
             </Dropdown>
             <Dropdown overlay={leadershipMenu}>
-              <a className="primary-nav" onClick={e => e.preventDefault()}> Leadership <DownOutlined /></a>
+              <a class="primary-nav" onClick={e => e.preventDefault()}> Leadership <DownOutlined /></a>
             </Dropdown>
-            <Link className="primary-nav" onClick={() => window.open('https://bubble.io/domain_not_supported?domain=rush.pctumich.com')}>Apply Now</Link>
+            <Link class="primary-nav" onClick={() => window.open('https://bubble.io/domain_not_supported?domain=rush.pctumich.com')}>Apply Now</Link>
           </div>
         </div>
         <Switch>
@@ -59,15 +61,21 @@ class App extends Component {
           <Route path="/rush" component={Rush} />
           <Route path="/leadership" component={Leadership} />
           <Route component={Error} />
+        </Switch> */}
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/rush" component={Rush} />
+          <Route path="/leadership" component={Leadership} />
+          <Route component={Error} />
         </Switch>
-        <div className="footer">
-          <h4 className="contact-us">Follow Us</h4>
-          <div className="social-media">
-            <a href="https://www.facebook.com/pctumich/" target="_blank"><span class="fa fa-facebook facebook"></span></a>
-            <a href="https://www.instagram.com/pctumich/" target="_blank"><span class="fa fa-instagram instagram"></span></a>
-            <a href="https://www.linkedin.com/company/pctumich" target="_blank"><span class="fa fa-linkedin-square linkedin"></span></a>
+        <div class="text-center bg-black shadow-2xl shadow-inner pt-3">
+          <p class="text-black h-4 text-2xl text-white font-semibold">Follow Us</p>
+          <div class="space-x-4 mx-auto w-1/2">
+            <a href="https://www.facebook.com/pctumich/" target="_blank"><span class="fa fa-facebook text-3xl text-white"></span></a>
+            <a href="https://www.instagram.com/pctumich/" target="_blank"><span class="fa fa-instagram text-4xl text-white"></span></a>
+            <a href="https://www.linkedin.com/company/pctumich" target="_blank"><span class="fa fa-linkedin-square text-4xl text-white"></span></a>
           </div>
-          <p className="copyright">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
+          <p class="text-white pt-2 pb-3">Copyright 2021 Phi Chi Theta - Zeta Beta</p>
         </div>
       </div>
     )

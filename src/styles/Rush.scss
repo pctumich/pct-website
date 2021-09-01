@@ -1,181 +1,98 @@
-.Rush {
-    margin-left: 16%;
-    margin-right: 16%;
-    .heading {
-        .section-title {
+.timeline {
+    padding: 0 !important; 
+    margin-left: 20%;
+    margin-right: 20%;
+    .vertical-timeline-element-icon.bounce-in {
+       height: 50px;
+       width: 50px;
+       top: 50%;
+    }
+    .component {
+        margin: 0; 
+        height: 350px;
+        .event-name {
             text-align: center;
-            font-size: 30px;
-            font-weight: 700;
-        }
-        .hr {
-            border: 0;
-            height: 8px;
-            width: 100%;
-            background: #095484;
-            margin-bottom: 20px;
-        }
-    }
-    .heading-v2 {
-        margin-top: 4%;
-        .section-title {
-            text-align: center;
-            font-size: 30px;
-            font-weight: 700;
-        }
-        .hr {
-            border: 0;
-            height: 8px;
-            width: 100%;
-            background: #095484;
-            margin-bottom: 20px;
-        }
-    }
-    .video {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 2%;
-        width: 120%;
-        height: 120%;
-    }
-    .email-description-questions {
-        margin-top: 9%;
-        font-size: 19px;
-        text-align: center;
-    }
-    .email-description-updates {
-        margin-top: 8%;
-        font-size: 19px;
-        text-align: center;
-    }
-    .rush-email-container {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        margin-left: 30%;
-        .listserv {
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
-            padding-top: 2%;
+            font-size: 25px;
+            font-weight: 500; 
             padding-bottom: 2%;
-            .input {
-                width: 300px;
-                height: 40px;
-                font-size: 16px;
-                text-align: center;
-            }
-            .button {
-                width: 90px;
-                height: 40px;
-            }
         }
-        .thanks {
-            font-size: 19px;
-            padding-left: 2%;
-            margin-top: 1.25%;
-        }
-    }
-    .timeline {
-        padding: 0; 
-        .vertical-timeline-element-icon.bounce-in {
-           height: 0px;
-           width: 0px;
-        }
-        .component {
-            margin: 0; 
-            height: 350px; 
-            .event-name {
-                text-align: center;
-                font-size: 25px;
-                font-weight: 500; 
-                padding-bottom: 2%;
-            }
-            .event-info {
-                text-align: center;
-                .container {
-                    display: flex;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    padding-top: 3%;
-                    .bar {
-                        padding: 0% 3% 0% 3%;
-                    }
-                }
-                .container > p {
-                    margin: 0;
-                    font-size: 18px;
-                    font-weight: 400;
+        .event-info {
+            text-align: center;
+            .container {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                padding-top: 3%;
+                .bar {
+                    padding: 0% 3% 0% 3%;
                 }
             }
-            .event-info > p {
-                margin: 0; 
+            .container > p {
+                margin: 0;
                 font-size: 18px;
                 font-weight: 400;
             }
-            .vertical-timeline-element-content.bounce-in {
-                margin: 0;
-                padding: 0em;
-                -webkit-box-shadow: 0 0px 0 #ddd;
-                box-shadow: 0 0px 0 #ddd;
-            }
-            .vertical-timeline-element-date {
-                width: 0px;
-                height: 0px; 
-                background-color: transparent;
-            }
-            .slideshow-container {
-                height: 240px;
-                width: 400px;
-
-                .each-fade {
-                    display: flex;
-                    width: 100%;
-                  }
-                  
-                  .each-fade > div {
-                    width: 100%;
-                    height: 240px;
-                    overflow: hidden;
-                    position: relative;
-                    background: #fefefe;
-                  }
-                  
-                  .each-fade > div > img {
-                    position: absolute;
-                    text-align: center;
-                    width: 110%;
-                    height: 110%;
-                    margin: 0;
-                    object-fit: cover;
-                    filter: none;
-                  }
-
-                  @keyframes scroll-bottom {
-                    0% {
-                        transform: translateY(0%);
-                    }
-                    100% {
-                        transform: translateY(-0%);
-                    }
-                  }
-            }
-        }               
-    }
-    .tips {
-        margin: 0% 0% 0% 0%;
-        .container {
-            padding-bottom: 1.5%;;
-            .tip {
-                font-size: 25px;
-                font-weight: 500;
-                margin-bottom: 0.25em;
-            }
-            .content {
-                font-size: 18px;
-                font-weight: 450;
-            }
         }
-    }
+        .event-info > p {
+            margin: 0; 
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .vertical-timeline-element-content.bounce-in {
+            margin: 0;
+            padding: 1em;
+            -webkit-box-shadow: 0 0px 0 #ddd;
+            box-shadow: 0 0px 0 #ddd;
+        }
+        .vertical-timeline-element-date {
+            width: 0px;
+            height: 0px; 
+            background-color: transparent;
+        }
+        .slideshow-container {
+            height: 240px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .each-fade {
+                display: flex;
+                width: 100%;
+              }
+              
+              .each-fade > div {
+                width: 100%;
+                height: 240px;
+                overflow: hidden;
+                position: relative;
+                background: #fefefe;
+              }
+              
+              .each-fade > div > img {
+                position: absolute;
+                text-align: center;
+                width: 110%;
+                height: 110%;
+                margin: 0;
+                object-fit: cover;
+                filter: none;
+                
+              }
+
+              @keyframes scroll-bottom {
+                0% {
+                    transform: translateY(0%);
+                }
+                100% {
+                    transform: translateY(-0%);
+                }
+              }
+        }
+    }               
 }
 
+/* The line color */
+.timeline.vertical-timeline.vertical-timeline--two-columns::before {
+    background: #424242;
+    margin-left: -8px;
+}

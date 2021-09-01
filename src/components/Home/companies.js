@@ -39,6 +39,31 @@ const LOGO_COORDS = [
       [691, 86, 786, 131],
     ];
 
+const ORIG_X = 800;
+const ORIG_Y = 355;
+
+/*
+constructor(props) {
+    super(props);
+    this.state = {dimensions: {}};
+    this.onImgLoad = this.onImgLoad.bind(this);
+}
+onImgLoad({target:img}) {
+    this.setState({dimensions:{height:img.offsetHeight,
+                               width:img.offsetWidth}});
+}
+render(){
+    const {src} = this.props;
+    const {width, height} = this.state.dimensions;
+
+    return (<div>
+            dimensions width{width}, height{height}
+            <img onLoad={this.onImgLoad} src={src}/>
+            </div>
+           );
+}
+*/
+
 class Cover extends Component {
     constructor(props) {
         super(props);
@@ -47,20 +72,29 @@ class Cover extends Component {
     }
 
     render() {
+        const new_x = this.props.new_dimensions.width;
+        const new_y = this.props.new_dimensions.height;
+        
+        const x_ratio = new_x / ORIG_X;
+        const y_ratio = new_y / ORIG_Y;
+
+        console.log("new x:");
+        console.log(this.props.new_dimensions);
+
         const style = {
             background: "white",
             position: "absolute",
-            left: this.props.coords[0] + "px",
-            top: this.props.coords[1] + "px",
-            width: this.props.coords[2] - this.props.coords[0] + "px",
-            height: this.props.coords[3] - this.props.coords[1] + "px",
+            left: (this.props.coords[0] * x_ratio) + "px",
+            top: (this.props.coords[1] * y_ratio) + "px",
+            width: ((this.props.coords[2] - this.props.coords[0]) * x_ratio + 1) + "px",
+            height: ((this.props.coords[3] - this.props.coords[1]) * y_ratio + 1) + "px",
             transitionProperty: "opacity",
             transitionDuration: "1.5s",
             transitionTimingFunction: "ease-out",
             transitionDelay: this.props.transition_delay + "ms"
           };
         return (
-            <div class={`cover ${this.props.animated ? 'cover-transition' : ''}`} style={style}></div>
+            <div class={`absolute cover ${this.props.animated ? 'opacity-0' : 'opacity-100'}`} style={style}></div>
         )
     }
 }
@@ -69,8 +103,10 @@ class Companies extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            animated: false
+            animated: false,
+            dimensions: {}
         };
+        this.onImgLoad = this.onImgLoad.bind(this);
         this.onEnterViewport = this.onEnterViewport.bind(this)
         this.onExitViewport = this.onExitViewport.bind(this)
     }
@@ -87,20 +123,24 @@ class Companies extends Component {
         });
     }
 
+    onImgLoad({target:img}) {
+        this.setState({dimensions:{height:img.offsetHeight,
+                                   width:img.offsetWidth}});
+    }
+
     render() {
+        const {width, height} = this.state.dimensions;
         var delay = 0;
         const covers = LOGO_COORDS.map((coords) => {
-            console.log("Coords are: ")
-            console.log(coords)
-            delay += 100;
-            return <Cover coords={coords} animated={this.state.animated} transition_delay={delay}></Cover>
+            delay += 75;
+            return <Cover coords={coords} new_dimensions={this.state.dimensions} animated={this.state.animated} transition_delay={delay}></Cover>
         });
 
         return (
-            <div class="company">
-                <img src={company_image}></img>
+            <div class="company relative justify-center max-w-3xl mx-auto">
+                <img onLoad={this.onImgLoad} src={company_image}></img>
                 {covers}
-                <ScrollTrigger onEnter={this.onEnterViewport} ></ScrollTrigger>
+                <ScrollTrigger onEnter={this.onEnterViewport}></ScrollTrigger>
             </div>
         )
     }
