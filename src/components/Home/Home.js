@@ -11,6 +11,8 @@ import philanthropy from './pics/philanthropy.jpg'
 import tailgate from './pics/tailgate.jpg'
 import prof1 from './pics/prof1.jpg'
 import prof2 from './pics/prof2.jpg'
+import prof3 from './pics/prof3.jpg'
+import dei1 from './pics/dei.jpg'
 import ScrollTrigger from 'react-scroll-trigger';
 import Companies from './companies'
 import { Card, Collapse } from 'antd'
@@ -142,7 +144,7 @@ class Home extends Component {
                       <p className="description">Underclassmen are encouraged to reach out to upperclassmen to conduct mock interviews. In addition, we organize a mock "superday" once a semester where members are given several mock interviews by upperclassmen for industries they are interested in and receive valuable feedback afterwards.</p>
                     </div>
                     <div className="hidden lg:block w-4/12">
-                      <img class="w-16 md:w-16 lg:w-16" className="pillar-img" src={prof1} alt="" style={{marginTop: "5%"}}></img>
+                      <img class="w-16 md:w-16 lg:w-16" className="pillar-img" src={prof3} alt="" style={{marginTop: "5%"}}></img>
                       <img class="w-16 md:w-16 lg:w-16" className="pillar-img" src={prof2} alt="" style={{marginTop: "7%"}}></img>
                       <img class="w-16 md:w-16 lg:w-16" className="pillar-img" src={prof1} alt="" style={{marginTop: "7%"}}></img>
                     </div>
@@ -165,9 +167,14 @@ class Home extends Component {
                   <Panel className={this.state.slide ? "slide-in-3" : ""} header="Diversity, Equity, & Inclusion Mindset" key="3">
                     <div className="w-10/12 lg:w-6/12">
                       <p className="text-xl">Committee Creation<hr></hr></p>
-                      <p className="text-xl">Education Sessions<hr></hr></p>
-                      <p className="text-xl">Cultural Conversations<hr></hr></p>
-                      <p className="text-xl">Donations<hr></hr></p>
+                      <p className="description">DEI directors lead a committee of members who are devoted to maintaining a welcoming atmosphere and upholding the respect of the diversity within our chapter. This committee helps plan events, create outreach efforts, and develop new DEI initiatives.</p>
+                      <p className="text-xl">Inclusive Discussions<hr></hr></p>
+                      <p className="description">As a community, we support one another by having both formal and impromptu discussions on the numerous identities we take on as we go through university, as well as into the future.</p>
+                      <p className="text-xl">Diverse Celebrations<hr></hr></p>
+                      <p className="description">Celebrating our members goes beyond the classroom. We love to recognize our various cultural identities within the chapter by recognizing holidays and traditions.</p>
+                    </div>
+                    <div className="hidden lg:block w-4/12">
+                      <img className="pillar-img" style={{marginTop: "12%"}} src={dei1} alt=""></img>
                     </div>
                   </Panel>
                   <Panel className={this.state.slide ? "slide-in-4" : ""} header="Personal Growth" key="4">

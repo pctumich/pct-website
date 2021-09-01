@@ -8,8 +8,8 @@ import vpOp2 from './pics/Josie.jpg'
 import marketing1 from './pics/Michaela.jpg'
 import marketing2 from './pics/Chin.jpg'
 import alumni from './pics/Linh.jpg'
-// import community1 from './pics/Anjali.jpg'
-// import community2 from './pics/Sahaja.jpg'
+import community1 from './pics/Anjali.jpg'
+import community2 from './pics/Sahaja.jpg'
 import fundraising1 from './pics/Carly.jpg'
 import fundraising2 from './pics/Katie.jpg'
 import IR1 from './pics/Yaz.jpg'
@@ -59,8 +59,8 @@ const directors = [{"position": "Director of New Member Engagement", "name": "Jh
 {"position": "Fundraising Director", "name": "Katie Derrough", "headshot": fundraising2},
 {"position": "Marketing Director", "name": "Michaela Nam", "headshot": marketing1},
 {"position": "Marketing Director", "name": "Achintya Saxena", "headshot": marketing2},
-{"position": "Director of Community Outreach", "name": "Anjali Vemuri", "headshot": ""},
-{"position": "Director of Community Outreach", "name": "Sahaja Pinnu", "headshot": ""},
+{"position": "Director of Community Outreach", "name": "Anjali Vemuri", "headshot": community1},
+{"position": "Director of Community Outreach", "name": "Sahaja Pinnu", "headshot": community2},
 {"position": "Director of Technology", "name": "Ryan Toth", "headshot": tech1},
 {"position": "Director of Technology", "name": "Anthony Zhu", "headshot": tech2}]
 

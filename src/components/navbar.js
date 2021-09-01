@@ -61,7 +61,7 @@ export default function NavBar() {
                         {item.name}
                       </Link>
                     ))}
-                    <a href="https://bubble.io/domain_not_supported?domain=rush.pctumich.com" target="_blank" rel="noopener noreferrer" className={classNames(
+                    <a href="https://rush.pctumich.com/" target="_blank" rel="noopener noreferrer" className={classNames(
                       'text-gray-300 hover:bg-gray-700 hover:text-white',
                       'px-3 py-2 rounded-md text-lg font-medium'
                     )} >
@@ -86,7 +86,7 @@ export default function NavBar() {
                   {item.name}
                 </Link>
               ))}
-              <a href="https://bubble.io/domain_not_supported?domain=rush.pctumich.com" target="_blank" rel="noopener noreferrer" className={classNames(
+              <a href="https://rush.pctumich.com/" target="_blank" rel="noopener noreferrer" className={classNames(
                     'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}>
