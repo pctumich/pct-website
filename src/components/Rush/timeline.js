@@ -34,8 +34,10 @@ class Timeline extends Component {
     render() {
         return (
             <VerticalTimeline className="timeline" animate={this.state.animate}>
-                <VerticalTimelineElement className="component" iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<img src={logo}/>}>
+                <VerticalTimelineElement className="component" 
+                iconStyle={{ background: '#fff'}} 
+                icon={<img src={logo}/>}
+                >
                     <p className="event-name">Info Session</p>
                     <Slideshow images={[is1, is2, is3]}></Slideshow>
                     <div className="event-info">
@@ -47,7 +49,9 @@ class Timeline extends Component {
                         <p>Ross: Robertson Auditorium</p>
                     </div>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement className="component">
+                <VerticalTimelineElement className="component" 
+                iconStyle={{ background: '#fff'}} 
+                icon={<img src={logo}/>}>
                     <p className="event-name">Diverse Voices Event</p>
                     <Slideshow images={[dei1, dei2, dei3]}></Slideshow>
                     <div className="event-info">
@@ -59,7 +63,9 @@ class Timeline extends Component {
                         <p>Ross: R2240</p>
                     </div>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement className="component">
+                <VerticalTimelineElement className="component" 
+                iconStyle={{ background: '#fff'}} 
+                icon={<img src={logo}/>}>
                     <p className="event-name">Women's Event</p>
                     <Slideshow images={[we1, we2, we3]}></Slideshow>
                     <div className="event-info">
@@ -71,7 +77,9 @@ class Timeline extends Component {
                         <p>Ross: R0230</p>
                     </div>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement className="component">
+                <VerticalTimelineElement className="component" 
+                iconStyle={{ background: '#fff'}} 
+                icon={<img src={logo}/>}>
                     <p className="event-name">Coffee Chats</p>
                     <Slideshow images={[cc1, cc2, cc3, cc4]}></Slideshow>
                     <div className="event-info">
