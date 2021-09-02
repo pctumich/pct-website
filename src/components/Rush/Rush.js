@@ -110,7 +110,7 @@ class Rush extends Component {
         </div>
         {window.innerWidth < 1024 &&
           <div>
-            <div>
+            <div class="mb-5">
               <p className="text-center text-lg font-semibold">Info Session</p>
               <SlideshowMobile images={[is1, is2, is3]}></SlideshowMobile>
               <div className="event-info">
@@ -118,7 +118,7 @@ class Rush extends Component {
                 <p class="text-center">Ross: Robertson Auditorium</p>
               </div>
             </div>
-            <div>
+            <div class="mb-5">
               <p className="text-center text-lg font-semibold">Diverse Voices Event</p>
               <SlideshowMobile images={[dei1, dei2, dei3]}></SlideshowMobile>
               <div className="event-info">
@@ -126,7 +126,7 @@ class Rush extends Component {
                 <p class="text-center">Ross: R2240</p>
               </div>
             </div>
-            <div>
+            <div class="mb-5">
               <p className="text-center text-lg font-semibold">Women's Event</p>
               <SlideshowMobile images={[we1, we2, we3]}></SlideshowMobile>
               <div className="event-info">
@@ -134,7 +134,7 @@ class Rush extends Component {
                 <p class="text-center">Ross: R0230</p>
               </div>
             </div>
-            <div>
+            <div class="mb-5">
               <p className="text-center text-lg font-semibold">Coffee Chats</p>
               <SlideshowMobile images={[cc1, cc2, cc3, cc4]}></SlideshowMobile>
               <div className="event-info">
