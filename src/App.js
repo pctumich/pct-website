@@ -69,7 +69,7 @@ class App extends Component {
           <Route component={Error} />
         </Switch>
         <div class="text-center bg-black shadow-2xl shadow-inner pt-3">
-          <p class="text-black h-4 text-2xl text-white font-semibold">Follow Us</p>
+          <p class="text-black text-xl text-white font-semibold">Follow Us</p>
           <div class="space-x-4 mx-auto w-1/2">
             <a href="https://www.facebook.com/pctumich/" target="_blank"><span class="fa fa-facebook text-3xl text-white"></span></a>
             <a href="https://www.instagram.com/pctumich/" target="_blank"><span class="fa fa-instagram text-4xl text-white"></span></a>

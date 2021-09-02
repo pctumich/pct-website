@@ -135,13 +135,13 @@ class Home extends Component {
                   <Panel className={this.state.slide ? "slide-in-1" : ""} header="Professional Growth" key="1">
                     <div class="w-10/12 lg:w-6/12">
                       <p className="text-xl">Individual Mentorship<hr></hr></p>
-                      <p className="description">Every semester, underclassmen are assigned an upperclassmen mentor in their major or industry of interest to guide them with course selection, resume feedback, interview practice, company / club applications and much more! This is a great opportunity for younger members to become friends with and learn from older members.</p>
+                      <p className="description mb-10">Every semester, underclassmen are assigned an upperclassmen mentor in their major or industry of interest to guide them with course selection, resume feedback, interview practice, company / club applications and much more! This is a great opportunity for younger members to become friends with and learn from older members.</p>
                       <p className="text-xl">Industry Overviews<hr></hr></p>
-                      <p className="description">At this event, upperclassmen present to the fraternity about their experiences in different industries, including investment banking, management consulting, private equity, marketing, advertising, technology and more. It offers members a unique and in-depth perspective into career paths they may be interested in.</p>
+                      <p className="description mb-10">At this event, upperclassmen present to the fraternity about their experiences in different industries, including investment banking, management consulting, private equity, marketing, advertising, technology and more. It offers members a unique and in-depth perspective into career paths they may be interested in.</p>
                       <p className="text-xl">Company Visits<hr></hr></p>
-                      <p className="description">Every year, members engage with alumni across various industries and companies to learn about internship and job opportunities. Additionally, members go on weekend trips to Detroit and Chicago for networking events with companies in various industries, including banking, consulting, and tech.</p>
+                      <p className="description mb-10">Every year, members engage with alumni across various industries and companies to learn about internship and job opportunities. Additionally, members go on weekend trips to Detroit and Chicago for networking events with companies in various industries, including banking, consulting, and tech.</p>
                       <p className="text-xl">Interview Prep<hr></hr></p>
-                      <p className="description">Underclassmen are encouraged to reach out to upperclassmen to conduct mock interviews. In addition, we organize a mock "superday" once a semester where members are given several mock interviews by upperclassmen for industries they are interested in and receive valuable feedback afterwards.</p>
+                      <p className="description mb-10">Underclassmen are encouraged to reach out to upperclassmen to conduct mock interviews. In addition, we organize a mock "superday" once a semester where members are given several mock interviews by upperclassmen for industries they are interested in and receive valuable feedback afterwards.</p>
                     </div>
                     <div className="hidden lg:block w-4/12">
                       <img class="w-16 md:w-16 lg:w-16" className="pillar-img" src={prof3} alt="" style={{marginTop: "5%"}}></img>
@@ -152,12 +152,12 @@ class Home extends Component {
                   <Panel className={this.state.slide ? "slide-in-2" : ""} header="Community" key="2">
                     <div className="w-10/12 lg:w-6/12">
                       <p className="text-xl">Membership and Social Events<hr></hr></p>
-                      <p className="description">We host and participate in a variety of social events, including football game tailgates, bowling nights, IM sports, secret santa, karaoke nights, potluck dinners and more. </p>
+                      <p className="description mb-10">We host and participate in a variety of social events, including football game tailgates, bowling nights, IM sports, secret santa, karaoke nights, potluck dinners and more. </p>
                       <p className="text-xl">Family Wars<hr></hr></p>
-                      <p className="description">All members are grouped into one of four sub-families based on their lineage. Throughout the semester, families have friendly competitions with one another at events like our campus-wide scavenger hunt, family hangouts, and more!</p>
+                      <p className="description mb-10">All members are grouped into one of four sub-families based on their lineage. Throughout the semester, families have friendly competitions with one another at events like our campus-wide scavenger hunt, family hangouts, and more!</p>
                       <p className="text-xl">Philanthropy<hr></hr></p>
-                      <p className="description">Our annual 5K was started by a PCT member in 2015 to support the Matthew Bittker Foundation, an organization his family started in memory of his brother to support pediatric cancer research. We’ve held the 5K every year since to support the foundation and give back to the greater community.</p>
-                      <p className="description">Additionally, we participate in the Detroit Partnership Day every year to give back to the Detroit community and organize several of our own service events. We’ve also organized events with Habitat for Humanity, Ronald McDonald House, Business Clothing Drive, and more. </p>
+                      <p className="description mb-10">Our annual 5K was started by a PCT member in 2015 to support the Matthew Bittker Foundation, an organization his family started in memory of his brother to support pediatric cancer research. We’ve held the 5K every year since to support the foundation and give back to the greater community.</p>
+                      <p className="description mb-10">Additionally, we participate in the Detroit Partnership Day every year to give back to the Detroit community and organize several of our own service events. We’ve also organized events with Habitat for Humanity, Ronald McDonald House, Business Clothing Drive, and more. </p>
                     </div>
                     <div className="hidden lg:block w-4/12">
                       <img className="pillar-img" style={{marginTop: "9%"}} src={tailgate} alt=""></img>
@@ -167,11 +167,11 @@ class Home extends Component {
                   <Panel className={this.state.slide ? "slide-in-3" : ""} header="Diversity, Equity, & Inclusion Mindset" key="3">
                     <div className="w-10/12 lg:w-6/12">
                       <p className="text-xl">Committee Creation<hr></hr></p>
-                      <p className="description">DEI directors lead a committee of members who are devoted to maintaining a welcoming atmosphere and upholding the respect of the diversity within our chapter. This committee helps plan events, create outreach efforts, and develop new DEI initiatives.</p>
+                      <p className="description mb-10">DEI directors lead a committee of members who are devoted to maintaining a welcoming atmosphere and upholding the respect of the diversity within our chapter. This committee helps plan events, create outreach efforts, and develop new DEI initiatives.</p>
                       <p className="text-xl">Inclusive Discussions<hr></hr></p>
-                      <p className="description">As a community, we support one another by having both formal and impromptu discussions on the numerous identities we take on as we go through university, as well as into the future.</p>
+                      <p className="description mb-10">As a community, we support one another by having both formal and impromptu discussions on the numerous identities we take on as we go through university, as well as into the future.</p>
                       <p className="text-xl">Diverse Celebrations<hr></hr></p>
-                      <p className="description">Celebrating our members goes beyond the classroom. We love to recognize our various cultural identities within the chapter by recognizing holidays and traditions.</p>
+                      <p className="description mb-10">Celebrating our members goes beyond the classroom. We love to recognize our various cultural identities within the chapter by recognizing holidays and traditions.</p>
                     </div>
                     <div className="hidden lg:block w-4/12">
                       <img className="pillar-img" style={{marginTop: "12%"}} src={dei1} alt=""></img>
@@ -180,11 +180,11 @@ class Home extends Component {
                   <Panel className={this.state.slide ? "slide-in-4" : ""} header="Personal Growth" key="4">
                     <div class="w-10/12 lg:w-6/12">
                       <p class="text-xl">Wellness<hr></hr></p>
-                      <p class="description">Our Directors of Member Wellness organize several events a semester to promote mental and physical wellness during the semester. A few include mental health workshops, sleep workshops, and yoga and fitness classes. </p>
+                      <p class="description mb-10">Our Directors of Member Wellness organize several events a semester to promote mental and physical wellness during the semester. A few include mental health workshops, sleep workshops, and yoga and fitness classes. </p>
                       <p class="text-xl">Learning<hr></hr></p>
-                      <p class="description">We embrace learning, whether it be through professional workshops, personal and mock interviews, or even leadership positions.</p>
+                      <p class="description mb-10">We embrace learning, whether it be through professional workshops, personal and mock interviews, or even leadership positions.</p>
                       <p class="text-xl">People and Fraternity Pride<hr></hr></p>
-                      <p class="description">We pride ourselves on being the best business fraternity we can be. We hope members develop lifelong friendships that reach far beyond the scope of Michigan and our fraternity.</p>
+                      <p class="description mb-10">We pride ourselves on being the best business fraternity we can be. We hope members develop lifelong friendships that reach far beyond the scope of Michigan and our fraternity.</p>
                     </div>
                     <div class="hidden lg:block w-5/12">
                       <img class="w-16 md:w-72 lg:w-72 lg:mx-auto lg:pt-12" src={personalGrowth} alt=""></img>
