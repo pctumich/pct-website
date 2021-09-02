@@ -16,7 +16,7 @@ import IR1 from './pics/Yaz.jpg'
 import IR2 from './pics/Ava.jpg'
 import Member1 from './pics/Jajoo.jpg'
 import Member2 from './pics/Erik.jpg'
-// import Social1 from './pics/Spiro.jpg'
+import Social1 from './pics/Spiro.jpg'
 import Social2 from './pics/Adi.jpg'
 import Parent from './pics/Jharna.jpg'
 import Prof1 from './pics/Spencer.jpg'
@@ -30,9 +30,9 @@ import tech2 from './pics/Ant.jpg'
 import wellness1 from './pics/Aakash.jpg'
 import wellness2 from './pics/Sarah.jpg'
 
-const board1 = [{"name": "Krisha Monpara", "position": "President", "headshot": elPrez, "bio": "Krisha is a junior studying Economics. From Pittsburgh, Pennsylvania, she enjoys running, playing the piano, and spending time with her friends and family. Her internship experience includes Wealth Management at Cetera Financial Investors, the Women’s Advisory Program in Global Investment Banking at RBC, and as an incoming Financial Analyst at Amazon in Seattle."},
+const board1 = [{"name": "Krisha Monpara", "position": "President", "headshot": elPrez, "bio": "Krisha is a senior studying Economics. From Pittsburgh, Pennsylvania, she enjoys running, playing the piano, and spending time with her friends and family. Her internship experience includes Wealth Management at Cetera Financial Investors, the Women’s Advisory Program in Global Investment Banking at RBC, and will be returning full time to Amazon as a Financial Analyst in Seattle."},
 {"name": "Jason Stahlman", "position": "VP Internal", "headshot": vpi, "bio": "Jason is a senior studying Business from Twinsburg, Ohio. He enjoys playing and watching a variety of sports, listening to music, and hanging out with friends. In past summers he has interned in corporate finance, strategy and investment banking. Upon graduation he will be joining Lincoln International as an Investment Banking Analyst."},
-{"name": "Theo Kardasis", "position": "VP External", "headshot": vpx, "bio": "Theo, originally from Rochester, MI, is a junior in the School of Information studying Data Analysis and minoring in Business and Spanish. In his free time, he loves to hike, cook, and watch YouTube. His past internship experiences lie within strategy and insights, and he will be interning as a Digital Analytics Intern at American Express this coming summer."},
+{"name": "Theo Kardasis", "position": "VP External", "headshot": vpx, "bio": "Theo, originally from Rochester, MI, is a senior in the School of Information studying Data Analytics with minors in Business and Spanish. His past internship experiences lie at the intersection of technology and financial services, and most recently interned at American Express as a Digital Analytics Intern. In his free time, he enjoys hiking, cooking, and reading. "},
 ]
 
 const board2 = [{"name": "Ian Kim", "position": "VP Finance", "headshot": vpf, "bio": "Ian is a senior studying Industrial and Operations Engineering with minors in German and Computer Science. He is originally from the Boston suburbs, and has interned within a variety of industries, most recently research and advisory at Gartner. Ian’s hobbies include running, golf, basketball, cooking, shoes and travel."},
@@ -53,7 +53,7 @@ const directors = [{"position": "Director of New Member Engagement", "name": "Jh
 {"position": "Director of Diversity, Equity, and Inclusion", "name": "Audrey Thedford", "headshot": DEI2},
 {"position": "Director of Internal Relations", "name": "Yasmine Zadeh", "headshot": IR1},
 {"position": "Director of Internal Relations", "name": "Ava Ben-David", "headshot": IR2},
-{"position": "Director of Social Engagement", "name": "Spiro Kass", "headshot": ""},
+{"position": "Director of Social Engagement", "name": "Spiro Kass", "headshot": Social1},
 {"position": "Director of Social Engagement", "name": "Adi Middha", "headshot": Social2},
 {"position": "Fundraising Director", "name": "Carly May", "headshot": fundraising1},
 {"position": "Fundraising Director", "name": "Katie Derrough", "headshot": fundraising2},

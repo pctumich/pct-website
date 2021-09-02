@@ -145,7 +145,7 @@ class Home extends Component {
                     </div>
                     <div className="hidden lg:block w-4/12">
                       <img class="w-16 md:w-16 lg:w-16" className="pillar-img" src={prof3} alt="" style={{marginTop: "5%"}}></img>
-                      <img class="w-16 md:w-16 lg:w-16" className="pillar-img" src={prof2} alt="" style={{marginTop: "7%"}}></img>
+                      {/* <img class="w-16 md:w-16 lg:w-16" className="pillar-img" src={prof2} alt="" style={{marginTop: "7%"}}></img> */}
                       <img class="w-16 md:w-16 lg:w-16" className="pillar-img" src={prof1} alt="" style={{marginTop: "7%"}}></img>
                     </div>
                   </Panel>
@@ -200,4 +200,4 @@ class Home extends Component {
   }
 }
 
-        export default Home;
+  export default Home;
