@@ -42,28 +42,6 @@ const LOGO_COORDS = [
 const ORIG_X = 800;
 const ORIG_Y = 355;
 
-/*
-constructor(props) {
-    super(props);
-    this.state = {dimensions: {}};
-    this.onImgLoad = this.onImgLoad.bind(this);
-}
-onImgLoad({target:img}) {
-    this.setState({dimensions:{height:img.offsetHeight,
-                               width:img.offsetWidth}});
-}
-render(){
-    const {src} = this.props;
-    const {width, height} = this.state.dimensions;
-
-    return (<div>
-            dimensions width{width}, height{height}
-            <img onLoad={this.onImgLoad} src={src}/>
-            </div>
-           );
-}
-*/
-
 class Cover extends Component {
     constructor(props) {
         super(props);
@@ -77,9 +55,6 @@ class Cover extends Component {
         
         const x_ratio = new_x / ORIG_X;
         const y_ratio = new_y / ORIG_Y;
-
-        console.log("new x:");
-        console.log(this.props.new_dimensions);
 
         const style = {
             background: "white",
