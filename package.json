@@ -2,7 +2,7 @@
   "name": "pct-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pctumich.github.io/pct-website/",
+  "homepage": "https://pctumich.com",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
     "@craco/craco": "^6.2.0",
