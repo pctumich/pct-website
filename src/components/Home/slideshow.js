@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import slide1 from './pics/slide1.jpg'
+import slide1 from './pics/tailgate.jpg'
 import slide2 from './pics/slide2.jpg'
 import slide3 from './pics/slide3.jpg'
 import slide4 from './pics/slide4.jpg'
