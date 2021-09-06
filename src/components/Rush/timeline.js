@@ -44,7 +44,7 @@ class Timeline extends Component {
                         <div className="container">
                             <p>Sunday, September 12th</p>
                             <p className="bar">|</p>
-                            <p>3:30-4:00PM</p>
+                            <p>4:00-6:00PM</p>
                         </div>
                         <p>Ross: Robertson Auditorium</p>
                     </div>
@@ -72,7 +72,7 @@ class Timeline extends Component {
                         <div className="container">
                             <p>Wednesday, September 15th</p>
                             <p className="bar">|</p>
-                            <p>4:30-6:30PM</p>
+                            <p>5:00-6:30PM</p>
                         </div>
                         <p>Ross: R0230</p>
                     </div>

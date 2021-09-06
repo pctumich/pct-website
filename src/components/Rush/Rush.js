@@ -79,7 +79,7 @@ class Rush extends Component {
       "Positive Attitude": "Rush can be an intimidating process when you are rushing with hundreds of other students on campus. Remember to stay positive and know that we’re are super excited to meet and interact with every one of you. Just be yourself and have fun!",
       "Come Informed": "Coming to rush events prepared is the easiest way that we can take your rush experience to the next level. Preparing a few questions, either personal or professional, and attending rush events will ultimately enhance your rush experience and brother/sister interactions.",
       "Professional Appearance": "Although some of our events have a casual dress code, it is important to recognize that a clean-cut appearance shows respect. We want to see each and every rushee's individuality at the forefront, so if expressing yourself through fashion is of interest to you, by all means do it! Just remember, whether casual wear or business professional, try to keep it appropriate and respectful.",
-      "Create a Resume": "Even if you have not yet written a formal resume, we encourage you to compile a one page document highlighting your extracurricular activities and achievements, academic accomplishments, hobbies, and anything else you think we should know. We will ask for this after our 3rd rush event. You should not bring a resume to any open events (barring Resume Workshop)."
+      "Create a Resume": "We will ask for this after our application. You should not bring a resume to any open events."
     }
     return (
       <div class="container mx-auto px-4">
@@ -107,6 +107,7 @@ class Rush extends Component {
         <div id="header" className="mt-8">
           <h2 className="text-3xl font-bold text-center">Rush Schedule</h2>
           <hr className="block box-content border-0 h-1 w-10/12 bg-black mb-5 mx-auto"></hr>
+          <p class="text-xl text-center">Dress code for events: casual</p>
         </div>
         {window.innerWidth < 1024 &&
           <div>
@@ -142,10 +143,14 @@ class Rush extends Component {
                 <p class="text-center">Ross: R1210, R1230, R1240</p>
               </div>
             </div>
+            <p class="text-2xl text-center">Applications are due at 11:59pm on September 17th</p>
           </div>
         }
         {window.innerWidth >= 1024 &&
+        <div>
           <Timeline />
+          <p class="text-xl text-center pt-4 pb-4">Applications are due at 11:59pm on September 17th</p>
+        </div>  
         }
         <span id="tips" className="tips"></span>
         <div id="header" className="mt-8">
