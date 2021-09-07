@@ -91,9 +91,9 @@ class Rush extends Component {
         <ReactPlayer class="w-10/12 h-96 sm:w-auto sm:max-w-2xl mx-auto overflow-hidden" width="w-10/12" height="h-96" url="https://www.youtube.com/watch?v=xj7DYzoTdKQ" controls={true} />
         <div>
           <p id="email-description-updates" class="mx-auto text-center pt-12 text-xl lg:w-1/2 lg:leading-10">Email any questions to pctrushquestionsf21@umich.edu and enter your U-M email below to receive updates about rush!</p>
-          <div id="rush-email-container" class="mx-auto pt-6 text-center">
+          <div id="rush-email-container" class="mx-auto pt-2 text-center">
             <div class="inline-block h-8">
-              <input class="pb-2 h-full text-lg text-center border border-black" placeholder='e.g ryantoth@umich.edu' value={this.state.rushEmail} onChange={event => this.updateInputValue(event)}></input>
+              <input class="pb-1 h-full text-lg text-center border border-black mr-1" placeholder='e.g ryantoth@umich.edu' value={this.state.rushEmail} onChange={event => this.updateInputValue(event)}></input>
               {!this.state.submitted &&
                 <Button class="" type="primary" onClick={this.addEmail}>Submit</Button>
               }
