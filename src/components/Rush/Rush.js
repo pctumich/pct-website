@@ -120,14 +120,6 @@ class Rush extends Component {
               </div>
             </div>
             <div class="mb-5">
-              <p className="text-center text-lg font-semibold">Diverse Voices Event</p>
-              <SlideshowMobile images={[dei1, dei2, dei3]}></SlideshowMobile>
-              <div className="event-info">
-                <p class="text-center pt-4 m-0">Tuesday, September 14th | 5:00-7:00PM</p>
-                <p class="text-center">Ross: R2240</p>
-              </div>
-            </div>
-            <div class="mb-5">
               <p className="text-center text-lg font-semibold">Women's Event</p>
               <SlideshowMobile images={[we1, we2, we3]}></SlideshowMobile>
               <div className="event-info">
@@ -141,6 +133,14 @@ class Rush extends Component {
               <div className="event-info">
                 <p class="text-center pt-4 m-0">Thursday, September 16th | 5:00-7:00PM</p>
                 <p class="text-center">Ross: R1210, R1230, R1240</p>
+              </div>
+            </div>
+            <div class="mb-5">
+              <p className="text-center text-lg font-semibold">Diverse Voices Event</p>
+              <SlideshowMobile images={[dei1, dei2, dei3]}></SlideshowMobile>
+              <div className="event-info">
+                <p class="text-center pt-4 m-0">Friday, September 17th | 5:00-7:00PM</p>
+                <p class="text-center">Ross: R1240</p>
               </div>
             </div>
             <p class="text-2xl text-center">Applications are due at 11:59pm on September 17th</p>

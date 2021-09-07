@@ -34,9 +34,9 @@ class Timeline extends Component {
     render() {
         return (
             <VerticalTimeline className="timeline" animate={this.state.animate}>
-                <VerticalTimelineElement className="component" 
-                iconStyle={{ background: '#fff'}} 
-                icon={<img src={logo}/>}
+                <VerticalTimelineElement className="component"
+                    iconStyle={{ background: '#fff' }}
+                    icon={<img src={logo} />}
                 >
                     <p className="event-name">Info Session</p>
                     <Slideshow images={[is1, is2, is3]}></Slideshow>
@@ -49,23 +49,9 @@ class Timeline extends Component {
                         <p>Ross: Robertson Auditorium</p>
                     </div>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement className="component" 
-                iconStyle={{ background: '#fff'}} 
-                icon={<img src={logo}/>}>
-                    <p className="event-name">Diverse Voices Event</p>
-                    <Slideshow images={[dei1, dei2, dei3]}></Slideshow>
-                    <div className="event-info">
-                        <div className="container">
-                            <p>Tuesday, September 14th</p>
-                            <p className="bar">|</p>
-                            <p>5:00-7:00PM</p>
-                        </div>
-                        <p>Ross: R2240</p>
-                    </div>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement className="component" 
-                iconStyle={{ background: '#fff'}} 
-                icon={<img src={logo}/>}>
+                <VerticalTimelineElement className="component"
+                    iconStyle={{ background: '#fff' }}
+                    icon={<img src={logo} />}>
                     <p className="event-name">Women's Event</p>
                     <Slideshow images={[we1, we2, we3]}></Slideshow>
                     <div className="event-info">
@@ -77,9 +63,9 @@ class Timeline extends Component {
                         <p>Ross: R0230</p>
                     </div>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement className="component" 
-                iconStyle={{ background: '#fff'}} 
-                icon={<img src={logo}/>}>
+                <VerticalTimelineElement className="component"
+                    iconStyle={{ background: '#fff' }}
+                    icon={<img src={logo} />}>
                     <p className="event-name">Coffee Chats</p>
                     <Slideshow images={[cc1, cc2, cc3, cc4]}></Slideshow>
                     <div className="event-info">
@@ -91,6 +77,20 @@ class Timeline extends Component {
                         <p>Ross: R1210, R1230, R1240</p>
                     </div>
                     <ScrollTrigger onEnter={this.updateAnimate}></ScrollTrigger>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement className="component"
+                    iconStyle={{ background: '#fff' }}
+                    icon={<img src={logo} />}>
+                    <p className="event-name">Diverse Voices Event</p>
+                    <Slideshow images={[dei1, dei2, dei3]}></Slideshow>
+                    <div className="event-info">
+                        <div className="container">
+                            <p>Friday, September 17th</p>
+                            <p className="bar">|</p>
+                            <p>5:00-7:00PM</p>
+                        </div>
+                        <p>Ross: R1240</p>
+                    </div>
                 </VerticalTimelineElement>
             </VerticalTimeline>
         )
