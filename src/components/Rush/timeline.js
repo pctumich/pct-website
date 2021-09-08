@@ -44,9 +44,9 @@ class Timeline extends Component {
                         <div className="container">
                             <p>Sunday, September 12th</p>
                             <p className="bar">|</p>
-                            <p>4:00-6:00PM</p>
+                            <p>4:00-5:00PM</p>
                         </div>
-                        <p>Ross: Robertson Auditorium</p>
+                        <p>Blau: B1580</p>
                     </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement className="component"

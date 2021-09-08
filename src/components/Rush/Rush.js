@@ -115,8 +115,8 @@ class Rush extends Component {
               <p className="text-center text-lg font-semibold">Info Session</p>
               <SlideshowMobile images={[is1, is2, is3]}></SlideshowMobile>
               <div className="event-info">
-                <p class="text-center pt-4 m-0">Sunday, September 12th | 3:30-4:00PM</p>
-                <p class="text-center">Ross: Robertson Auditorium</p>
+                <p class="text-center pt-4 m-0">Sunday, September 12th | 4:00-5:00PM</p>
+                <p class="text-center">Blau: B1580</p>
               </div>
             </div>
             <div class="mb-5">
