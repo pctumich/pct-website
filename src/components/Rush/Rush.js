@@ -88,7 +88,7 @@ class Rush extends Component {
           <h2 class="text-3xl font-bold text-center">Rush Phi Chi Theta</h2>
           <hr class="block box-content border-0 h-1 w-10/12 bg-black mb-5 mx-auto"></hr>
         </div>
-        <ReactPlayer class="w-10/12 h-96 sm:w-auto sm:max-w-2xl mx-auto overflow-hidden" width="w-10/12" height="h-96" url="https://www.youtube.com/watch?v=xj7DYzoTdKQ" controls={true} />
+        <ReactPlayer class="w-10/12 h-96 sm:w-auto sm:max-w-2xl mx-auto overflow-hidden" width="w-10/12" height="h-96" url="https://youtu.be/gYSP8GY6hYc" controls={true} />
         <div>
           <p id="email-description-updates" class="mx-auto text-center pt-12 text-xl lg:w-1/2 lg:leading-10">Email any questions to pctrushquestionsf21@umich.edu and enter your U-M email below to receive updates about rush!</p>
           <div id="rush-email-container" class="mx-auto pt-2 text-center">
